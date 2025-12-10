@@ -7,8 +7,8 @@ import react from '@astrojs/react';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://shadow-labs-ai.github.io',
-  base: '/website',
+  site: 'https://shadowlabs.ai',
+  base: '/',
   vite: {
     plugins: [tailwindcss()]
   },
