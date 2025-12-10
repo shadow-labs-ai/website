@@ -1,44 +1,221 @@
 ---
-// Features section component
+// Features section component - Updated to match Figma design
 ---
 
-<section id="features" class="w-full py-20 bg-white">
-	<div class="container mx-auto px-4">
-		<div class="text-center mb-16">
-			<h2 class="text-4xl font-bold text-gray-900 mb-4">Features</h2>
-			<p class="text-xl text-gray-600 max-w-2xl mx-auto">
-				Discover what makes ShadowLabs unique
-			</p>
-		</div>
-		<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-			<div class="p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
-				<div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-					<svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-					</svg>
-				</div>
-				<h3 class="text-xl font-semibold text-gray-900 mb-2">Fast Performance</h3>
-				<p class="text-gray-600">Lightning-fast performance optimized for speed and efficiency.</p>
-			</div>
-			<div class="p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
-				<div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
-					<svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-					</svg>
-				</div>
-				<h3 class="text-xl font-semibold text-gray-900 mb-2">Secure</h3>
-				<p class="text-gray-600">Enterprise-grade security to protect your data and privacy.</p>
-			</div>
-			<div class="p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
-				<div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-					<svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
-					</svg>
-				</div>
-				<h3 class="text-xl font-semibold text-gray-900 mb-2">Customizable</h3>
-				<p class="text-gray-600">Fully customizable to meet your specific needs and requirements.</p>
-			</div>
+<section id="features" class="bg-[#f5f5f7] flex flex-col gap-[80px] items-center pb-[140px] pt-[100px] px-[100px]">
+	<!-- Section Heading -->
+	<div class="flex flex-col gap-[8px] items-center not-italic text-center w-full">
+		<p class="leading-[1.4] text-[#666666] text-[24px] w-full">Features</p>
+		<div class="flex flex-col justify-center leading-[50px] text-[40px] text-black tracking-[-1.6px] w-full">
+			<p class="mb-0">Scale great conversations,</p>
+			<p>not just teams.</p>
 		</div>
 	</div>
+	
+	<!-- For Business Owners Section -->
+		<div class="flex flex-col gap-[63px] items-center justify-end rounded-[18px] w-[1240px]">
+			<div class="flex flex-col gap-[24px] items-start leading-[0] not-italic w-full">
+				<div class="flex flex-col font-medium justify-center text-[40px] text-black tracking-[-1.6px] w-full">
+					<p class="leading-[50px]">For Business Owners</p>
+				</div>
+				<div class="flex flex-col font-semibold justify-center text-[#666666] text-[20px] tracking-[-0.374px] w-full">
+					<p class="leading-[1.2]">Drive higher conversions with real-time deal coaching, pitch personalization, and team-wide performance consistency across regions and languages.</p>
+				</div>
+			</div>
+			
+			<!-- Bento Grid -->
+			<div class="flex gap-[24px] items-center w-full">
+				<!-- Column 1 -->
+				<div class="basis-0 flex flex-col gap-[24px] grow items-start min-h-px min-w-px shrink-0">
+					<!-- Card 1: Higher Sales Conversions -->
+					<div class="bg-white flex flex-col h-[686px] items-center justify-between overflow-clip pb-0 pt-[80px] px-0 rounded-[32px] w-full">
+						<div class="flex flex-col gap-[26px] items-center leading-[0] not-italic px-[80px] py-0 text-center w-full">
+							<div class="flex flex-col font-normal justify-center text-[40px] text-black tracking-[-1.6px] w-full">
+								<p class="leading-[50px]">Higher Sales Conversions</p>
+							</div>
+							<div class="flex flex-col font-semibold justify-center text-[#666666] text-[20px] tracking-[-0.374px] w-full">
+								<p class="leading-[1.2]">Help your reps run focused conversations that uncover real needs and move deals to close.</p>
+							</div>
+						</div>
+						<div class="h-[374px] overflow-clip relative shrink-0 w-full">
+							<img 
+								src="http://localhost:3845/assets/3a414b4387dbc05bc057b8b8c5eff9773b95fc6e.png" 
+								alt="Sales Conversions" 
+								class="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full"
+							/>
+						</div>
+					</div>
+				
+					<!-- Card 2: Performance Equity -->
+					<div class="bg-white flex flex-col h-[590px] items-center justify-between overflow-clip pb-[50px] pt-0 px-0 rounded-[32px] w-full">
+						<div class="h-[280px] overflow-clip relative shrink-0 w-full">
+							<img 
+								src="http://localhost:3845/assets/c207dfce29d52e58eaaf74724578b30aa9bc765c.png" 
+								alt="Team Performance" 
+								class="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full"
+							/>
+						</div>
+						<div class="flex flex-col gap-[24px] items-center leading-[0] not-italic px-[80px] py-0 text-center w-full">
+							<div class="flex flex-col font-normal justify-center text-[40px] text-black tracking-[-1.6px] w-full">
+								<p class="leading-[50px]">Performance Equity Across the Team</p>
+							</div>
+							<div class="flex flex-col font-semibold justify-center text-[#666666] text-[20px] tracking-[-0.374px] w-full">
+								<p class="leading-[1.2]">Turn what your best reps do—questions, phrasing, timing—into live guidance for everyone on the team.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Column 2 -->
+				<div class="basis-0 flex flex-col gap-[24px] grow items-start min-h-px min-w-px shrink-0">
+				
+					<!-- Card 3: Personalised Sales Pitch -->
+					<div class="bg-white flex flex-col h-[590px] items-center justify-between overflow-clip pb-[80px] pt-0 px-0 rounded-[32px] w-[600px]">
+						<div class="bg-[#d6e3f8] h-[280px] overflow-clip relative shrink-0 w-full">
+							<img 
+								src="http://localhost:3845/assets/4b38a5cacab7464c58b61183661cd590e8818b3e.png" 
+								alt="Personalized Sales" 
+								class="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full"
+							/>
+						</div>
+						<div class="flex flex-col gap-[26px] items-center leading-[0] not-italic px-[80px] py-0 text-center w-full">
+							<div class="flex flex-col font-normal justify-center text-[40px] text-black tracking-[-1.6px] w-full">
+								<p class="leading-[50px]">Personalised Sales Pitch</p>
+							</div>
+							<div class="flex flex-col font-semibold justify-center text-[#666666] text-[20px] tracking-[-0.374px] w-full">
+								<p class="leading-[1.2]">Shadow listens for intent and willingness to pay in real time, and nudges reps to the right offer, price and proof.</p>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Card 4: Make Your Team Global -->
+					<div class="bg-white flex flex-col h-[686px] items-center justify-between overflow-clip pb-0 pt-[80px] px-0 rounded-[32px] w-full">
+						<div class="flex flex-col gap-[26px] items-center leading-[0] not-italic px-[80px] py-0 text-center w-full">
+							<div class="flex flex-col font-normal justify-center text-[40px] text-black tracking-[-1.6px] w-full">
+								<p class="leading-[50px]">Make Your Team Global</p>
+							</div>
+							<div class="flex flex-col font-semibold justify-center text-[#666666] text-[20px] tracking-[-0.374px] w-full">
+								<p class="leading-[1.2]">Help reps sell across regions and industries by bridging language, cultural and context gaps on every call.</p>
+							</div>
+						</div>
+						<div class="h-[374px] overflow-clip relative shrink-0 w-full">
+							<!-- Global team visualization - placeholder for complex image -->
+							<div class="w-full h-full bg-gradient-to-br from-blue-50 to-purple-50"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- For Sales Professionals Section -->
+		<div class="flex flex-col gap-[63px] items-center justify-end rounded-[18px] w-[1240px]">
+			<div class="flex flex-col gap-[24px] items-start leading-[0] not-italic w-full">
+				<div class="flex flex-col font-medium justify-center text-[40px] text-black tracking-[-1.6px] w-full">
+					<p class="leading-[50px]">For Sales Professionals</p>
+				</div>
+				<div class="flex flex-col font-semibold justify-center text-[#666666] text-[20px] tracking-[-0.374px] w-full">
+					<p class="leading-[1.2]">Access instant facts, handle objections confidently, adapt your storytelling and tone, and communicate clearly—even in mixed languages.</p>
+				</div>
+			</div>
+			
+			<!-- Features Grid -->
+			<div class="flex flex-col gap-[24px] items-start justify-center w-[1240px]">
+				<div class="flex gap-[24px] items-center w-full">
+					<!-- Column 1 -->
+					<div class="basis-0 flex flex-col gap-[24px] grow items-start min-h-px min-w-px shrink-0">
+						<!-- Higher Sales Facts on Tap -->
+						<div class="bg-white flex flex-col h-[686px] items-center justify-between overflow-clip pb-0 pt-[80px] px-0 rounded-[32px] w-full">
+							<div class="flex flex-col gap-[26px] items-center leading-[0] not-italic px-[80px] py-0 text-center w-full">
+								<div class="flex flex-col font-normal justify-center text-[40px] text-black tracking-[-1.6px] w-full">
+									<p class="leading-[50px]">Higher Sales Facts on Tap</p>
+								</div>
+								<div class="flex flex-col font-semibold justify-center text-[#666666] text-[20px] tracking-[-0.374px] w-full">
+									<p class="leading-[1.2]">See key product, pricing and customer details on screen the moment you need them.</p>
+								</div>
+							</div>
+							<div class="bg-white h-[374px] overflow-clip relative shrink-0 w-full">
+								<img 
+									src="http://localhost:3845/assets/f5a9e8ba4160714897ee8188806510fe1a969b5d.png" 
+									alt="Sales Facts" 
+									class="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full"
+								/>
+							</div>
+						</div>
+						
+						<!-- Multi-Lingual Support -->
+						<div class="bg-white flex flex-col h-[590px] items-center justify-between overflow-clip rounded-[32px] w-full">
+							<div class="bg-[#ecd7f5] h-[280px] overflow-clip relative shrink-0 w-full">
+								<!-- Multilingual interface visualization -->
+							</div>
+							<div class="basis-0 flex flex-col gap-[24px] grow items-center justify-center leading-[0] min-h-px min-w-px not-italic px-[80px] py-0 text-center w-full">
+								<div class="flex flex-col font-normal justify-center text-[40px] text-black tracking-[-1.6px] w-full">
+									<p class="leading-[50px] whitespace-pre-wrap">Multi-Lingual  Support</p>
+								</div>
+								<div class="flex flex-col font-semibold justify-center text-[#666666] text-[20px] tracking-[-0.374px] w-full">
+									<p class="leading-[1.2]">Speak naturally—English, Hinglish or a mix—while Shadow keeps your message clear and professional.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Column 2 -->
+					<div class="basis-0 flex flex-col gap-[24px] grow items-start min-h-px min-w-px shrink-0">
+						<!-- Objection Handling -->
+						<div class="bg-white flex flex-col h-[590px] items-center justify-between overflow-clip pb-[80px] pt-0 px-0 rounded-[32px] w-full">
+							<div class="bg-white h-[280px] overflow-clip relative shrink-0 w-full">
+								<img 
+									src="http://localhost:3845/assets/96749e2af7f886656604cddaafbe655fad97e20f.png" 
+									alt="Objection Handling" 
+									class="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full"
+								/>
+							</div>
+							<div class="flex flex-col gap-[26px] items-center leading-[0] not-italic px-[80px] py-0 text-center w-full">
+								<div class="flex flex-col font-normal justify-center text-[40px] text-black tracking-[-1.6px] w-full">
+									<p class="leading-[50px]">Objection Handling</p>
+								</div>
+								<div class="flex flex-col font-semibold justify-center text-[#666666] text-[20px] tracking-[-0.374px] w-full">
+									<p class="leading-[1.2]">When a customer pushes back, get simple, suggested replies and follow-up questions right in the flow of the call.</p>
+								</div>
+							</div>
+						</div>
+						
+						<!-- Sharper Story Telling -->
+						<div class="bg-white flex flex-col h-[686px] items-center justify-between overflow-clip pb-0 pt-[80px] px-0 rounded-[32px] w-full">
+							<div class="flex flex-col gap-[26px] items-center leading-[0] not-italic px-[80px] py-0 text-center w-full">
+								<div class="flex flex-col font-normal justify-center text-[40px] text-black tracking-[-1.6px] w-full">
+									<p class="leading-[50px] whitespace-pre-wrap">Sharper  Story Telling</p>
+								</div>
+								<div class="flex flex-col font-semibold justify-center text-[#666666] text-[20px] tracking-[-0.374px] w-full">
+									<p class="leading-[1.2]">Get timely nudges to use the right examples, numbers and customer stories for this specific customer.</p>
+								</div>
+							</div>
+							<div class="h-[374px] overflow-clip relative shrink-0 w-full">
+								<img 
+									src="http://localhost:3845/assets/ede2c313ecc46ebdcdf2cff3decefd49e0d1d620.png" 
+									alt="Storytelling" 
+									class="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Personality Intelligence -->
+				<div class="flex flex-col items-start w-full">
+					<div class="bg-white flex gap-[24px] h-[400px] items-center overflow-clip rounded-[32px] w-full">
+						<div class="bg-[#d6e3f8] h-full overflow-clip relative shrink-0 w-[607px]">
+							<!-- Personality visualization -->
+						</div>
+						<div class="basis-0 flex flex-col gap-[16px] grow h-full items-start justify-center leading-[0] min-h-px min-w-px not-italic px-[80px] py-[40px] shrink-0">
+							<div class="flex flex-col font-normal justify-center text-[40px] text-black tracking-[-1.6px] w-full">
+								<p class="leading-[50px]">Personality Intelligence</p>
+							</div>
+							<div class="flex flex-col font-semibold justify-center text-[#666666] text-[20px] tracking-[-0.374px] w-full">
+								<p class="leading-[1.2]">Shadow picks up how the customer talks and suggests how to match their tone, pace and directness.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 </section>
-

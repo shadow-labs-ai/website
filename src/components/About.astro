@@ -1,29 +1,135 @@
 ---
-// About section component
+// Why Us section component - Updated to match Figma design
 ---
 
-<section id="about" class="w-full py-20 bg-gray-50">
-	<div class="container mx-auto px-4">
-		<div class="max-w-4xl mx-auto">
-			<div class="text-center mb-12">
-				<h2 class="text-4xl font-bold text-gray-900 mb-4">About ShadowLabs</h2>
-				<p class="text-xl text-gray-600">
-					Learn more about our mission and vision
-				</p>
+<section id="why-us" class="bg-white flex flex-col gap-[80px] items-center px-[100px] py-[80px]">
+	<!-- Section Heading -->
+	<div class="flex flex-col gap-[8px] items-center not-italic text-center w-full">
+		<p class="leading-[1.4] text-[#666666] text-[24px] w-full">Why Us?</p>
+		<div class="flex flex-col justify-center leading-[50px] text-[40px] text-black tracking-[-1.6px] w-full">
+			<p class="mb-0">Built for high-stakes teams that</p>
+			<p class="mb-0">care about privacy, control and </p>
+			<p>real impact on every call.</p>
+		</div>
+	</div>
+	
+	<!-- Features List -->
+	<div class="bg-white flex flex-col items-start w-full">
+		<div class="flex flex-col gap-[9px] items-start w-full">
+			<!-- Item 1 -->
+			<div class="bg-white border-[#e2e3e9] border-[0px_0px_1px] border-solid flex gap-[24px] items-start pb-[25px] pt-[24px] px-[12px] rounded-[6px] w-full">
+				<div class="bg-gradient-to-b from-[30.83%] from-[rgba(238,239,241,0.5)] rounded-[16px] shrink-0 size-[56px] to-[rgba(227,228,233,0.5)]">
+					<div class="flex items-center justify-center relative size-[56px]">
+						<img 
+							src="http://localhost:3845/assets/2d5834ece4d7544d3ea9533c4859d69bd6ad8d83.png" 
+							alt="Privacy Icon" 
+							class="relative shrink-0 size-[32px]"
+						/>
+					</div>
+				</div>
+				<div class="basis-0 grow min-h-px min-w-px relative self-stretch shrink-0">
+					<div class="flex items-center justify-between not-italic relative size-full">
+						<div class="flex flex-col font-medium justify-center leading-[0] relative shrink-0 text-[22px] text-black tracking-[-0.4px] w-[250px]">
+							<p class="leading-[33px]">Build with Privacy in Mind</p>
+						</div>
+						<p class="leading-[1.4] relative shrink-0 text-[#666666] text-[20px] w-[544px]">
+							Shadow records only with consent, encrypts everything, and lets you control what's stored, shared and deleted.
+						</p>
+					</div>
+				</div>
 			</div>
-			<div class="prose prose-lg max-w-none">
-				<p class="text-gray-700 mb-6">
-					ShadowLabs is dedicated to building innovative solutions that make a difference. 
-					We combine cutting-edge technology with user-centered design to create products 
-					that are both powerful and intuitive.
-				</p>
-				<p class="text-gray-700 mb-6">
-					Our team of experienced developers and designers work together to deliver 
-					high-quality solutions that exceed expectations. We believe in transparency, 
-					excellence, and continuous improvement.
-				</p>
+			
+			<!-- Item 2 -->
+			<div class="bg-white border-[#e2e3e9] border-[0px_0px_1px] border-solid flex gap-[24px] items-start pb-[25px] pt-[24px] px-[12px] rounded-[6px] w-full">
+				<div class="bg-gradient-to-b from-[30.83%] from-[rgba(238,239,241,0.5)] rounded-[16px] shrink-0 size-[56px] to-[rgba(227,228,233,0.5)]">
+					<div class="flex items-center justify-center relative size-[56px]">
+						<img 
+							src="http://localhost:3845/assets/9e11efdf1a74e907dad73d0f04db476f2fae1c8a.png" 
+							alt="Enterprise Icon" 
+							class="relative shrink-0 size-[32px]"
+						/>
+					</div>
+				</div>
+				<div class="basis-0 grow min-h-px min-w-px relative self-stretch shrink-0">
+					<div class="flex items-center justify-between not-italic relative size-full">
+						<div class="flex flex-col font-medium justify-center leading-[0] relative shrink-0 text-[22px] text-black tracking-[-0.4px] w-[250px]">
+							<p class="leading-[33px]">Enterprise First</p>
+						</div>
+						<p class="leading-[1.4] relative shrink-0 text-[#666666] text-[20px] w-[544px]">
+							SSO, RBAC, audit logs and scalable infrastructure so your security and IT teams can say yes with confidence.
+						</p>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Item 3 -->
+			<div class="bg-white border-[#e2e3e9] border-[0px_0px_1px] border-solid flex gap-[24px] items-start pb-[25px] pt-[24px] px-[12px] rounded-[6px] w-full">
+				<div class="bg-gradient-to-b from-[30.83%] from-[rgba(238,239,241,0.5)] rounded-[16px] shrink-0 size-[56px] to-[rgba(227,228,233,0.5)]">
+					<div class="flex items-center justify-center relative size-[56px]">
+						<img 
+							src="http://localhost:3845/assets/2d9232afc7540010cab6f8974e6d73d00d66684b.png" 
+							alt="Insights Icon" 
+							class="relative shrink-0 size-[32px]"
+						/>
+					</div>
+				</div>
+				<div class="basis-0 grow min-h-px min-w-px relative self-stretch shrink-0">
+					<div class="flex items-center justify-between not-italic relative size-full">
+						<div class="flex flex-col font-medium justify-center leading-[0] relative shrink-0 text-[22px] text-black tracking-[-0.4px] w-[250px]">
+							<p class="leading-[33px]">Built on behavioral insights</p>
+						</div>
+						<p class="leading-[1.4] relative shrink-0 text-[#666666] text-[20px] w-[544px]">
+							Designed from real call patterns, what top reps actually say and do, not just generic sales advice.
+						</p>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Item 4 -->
+			<div class="bg-white border-[#e2e3e9] border-[0px_0px_1px] border-solid flex gap-[24px] items-start pb-[25px] pt-[24px] px-[12px] rounded-[6px] w-full">
+				<div class="bg-gradient-to-b from-[30.83%] from-[rgba(238,239,241,0.5)] rounded-[16px] shrink-0 size-[56px] to-[rgba(227,228,233,0.5)]">
+					<div class="flex items-center justify-center relative size-[56px]">
+						<img 
+							src="http://localhost:3845/assets/10a816b2170d07f70ed52e6767607f6373285b05.png" 
+							alt="Research Icon" 
+							class="relative shrink-0 size-[32px]"
+						/>
+					</div>
+				</div>
+				<div class="basis-0 grow min-h-px min-w-px relative self-stretch shrink-0">
+					<div class="flex items-center justify-between not-italic relative size-full">
+						<div class="flex flex-col font-medium justify-center leading-[0] relative shrink-0 text-[22px] text-black tracking-[-0.4px] w-[250px]">
+							<p class="leading-[33px]">Deep Research Algorithm</p>
+						</div>
+						<p class="leading-[1.4] relative shrink-0 text-[#666666] text-[20px] w-[544px]">
+							Surfaces the right facts, proof points and references in real time, backed by your own content and data.
+						</p>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Item 5 -->
+			<div class="bg-white flex gap-[24px] items-start px-[12px] py-[24px] rounded-[6px] w-full">
+				<div class="bg-gradient-to-b from-[30.83%] from-[rgba(238,239,241,0.5)] rounded-[16px] shrink-0 size-[56px] to-[rgba(227,228,233,0.5)]">
+					<div class="flex items-center justify-center relative size-[56px]">
+						<img 
+							src="http://localhost:3845/assets/52ae5c227a1f8fa41b4ea8b2e67124b2e9b61aff.png" 
+							alt="Personalized Icon" 
+							class="relative shrink-0 size-[32px]"
+						/>
+					</div>
+				</div>
+				<div class="basis-0 grow min-h-px min-w-px relative self-stretch shrink-0">
+					<div class="flex items-center justify-between not-italic relative size-full">
+						<div class="flex flex-col font-medium justify-center leading-[0] relative shrink-0 text-[22px] text-black tracking-[-0.4px] w-[250px]">
+							<p class="leading-[33px]">Personalized</p>
+						</div>
+						<p class="leading-[1.4] relative shrink-0 text-[#666666] text-[20px] w-[544px]">
+							Learns your playbooks, language and market over time so guidance feels tailored to your team, not templated.
+						</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 </section>
-

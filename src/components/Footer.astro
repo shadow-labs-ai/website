@@ -1,34 +1,46 @@
 ---
-// Footer component
+// Footer component - Updated to match Figma design
 ---
 
-<footer class="w-full bg-gray-900 text-gray-300 py-12">
-	<div class="container mx-auto px-4">
-		<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-			<div>
-				<h3 class="text-white text-xl font-bold mb-4">ShadowLabs</h3>
-				<p class="text-sm">Building innovative solutions for the future.</p>
+<footer class="bg-white h-[351px] flex items-center justify-between p-[100px]">
+		<!-- Left Content -->
+		<div class="flex flex-col h-full items-start w-[320px]">
+			<div class="flex flex-col gap-[12px] items-start overflow-clip w-full">
+				<!-- Logo -->
+				<div class="flex items-center relative mb-3">
+					<div class="overflow-clip relative shrink-0 size-[50px]">
+						<div class="absolute inset-[-8.46%_-8.33%_-8.2%_-8.33%]">
+							<img 
+								src="http://localhost:3845/assets/5676c90804bce52d7f0a0244cce4840cedeaad88.png" 
+								alt="ShadowLabs Logo" 
+								class="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full"
+							/>
+						</div>
+					</div>
+					<div class="h-[36.069px] relative shrink-0 w-[222.5px]">
+						<div class="absolute inset-0 overflow-hidden pointer-events-none">
+							<img 
+								src="http://localhost:3845/assets/c1699e81242a154c3525c573c74124972c3cf16f.png" 
+								alt="ShadowLabs" 
+								class="absolute h-[616.87%] left-0 max-w-none top-[-234.34%] w-full"
+							/>
+						</div>
+					</div>
+				</div>
+				<p class="text-[16px] text-neutral-500 leading-[24px]">
+					Make everyone on your team your best rep. Smarter conversations. Higher conversions. Half the cost.
+				</p>
 			</div>
-			<div>
-				<h4 class="text-white font-semibold mb-4">Quick Links</h4>
-				<ul class="space-y-2 text-sm">
-					<li><a href="#features" class="hover:text-white">Features</a></li>
-					<li><a href="#about" class="hover:text-white">About</a></li>
-					<li><a href="#contact" class="hover:text-white">Contact</a></li>
-				</ul>
-			</div>
-			<div>
-				<h4 class="text-white font-semibold mb-4">Connect</h4>
-				<div class="flex space-x-4">
-					<a href="#" class="hover:text-white" aria-label="Twitter">Twitter</a>
-					<a href="#" class="hover:text-white" aria-label="LinkedIn">LinkedIn</a>
-					<a href="#" class="hover:text-white" aria-label="GitHub">GitHub</a>
+		</div>
+		
+		<!-- Navigation -->
+			<div class="flex flex-col gap-[24px] w-[128px]">
+				<h4 class="text-[16px] font-medium text-black leading-[24px]">Navigation</h4>
+				<div class="flex flex-col gap-[20px]">
+					<a href="#enterprise" class="text-[14px] text-neutral-500 leading-[16.8px]">Enterprise</a>
+					<a href="#features" class="text-[14px] text-neutral-500 leading-[16.8px]">Features</a>
+					<a href="#why-us" class="text-[14px] text-neutral-500 leading-[16.8px]">Why Us?</a>
 				</div>
 			</div>
 		</div>
-		<div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
-			<p>&copy; {new Date().getFullYear()} ShadowLabs. All rights reserved.</p>
-		</div>
-	</div>
 </footer>
-

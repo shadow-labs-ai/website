@@ -1,25 +1,42 @@
 ---
-// Hero section component
+// Hero section component - Updated to match Figma design
 ---
 
-<section class="w-full bg-gradient-to-br from-blue-50 to-indigo-100 py-20">
-	<div class="container mx-auto px-4">
-		<div class="max-w-3xl mx-auto text-center">
-			<h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-				Welcome to ShadowLabs
-			</h1>
-			<p class="text-xl text-gray-600 mb-8">
-				Building innovative solutions for the future
-			</p>
-			<div class="flex flex-col sm:flex-row gap-4 justify-center">
-				<a href="#features" class="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
-					Get Started
-				</a>
-				<a href="#about" class="px-8 py-3 bg-white text-blue-600 rounded-lg border-2 border-blue-600 hover:bg-blue-50 transition-colors">
-					Learn More
-				</a>
+<section class="bg-white flex flex-col h-[920px] items-center justify-center overflow-clip pb-0 pt-[120px] px-0">
+	<div class="flex flex-col gap-[80px] h-[920px] items-center overflow-clip">
+		<!-- Heading -->
+		<div class="flex flex-col items-center w-full">
+			<div class="flex flex-col gap-[24px] items-center not-italic text-center">
+				<div class="flex flex-col font-medium justify-center leading-[80px] text-[80px] text-black tracking-[-1.6px]">
+					<p class="mb-0">Your Wingman for</p>
+					<p>High Stakes Conversations</p>
+				</div>
+				<p class="leading-[1.4] text-[#666666] text-[20px]">
+					The quiet edge in every conversation.
+				</p>
 			</div>
+		</div>
+		
+		<!-- CTA Button -->
+		<div class="bg-[#000c33] flex gap-px h-[44px] items-center justify-center rounded-[4px] relative">
+			<div class="flex items-center justify-center pb-[10.5px] pl-[40px] pr-[20px] pt-[9.5px]">
+				<span class="text-white text-[16px] font-medium tracking-[-0.4px] leading-[24px]">Download App</span>
+			</div>
+			<div class="flex h-full items-center justify-center px-[14px] py-0 rounded-br-[4px] rounded-tr-[4px] relative">
+				<div class="overflow-clip relative rounded-[3.636px] shrink-0 size-[20px]">
+					<p class="absolute leading-[normal] left-[calc(50%-7px)] text-[12px] text-white text-nowrap top-[calc(50%-7px)]">􀆈</p>
+				</div>
+				<div class="absolute bg-[rgba(255,255,255,0.5)] bottom-[8px] left-[-1px] mix-blend-overlay top-[8px] w-px"></div>
+			</div>
+		</div>
+		
+		<!-- Desktop Template Image -->
+		<div class="h-[599px] overflow-clip relative rounded-[12px] shrink-0 w-[1034px]">
+			<img 
+				src="http://localhost:3845/assets/96749e2af7f886656604cddaafbe655fad97e20f.png" 
+				alt="Shadow Desktop Interface" 
+				class="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full"
+			/>
 		</div>
 	</div>
 </section>
-
