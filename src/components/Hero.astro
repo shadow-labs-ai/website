@@ -2,16 +2,16 @@
 // Hero section component - Updated to match Figma design
 ---
 
-<section class="bg-white flex flex-col h-[920px] items-center justify-center overflow-clip pb-0 pt-[120px] px-0">
-	<div class="flex flex-col gap-[80px] h-[920px] items-center overflow-clip">
+<section class="bg-white flex flex-col min-h-[600px] md:h-[920px] items-center justify-center overflow-clip pb-8 md:pb-0 pt-[60px] md:pt-[120px] px-4 md:px-0">
+	<div class="flex flex-col gap-[40px] md:gap-[80px] items-center overflow-clip w-full max-w-[1240px]">
 		<!-- Heading -->
-		<div class="flex flex-col items-center w-full">
-			<div class="flex flex-col gap-[24px] items-center not-italic text-center">
-				<div class="flex flex-col font-medium justify-center leading-[80px] text-[80px] text-black tracking-[-1.6px]">
+		<div class="flex flex-col items-center w-full px-4">
+			<div class="flex flex-col gap-[16px] md:gap-[24px] items-center not-italic text-center">
+				<div class="flex flex-col font-medium justify-center leading-[1.2] md:leading-[80px] text-[32px] md:text-[56px] lg:text-[80px] text-black tracking-[-1.6px]">
 					<p class="mb-0">Your Wingman for</p>
 					<p>High Stakes Conversations</p>
 				</div>
-				<p class="leading-[1.4] text-[#666666] text-[20px]">
+				<p class="leading-[1.4] text-[#666666] text-[16px] md:text-[20px]">
 					The quiet edge in every conversation.
 				</p>
 			</div>
@@ -19,24 +19,237 @@
 		
 		<!-- CTA Button -->
 		<div class="bg-[#000c33] flex gap-px h-[44px] items-center justify-center rounded-[4px] relative">
-			<div class="flex items-center justify-center pb-[10.5px] pl-[40px] pr-[20px] pt-[9.5px]">
-				<span class="text-white text-[16px] font-medium tracking-[-0.4px] leading-[24px]">Download App</span>
+			<div class="flex items-center justify-center pb-[10.5px] pl-[24px] md:pl-[40px] pr-[12px] md:pr-[20px] pt-[9.5px]">
+				<span class="text-white text-[14px] md:text-[16px] font-medium tracking-[-0.4px] leading-[24px]">Download App</span>
 			</div>
-			<div class="flex h-full items-center justify-center px-[14px] py-0 rounded-br-[4px] rounded-tr-[4px] relative">
-				<div class="overflow-clip relative rounded-[3.636px] shrink-0 size-[20px]">
-					<p class="absolute leading-[normal] left-[calc(50%-7px)] text-[12px] text-white text-nowrap top-[calc(50%-7px)]">􀆈</p>
+			<div class="flex h-full items-center justify-center px-[10px] md:px-[14px] py-0 rounded-br-[4px] rounded-tr-[4px] relative">
+				<div class="overflow-clip relative rounded-[3.636px] shrink-0 size-[18px] md:size-[20px]">
+					<p class="absolute leading-[normal] left-[calc(50%-7px)] text-[10px] md:text-[12px] text-white text-nowrap top-[calc(50%-7px)]">􀆈</p>
 				</div>
 				<div class="absolute bg-[rgba(255,255,255,0.5)] bottom-[8px] left-[-1px] mix-blend-overlay top-[8px] w-px"></div>
 			</div>
 		</div>
 		
-		<!-- Desktop Template Image -->
-		<div class="h-[599px] overflow-clip relative rounded-[12px] shrink-0 w-[1034px]">
-			<img 
-				src="/images/hero/desktop-wallpaper.png" 
-				alt="Shadow Desktop Interface" 
-				class="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full"
-			/>
+		<!-- Desktop Template - Full macOS Desktop Screenshot with all layers -->
+		<div class="h-[200px] md:h-[400px] lg:h-[599px] overflow-clip relative rounded-[12px] shrink-0 w-full max-w-[1034px] px-4 md:px-0">
+			<!-- Desktop Wallpaper Background -->
+			<div class="absolute bottom-0 left-0 right-0 top-0">
+				<img 
+					src="/images/hero/desktop-wallpaper.png" 
+					alt="" 
+					class="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full"
+					aria-hidden="true"
+				/>
+			</div>
+			
+			<!-- macOS Menu Bar - Hidden on mobile, visible on larger screens -->
+			<div class="absolute left-1/2 top-0 hidden md:flex h-[14px] md:h-[21px] items-center justify-between px-[3px] md:px-[6.098px] py-[2px] md:py-[3.049px] translate-x-[-50%] w-full max-w-[1034px]">
+				<!-- Menu Bar Left Side -->
+				<div class="flex items-center gap-[2px] md:gap-[4.878px]">
+					<!-- Apple Logo -->
+					<div class="h-[10px] md:h-[14.635px] relative rounded-[4px] w-[14px] md:w-[20.123px]">
+						<p class="absolute left-1/2 text-[7px] md:text-[9.94px] text-black text-center text-nowrap top-1/2 translate-x-[-50%] translate-y-[-50%] whitespace-pre" style="font-family: 'SF Pro', sans-serif; font-variation-settings: 'wdth' 100; line-height: 1;">􀣺</p>
+					</div>
+					<!-- Finder -->
+					<div class="px-[3px] md:px-[6.708px] py-[1px] md:py-[2.439px] rounded-[4px]">
+						<p class="text-[5px] md:text-[7.93px] text-black text-center text-nowrap font-bold" style="font-family: 'SF Pro', sans-serif; font-variation-settings: 'wdth' 100; line-height: 1;">Finder</p>
+					</div>
+					<!-- File -->
+					<div class="px-[3px] md:px-[6.708px] py-[1px] md:py-[2.439px] rounded-[4px]">
+						<p class="text-[5px] md:text-[7.93px] text-black text-center text-nowrap font-semibold" style="font-family: 'SF Pro', sans-serif; font-variation-settings: 'wdth' 100; line-height: 1;">File</p>
+					</div>
+					<!-- Edit -->
+					<div class="px-[3px] md:px-[6.708px] py-[1px] md:py-[2.439px] rounded-[4px]">
+						<p class="text-[5px] md:text-[7.93px] text-black text-center text-nowrap font-semibold" style="font-family: 'SF Pro', sans-serif; font-variation-settings: 'wdth' 100; line-height: 1;">Edit</p>
+					</div>
+					<!-- View -->
+					<div class="px-[3px] md:px-[6.708px] py-[1px] md:py-[2.439px] rounded-[4px]">
+						<p class="text-[5px] md:text-[7.93px] text-black text-center text-nowrap font-semibold" style="font-family: 'SF Pro', sans-serif; font-variation-settings: 'wdth' 100; line-height: 1;">View</p>
+					</div>
+					<!-- Go -->
+					<div class="px-[3px] md:px-[6.708px] py-[1px] md:py-[2.439px] rounded-[4px]">
+						<p class="text-[5px] md:text-[7.93px] text-black text-center text-nowrap font-semibold" style="font-family: 'SF Pro', sans-serif; font-variation-settings: 'wdth' 100; line-height: 1;">Go</p>
+					</div>
+					<!-- Window -->
+					<div class="px-[3px] md:px-[6.708px] py-[1px] md:py-[2.439px] rounded-[4px]">
+						<p class="text-[5px] md:text-[7.93px] text-black text-center text-nowrap font-semibold" style="font-family: 'SF Pro', sans-serif; font-variation-settings: 'wdth' 100; line-height: 1;">Window</p>
+					</div>
+					<!-- Help -->
+					<div class="px-[3px] md:px-[6.708px] py-[1px] md:py-[2.439px] rounded-[4px]">
+						<p class="text-[5px] md:text-[7.93px] text-black text-center text-nowrap font-semibold" style="font-family: 'SF Pro', sans-serif; font-variation-settings: 'wdth' 100; line-height: 1;">Help</p>
+					</div>
+				</div>
+				<!-- Menu Bar Right Side (System Icons) -->
+				<div class="flex items-center gap-[2px] md:gap-[4.878px]">
+					<p class="text-[5px] md:text-[7.93px] text-black text-center text-nowrap font-semibold" style="font-family: 'SF Pro', sans-serif; font-variation-settings: 'wdth' 100; line-height: 1;">􀙇</p>
+					<p class="text-[5px] md:text-[7.93px] text-black text-center text-nowrap font-semibold" style="font-family: 'SF Pro', sans-serif; font-variation-settings: 'wdth' 100; line-height: 1;">􀊫</p>
+					<p class="text-[5px] md:text-[7.93px] text-black text-center text-nowrap font-semibold" style="font-family: 'SF Pro', sans-serif; font-variation-settings: 'wdth' 100; line-height: 1;">􀉭</p>
+					<p class="text-[5px] md:text-[7.93px] text-black text-center text-nowrap font-semibold" style="font-family: 'SF Pro', sans-serif; font-variation-settings: 'wdth' 100; line-height: 1;">􀜊</p>
+					<p class="text-[5px] md:text-[7.93px] text-black text-center text-nowrap font-semibold hidden lg:block" style="font-family: 'SF Pro', sans-serif; font-variation-settings: 'wdth' 100; line-height: 1;">Mon Jun 10  9:41 AM</p>
+				</div>
+				<!-- Menu Bar Blur Overlay -->
+				<div class="absolute backdrop-blur-[18.294px] bg-[rgba(255,255,255,0.15)] h-full inset-0 pointer-events-none"></div>
+			</div>
+			
+			<!-- Application Window - Responsive sizing -->
+			<div class="absolute bg-white h-[calc(100%-40px)] md:h-[calc(100%-60px)] left-1/2 overflow-clip rounded-[6px] md:rounded-[9.147px] shadow-[0px_3.049px_12.196px_0px_rgba(0,0,0,0.3)] top-1/2 translate-x-[-50%] translate-y-[-50%] w-[calc(100%-20px)] md:w-[calc(100%-40px)] max-w-[743.942px]">
+				<!-- Window Title Bar -->
+				<div class="absolute border-b border-[rgba(0,0,0,0.1)] h-[23.172px] left-0 right-0 top-0">
+					<!-- Window Controls -->
+					<div class="absolute flex gap-[4.269px] items-center left-[3.05px] px-[1.829px] py-[3.659px] top-[3.05px]">
+						<div class="bg-[#ff736a] border border-[rgba(0,0,0,0.1)] rounded-full size-[6.098px]"></div>
+						<div class="bg-[#febc2e] border border-[rgba(0,0,0,0.1)] rounded-full size-[6.098px]"></div>
+						<div class="bg-[#19c332] border border-[rgba(0,0,0,0.1)] rounded-full size-[6.098px]"></div>
+					</div>
+					<!-- Search Bar -->
+					<div class="absolute flex gap-[2.439px] h-[14.635px] items-center justify-center left-1/2 px-[3.659px] py-0 rounded-[60.979px] top-[3.66px] translate-x-[-50%] w-[219.524px] bg-white/60 backdrop-blur-[24.392px] border border-white/50">
+						<p class="text-[6.098px] text-[#808080] text-center text-nowrap" style="font-family: 'SF Pro', sans-serif; font-variation-settings: 'wdth' 100; line-height: 9.757px;">􀊫</p>
+						<p class="text-[6.098px] text-[#808080] text-nowrap overflow-ellipsis overflow-hidden" style="font-family: 'SF Pro', sans-serif; font-variation-settings: 'wdth' 100; line-height: 9.757px;">Search for anything...</p>
+					</div>
+					<!-- Profile Picture -->
+					<div class="absolute left-[calc(100%-30px)] rounded-[7.317px] size-[14.635px] top-[4.27px] bg-[#d9d9d9]"></div>
+				</div>
+				
+				<!-- Main Content Area -->
+				<div class="absolute flex flex-col gap-[11.586px] items-start left-1/2 top-[45.1px] translate-x-[-50%] w-[calc(100%-40px)] max-w-[517px] px-4">
+					<!-- Greeting Section -->
+					<div class="flex items-center justify-between w-full">
+						<div class="flex gap-[4.878px] items-end">
+							<div class="overflow-clip rounded-[1.829px] size-[14.635px]">
+								<img src="/images/logo/final-logo-1.png" alt="" class="size-full object-contain" />
+							</div>
+							<p class="text-[13.415px] text-black text-nowrap font-medium" style="font-family: 'Roboto', sans-serif; line-height: 17.074px;">Shadow says hi, Shubham</p>
+						</div>
+						<div class="flex gap-[4.878px] items-center">
+							<button class="border border-[#0d6fff] rounded-[9.757px] px-[4.878px] py-[4.878px] text-[7.927px] text-[#0d6fff] font-medium">Analyse profile</button>
+							<button class="bg-[#0d6fff] rounded-[9.757px] px-[7.317px] py-[4.878px] text-[7.927px] text-white font-medium">Set up a meet →</button>
+						</div>
+					</div>
+					
+					<!-- Divider -->
+					<div class="h-px w-full bg-[rgba(0,0,0,0.1)]"></div>
+					
+					<!-- Upcoming Meetings -->
+					<div class="flex flex-col gap-[9.757px] items-start w-full">
+						<p class="text-[#666666] text-[7.317px] font-medium tracking-[0.3049px] w-full" style="font-family: 'Roboto', sans-serif; line-height: 9.757px;">Upcoming meetings today</p>
+						<!-- Meeting Items (simplified for space) -->
+						<div class="flex flex-col gap-[12.196px] items-start w-full">
+							<div class="flex items-center justify-between w-full">
+								<div class="border-l-2 border-[#002ea2] flex flex-col gap-[4.878px] items-start px-[7.317px] py-[2.439px]">
+									<div class="flex flex-col gap-[1.22px]">
+										<p class="text-[#666666] text-[7.317px]" style="font-family: 'Roboto', sans-serif; line-height: 9.757px;">Today at 4:00 PM</p>
+										<p class="text-black text-[9.757px] font-medium" style="font-family: 'Roboto', sans-serif; line-height: 14.635px;">Villy HQ</p>
+									</div>
+									<div class="flex gap-[2.439px] items-start">
+										<span class="bg-neutral-100 px-[2.439px] py-[1.22px] rounded-[2.439px] text-[#666666] text-[7.317px]" style="font-family: 'Roboto', sans-serif; line-height: 9.757px;">You</span>
+										<span class="bg-neutral-100 px-[2.439px] py-[1.22px] rounded-[2.439px] text-[#666666] text-[7.317px]" style="font-family: 'Roboto', sans-serif; line-height: 9.757px;">Shubham Gupta</span>
+										<span class="bg-neutral-100 px-[2.439px] py-[1.22px] rounded-[2.439px] text-[#666666] text-[7.317px]" style="font-family: 'Roboto', sans-serif; line-height: 9.757px;">+1 more</span>
+									</div>
+								</div>
+								<button class="border border-[#0d6fff] rounded-[9.757px] h-[19.513px] px-[4.878px] text-[7.927px] text-[#0d6fff] font-medium">Join the meeting →</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Sidebar Navigation -->
+				<div class="absolute bg-neutral-50 border border-[#f0f0f0] h-[calc(100%-34px)] left-[10.97px] overflow-clip rounded-[4px] top-[34.1px] w-[172px]">
+					<div class="flex flex-col gap-[5.112px] items-start px-[7.668px] py-[7.5px]">
+						<div class="bg-[#f2f2f2] flex items-center px-[5.112px] py-[3.834px] rounded-[5.112px] w-full">
+							<div class="flex gap-[2.556px] items-center">
+								<div class="size-[10.224px]">
+									<img src="/images/logo/final-logo-1.png" alt="" class="size-full object-contain" />
+								</div>
+								<p class="text-[#1a1a1a] text-[8.307px] font-medium" style="font-family: 'SF Pro Display', sans-serif; line-height: 10.224px;">Home</p>
+							</div>
+						</div>
+						<div class="flex items-center px-[5.112px] py-[3.834px] rounded-[5.112px] w-full">
+							<div class="flex gap-[2.556px] items-center">
+								<div class="size-[10.224px]">
+									<!-- Calendar icon placeholder -->
+								</div>
+								<p class="text-[#666666] text-[8.307px]" style="font-family: 'SF Pro Display', sans-serif; line-height: 10.224px;">Meetings</p>
+							</div>
+						</div>
+						<div class="flex items-center px-[5.112px] py-[3.834px] rounded-[5.112px] w-full">
+							<div class="flex gap-[2.556px] items-center">
+								<div class="size-[10.224px]">
+									<!-- Integrations icon placeholder -->
+								</div>
+								<p class="text-[#666666] text-[8.307px]" style="font-family: 'SF Pro Display', sans-serif; line-height: 10.224px;">Integrations</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- macOS Dock - Hidden on mobile, visible on larger screens -->
+			<div class="absolute bottom-[2px] md:bottom-[3.24px] left-1/2 hidden md:flex gap-[3px] md:gap-[5.488px] items-center pb-[4px] md:pb-[6.708px] pt-[4px] md:pt-[6.098px] px-[3px] md:px-[4.878px] translate-x-[-50%]">
+				<!-- Dock Background -->
+				<div class="absolute backdrop-blur-[41.439px] bg-[rgba(246,246,246,0.36)] border border-[rgba(26,26,26,0.46)] inset-0 rounded-[6px] md:rounded-[9.147px] shadow-[0px_0px_3.659px_0px_rgba(0,0,0,0.15)]"></div>
+				<!-- Dock Icons -->
+				<div class="relative flex items-center gap-[3px] md:gap-[5.488px] z-10">
+					<div class="flex items-center justify-center size-[16px] md:size-[21.952px]">
+						<img src="/images/dock/img1.png" alt="" class="size-full object-contain" />
+					</div>
+					<div class="flex items-center justify-center size-[16px] md:size-[21.952px]">
+						<img src="/images/dock/img2.png" alt="" class="size-full object-contain" />
+					</div>
+					<div class="flex items-center justify-center size-[16px] md:size-[21.952px]">
+						<img src="/images/dock/img3.png" alt="" class="size-full object-contain" />
+					</div>
+					<div class="flex items-center justify-center size-[16px] md:size-[21.952px]">
+						<img src="/images/dock/img4.png" alt="" class="size-full object-contain" />
+					</div>
+					<div class="flex items-center justify-center size-[16px] md:size-[21.952px]">
+						<img src="/images/dock/img5.png" alt="" class="size-full object-contain" />
+					</div>
+					<div class="flex items-center justify-center size-[16px] md:size-[21.952px]">
+						<img src="/images/dock/img6.png" alt="" class="size-full object-contain" />
+					</div>
+					<div class="flex items-center justify-center size-[16px] md:size-[21.952px]">
+						<img src="/images/dock/img7.png" alt="" class="size-full object-contain" />
+					</div>
+					<div class="flex items-center justify-center size-[16px] md:size-[21.952px]">
+						<img src="/images/dock/img8.png" alt="" class="size-full object-contain" />
+					</div>
+					<div class="flex items-center justify-center size-[16px] md:size-[21.952px]">
+						<img src="/images/dock/img9.png" alt="" class="size-full object-contain" />
+					</div>
+					<div class="flex items-center justify-center size-[16px] md:size-[21.952px]">
+						<img src="/images/dock/img10.png" alt="" class="size-full object-contain" />
+					</div>
+					<div class="flex items-center justify-center size-[16px] md:size-[21.952px]">
+						<img src="/images/dock/img11.png" alt="" class="size-full object-contain" />
+					</div>
+					<div class="flex items-center justify-center size-[16px] md:size-[21.952px]">
+						<img src="/images/dock/img12.png" alt="" class="size-full object-contain" />
+					</div>
+					<div class="flex items-center justify-center size-[16px] md:size-[21.952px]">
+						<img src="/images/dock/img13.png" alt="" class="size-full object-contain" />
+					</div>
+					<div class="flex items-center justify-center size-[16px] md:size-[21.952px]">
+						<img src="/images/dock/img14.png" alt="" class="size-full object-contain" />
+					</div>
+					<div class="flex items-center justify-center size-[16px] md:size-[21.952px]">
+						<img src="/images/dock/img15.png" alt="" class="size-full object-contain" />
+					</div>
+					<div class="flex items-center justify-center size-[16px] md:size-[21.952px]">
+						<img src="/images/dock/img16.png" alt="" class="size-full object-contain" />
+					</div>
+					<div class="flex items-center justify-center size-[16px] md:size-[21.952px]">
+						<img src="/images/dock/img17.png" alt="" class="size-full object-contain" />
+					</div>
+					<!-- Separator -->
+					<div class="bg-[rgba(60,60,67,0.29)] h-[18px] md:h-[25.001px] w-[0.5px] md:w-[0.61px]"></div>
+					<div class="flex items-center justify-center size-[16px] md:size-[21.952px]">
+						<img src="/images/dock/img18.png" alt="" class="size-full object-contain" />
+					</div>
+					<div class="flex items-center justify-center size-[16px] md:size-[21.952px]">
+						<img src="/images/dock/img19.png" alt="" class="size-full object-contain" />
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>

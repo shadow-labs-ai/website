@@ -2,64 +2,108 @@
 // Features section component - Updated to match Figma design
 ---
 
-<section id="features" class="bg-[#f5f5f7] flex flex-col gap-[80px] items-center pb-[140px] pt-[100px] px-[100px]">
+<section id="features" class="bg-[#f5f5f7] flex flex-col gap-[40px] md:gap-[80px] items-center pb-[60px] md:pb-[140px] pt-[50px] md:pt-[100px] px-4 md:px-8 lg:px-[100px]">
 	<!-- Section Heading -->
 	<div class="flex flex-col gap-[8px] items-center not-italic text-center w-full">
-		<p class="leading-[1.4] text-[#666666] text-[24px] w-full">Features</p>
-		<div class="flex flex-col justify-center leading-[50px] text-[40px] text-black tracking-[-1.6px] w-full">
+		<p class="leading-[1.4] text-[#666666] text-[18px] md:text-[24px] w-full">Features</p>
+		<div class="flex flex-col justify-center leading-[1.2] md:leading-[50px] text-[28px] md:text-[32px] lg:text-[40px] text-black tracking-[-1.6px] w-full">
 			<p class="mb-0">Scale great conversations,</p>
 			<p>not just teams.</p>
 		</div>
 	</div>
 	
 	<!-- For Business Owners Section -->
-		<div class="flex flex-col gap-[63px] items-center justify-end rounded-[18px] w-[1240px]">
-			<div class="flex flex-col gap-[24px] items-start leading-[0] not-italic w-full">
-				<div class="flex flex-col font-medium justify-center text-[40px] text-black tracking-[-1.6px] w-full">
-					<p class="leading-[50px]">For Business Owners</p>
+		<div class="flex flex-col gap-[40px] md:gap-[63px] items-center justify-end rounded-[18px] w-full max-w-[1240px]">
+			<div class="flex flex-col gap-[16px] md:gap-[24px] items-start leading-[0] not-italic w-full">
+				<div class="flex flex-col font-medium justify-center text-[24px] md:text-[32px] lg:text-[40px] text-black tracking-[-1.6px] w-full">
+					<p class="leading-[1.2] md:leading-[50px]">For Business Owners</p>
 				</div>
-				<div class="flex flex-col font-semibold justify-center text-[#666666] text-[20px] tracking-[-0.374px] w-full">
+				<div class="flex flex-col font-semibold justify-center text-[#666666] text-[16px] md:text-[18px] lg:text-[20px] tracking-[-0.374px] w-full">
 					<p class="leading-[1.2]">Drive higher conversions with real-time deal coaching, pitch personalization, and team-wide performance consistency across regions and languages.</p>
 				</div>
 			</div>
 			
 			<!-- Bento Grid -->
-			<div class="flex gap-[24px] items-center w-full">
+			<div class="flex flex-col md:flex-row gap-[16px] md:gap-[24px] items-center w-full">
 				<!-- Column 1 -->
 				<div class="basis-0 flex flex-col gap-[24px] grow items-start min-h-px min-w-px shrink-0">
 					<!-- Card 1: Higher Sales Conversions -->
-					<div class="bg-white flex flex-col h-[686px] items-center justify-between overflow-clip pb-0 pt-[80px] px-0 rounded-[32px] w-full">
-						<div class="flex flex-col gap-[26px] items-center leading-[0] not-italic px-[80px] py-0 text-center w-full">
-							<div class="flex flex-col font-normal justify-center text-[40px] text-black tracking-[-1.6px] w-full">
-								<p class="leading-[50px]">Higher Sales Conversions</p>
+					<div class="bg-white flex flex-col min-h-[500px] md:h-[686px] items-center justify-between overflow-clip pb-0 pt-[40px] md:pt-[80px] px-0 rounded-[32px] w-full">
+						<div class="flex flex-col gap-[16px] md:gap-[26px] items-center leading-[0] not-italic px-4 md:px-8 lg:px-[80px] py-0 text-center w-full">
+							<div class="flex flex-col font-normal justify-center text-[24px] md:text-[32px] lg:text-[40px] text-black tracking-[-1.6px] w-full">
+								<p class="leading-[1.2] md:leading-[50px]">Higher Sales Conversions</p>
 							</div>
-							<div class="flex flex-col font-semibold justify-center text-[#666666] text-[20px] tracking-[-0.374px] w-full">
+							<div class="flex flex-col font-semibold justify-center text-[#666666] text-[14px] md:text-[18px] lg:text-[20px] tracking-[-0.374px] w-full">
 								<p class="leading-[1.2]">Help your reps run focused conversations that uncover real needs and move deals to close.</p>
 							</div>
 						</div>
-						<div class="h-[374px] overflow-clip relative shrink-0 w-full">
+						<div class="h-[200px] md:h-[300px] lg:h-[374px] overflow-clip relative shrink-0 w-full">
+							<!-- Base image -->
 							<img 
 								src="/images/features/image-16.png" 
 								alt="Sales Conversions" 
-								class="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full"
+								class="absolute h-full md:h-[519px] left-0 top-[3px] w-full md:w-[365px] max-w-none object-50%-50% object-cover pointer-events-none"
 							/>
+							<!-- Blue background rectangle -->
+							<div class="absolute bg-[#d6e3f8] h-[120px] md:h-[233px] left-0 rounded-tr-[40px] md:rounded-tr-[80px] top-[60px] md:top-[141px] w-full md:w-[506px]"></div>
+							<!-- Metrics overlay card -->
+							<div class="absolute bg-white flex flex-col md:flex-row gap-[16px] md:gap-[24px] items-center leading-[0] left-1/2 md:left-[308px] overflow-clip p-[16px] md:p-[24px] rounded-[16px] shadow-[0px_10px_25px_0px_rgba(102,102,102,0.2)] top-[20px] md:top-[110px] -translate-x-1/2 md:translate-x-0">
+								<!-- Circular progress indicators -->
+								<div class="grid-cols-[max-content] grid-rows-[max-content] inline-grid place-items-start relative shrink-0">
+									<div class="[grid-area:1_/_1] flex flex-col font-semibold justify-center leading-[0] ml-[34.5px] mt-[35px] not-italic relative text-[17px] text-black text-center text-nowrap tracking-[-0.17px] translate-x-[-50%] translate-y-[-50%]">
+										<p class="leading-[24px] whitespace-pre">90%</p>
+									</div>
+									<!-- Outer circle (background) -->
+									<div class="[grid-area:1_/_1] ml-0 mt-0 relative size-[68px]">
+										<div class="absolute inset-0 rounded-full border-[3px] border-[#e5e5e5]"></div>
+									</div>
+									<!-- Inner circle (progress - 90%) -->
+									<div class="[grid-area:1_/_1] ml-0 mt-0 relative size-[68px]">
+										<div class="absolute bottom-0 left-0 right-0 top-[0.14%]">
+											<svg class="size-full transform -rotate-90" viewBox="0 0 68 68">
+												<circle cx="34" cy="34" r="31" fill="none" stroke="#2fb67e" stroke-width="3" stroke-dasharray="175" stroke-dashoffset="17.5" stroke-linecap="round"></circle>
+											</svg>
+										</div>
+									</div>
+								</div>
+								<div class="flex flex-col font-semibold justify-center leading-[33px] not-italic relative shrink-0 text-[22px] text-black text-nowrap tracking-[-0.22px] whitespace-pre">
+									<p class="mb-0">Sales</p>
+									<p>Conversions</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				
 					<!-- Card 2: Performance Equity -->
-					<div class="bg-white flex flex-col h-[590px] items-center justify-between overflow-clip pb-[50px] pt-0 px-0 rounded-[32px] w-full">
-						<div class="h-[280px] overflow-clip relative shrink-0 w-full">
-							<img 
-								src="/images/features/member-image.png" 
-								alt="Team Performance" 
-								class="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full"
-							/>
-						</div>
-						<div class="flex flex-col gap-[24px] items-center leading-[0] not-italic px-[80px] py-0 text-center w-full">
-							<div class="flex flex-col font-normal justify-center text-[40px] text-black tracking-[-1.6px] w-full">
-								<p class="leading-[50px]">Performance Equity Across the Team</p>
+					<div class="bg-white flex flex-col min-h-[450px] md:h-[590px] items-center justify-between overflow-clip pb-[30px] md:pb-[50px] pt-0 px-0 rounded-[32px] w-full">
+						<div class="h-[180px] md:h-[280px] overflow-clip relative shrink-0 w-full">
+							<!-- Members Collection Group - 5 member images positioned absolutely -->
+							<!-- Member Image 4 (center, largest) -->
+							<div class="absolute left-1/2 md:left-[224.52px] size-[80px] md:size-[120px] lg:size-[150.497px] top-[50px] md:top-[99px] -translate-x-1/2 md:translate-x-0 rounded-full overflow-hidden">
+								<img alt="" class="block max-w-none size-full object-cover" src="/images/features/member-image-4.png" />
 							</div>
-							<div class="flex flex-col font-semibold justify-center text-[#666666] text-[20px] tracking-[-0.374px] w-full">
+							<!-- Member Image 1 -->
+							<div class="absolute left-[calc(50%-60px)] md:left-[155.2px] size-[60px] md:size-[85px] lg:size-[106.26px] top-[60px] md:top-[121px] rounded-full overflow-hidden">
+								<img alt="" class="block max-w-none size-full object-cover" src="/images/features/member-image-1.png" />
+							</div>
+							<!-- Member Image 3 -->
+							<div class="absolute left-[calc(50%+60px)] md:left-[338.54px] size-[60px] md:size-[85px] lg:size-[106.26px] top-[60px] md:top-[121px] rounded-full overflow-hidden">
+								<img alt="" class="block max-w-none size-full object-cover" src="/images/features/member-image-3.png" />
+							</div>
+							<!-- Member Image (left) -->
+							<div class="absolute left-[calc(50%-120px)] md:left-[82.24px] size-[50px] md:size-[75px] lg:size-[92.122px] top-[65px] md:top-[128px] rounded-full overflow-hidden">
+								<img alt="" class="block max-w-none size-full object-cover" src="/images/features/member-image.png" />
+							</div>
+							<!-- Member Image 2 (right) -->
+							<div class="absolute left-[calc(50%+120px)] md:left-[425.19px] size-[50px] md:size-[75px] lg:size-[92.122px] top-[65px] md:top-[128px] rounded-full overflow-hidden">
+								<img alt="" class="block max-w-none size-full object-cover" src="/images/features/member-image-2.png" />
+							</div>
+						</div>
+						<div class="flex flex-col gap-[16px] md:gap-[24px] items-center leading-[0] not-italic px-4 md:px-8 lg:px-[80px] py-0 text-center w-full">
+							<div class="flex flex-col font-normal justify-center text-[24px] md:text-[32px] lg:text-[40px] text-black tracking-[-1.6px] w-full">
+								<p class="leading-[1.2] md:leading-[50px]">Performance Equity Across the Team</p>
+							</div>
+							<div class="flex flex-col font-semibold justify-center text-[#666666] text-[14px] md:text-[18px] lg:text-[20px] tracking-[-0.374px] w-full">
 								<p class="leading-[1.2]">Turn what your best reps do—questions, phrasing, timing—into live guidance for everyone on the team.</p>
 							</div>
 						</div>
@@ -70,37 +114,138 @@
 				<div class="basis-0 flex flex-col gap-[24px] grow items-start min-h-px min-w-px shrink-0">
 				
 					<!-- Card 3: Personalised Sales Pitch -->
-					<div class="bg-white flex flex-col h-[590px] items-center justify-between overflow-clip pb-[80px] pt-0 px-0 rounded-[32px] w-[600px]">
-						<div class="bg-[#d6e3f8] h-[280px] overflow-clip relative shrink-0 w-full">
-							<img 
-								src="/images/features/image-17.png" 
-								alt="Personalized Sales" 
-								class="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full"
-							/>
-						</div>
-						<div class="flex flex-col gap-[26px] items-center leading-[0] not-italic px-[80px] py-0 text-center w-full">
-							<div class="flex flex-col font-normal justify-center text-[40px] text-black tracking-[-1.6px] w-full">
-								<p class="leading-[50px]">Personalised Sales Pitch</p>
+					<div class="bg-white flex flex-col min-h-[450px] md:h-[590px] items-center justify-between overflow-clip pb-[40px] md:pb-[80px] pt-0 px-0 rounded-[32px] w-full">
+						<div class="bg-[#d6e3f8] h-[180px] md:h-[280px] overflow-clip relative shrink-0 w-full">
+							<!-- Base image -->
+							<div class="absolute h-full md:h-[353px] left-1/2 md:left-[310px] top-[15px] w-full md:w-[296px] -translate-x-1/2 md:translate-x-0">
+								<img alt="" class="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full" src="/images/features/image-17.png" />
 							</div>
-							<div class="flex flex-col font-semibold justify-center text-[#666666] text-[20px] tracking-[-0.374px] w-full">
+							<!-- UI Overlays -->
+							<!-- App Icon and Intent Detected badge -->
+							<div class="absolute flex flex-col md:flex-row gap-[8px] md:gap-[13px] items-end left-2 md:left-[59px] top-[20px] md:top-[43px]">
+								<div class="bg-[rgba(255,255,255,0.6)] flex items-center justify-center overflow-clip rounded-full size-[40px] md:size-[50px]">
+									<div class="size-[24px] md:size-[30px]">
+										<img alt="" class="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src="/images/logo/final-logo-1.png" />
+									</div>
+								</div>
+								<div class="bg-[rgba(255,255,255,0.6)] border border-solid border-white flex gap-[6px] md:gap-[8px] items-center pl-[10px] md:pl-[14px] pr-[12px] md:pr-[20px] py-[6px] md:py-[8px] rounded-[12px]">
+									<div class="size-[20px] md:size-[24px] flex items-center justify-center">
+										<span class="text-[14px] md:text-[16px]">✨</span>
+									</div>
+									<div class="flex flex-col font-medium justify-center leading-[0] not-italic relative shrink-0 text-[12px] md:text-[16px] text-black text-nowrap tracking-[-0.16px]">
+										<p class="leading-[1.2] md:leading-[33px] whitespace-pre">Intent Detected</p>
+									</div>
+								</div>
+							</div>
+							<!-- Say input field -->
+							<div class="absolute bg-[rgba(255,255,255,0.6)] border border-solid border-white flex flex-col gap-[8px] md:gap-[12px] items-start left-2 md:left-[42px] overflow-clip pb-[12px] md:pb-[16px] pt-[6px] md:pt-[8px] px-[8px] md:px-[12px] rounded-[12px] top-[70px] md:top-[104px] w-[calc(100%-16px)] md:w-[268px]">
+								<div class="flex items-center justify-between w-full">
+									<div class="flex gap-[4px] items-center">
+										<div class="size-[16px] flex items-center justify-center">
+											<span class="text-[12px]">💬</span>
+										</div>
+										<div class="flex flex-col font-medium justify-center leading-[0] not-italic relative shrink-0 text-[16px] text-black text-nowrap tracking-[-0.16px]">
+											<p class="leading-[33px] whitespace-pre">Say</p>
+										</div>
+									</div>
+								</div>
+								<div class="flex flex-col items-start w-full">
+									<div class="flex flex-col gap-[4px] items-start w-full">
+										<div class="border-l border-[rgba(0,0,0,0.05)] flex flex-col gap-[10px] items-center justify-center pl-[8px] w-full">
+											<div class="flex flex-col items-start w-full">
+												<div class="flex flex-col gap-[4px] items-start justify-center opacity-50 w-full">
+													<div class="bg-[#424242] h-[13px] rounded-[2px] w-full"></div>
+													<div class="bg-[#424242] h-[13px] rounded-[2px] w-[214px]"></div>
+													<div class="bg-[#424242] h-[13px] rounded-[2px] w-[172px]"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="flex flex-col gap-[16px] md:gap-[26px] items-center leading-[0] not-italic px-4 md:px-8 lg:px-[80px] py-0 text-center w-full">
+							<div class="flex flex-col font-normal justify-center text-[24px] md:text-[32px] lg:text-[40px] text-black tracking-[-1.6px] w-full">
+								<p class="leading-[1.2] md:leading-[50px]">Personalised Sales Pitch</p>
+							</div>
+							<div class="flex flex-col font-semibold justify-center text-[#666666] text-[14px] md:text-[18px] lg:text-[20px] tracking-[-0.374px] w-full">
 								<p class="leading-[1.2]">Shadow listens for intent and willingness to pay in real time, and nudges reps to the right offer, price and proof.</p>
 							</div>
 						</div>
 					</div>
 					
 					<!-- Card 4: Make Your Team Global -->
-					<div class="bg-white flex flex-col h-[686px] items-center justify-between overflow-clip pb-0 pt-[80px] px-0 rounded-[32px] w-full">
-						<div class="flex flex-col gap-[26px] items-center leading-[0] not-italic px-[80px] py-0 text-center w-full">
-							<div class="flex flex-col font-normal justify-center text-[40px] text-black tracking-[-1.6px] w-full">
-								<p class="leading-[50px]">Make Your Team Global</p>
+					<div class="bg-white flex flex-col min-h-[500px] md:h-[686px] items-center justify-between overflow-clip pb-0 pt-[40px] md:pt-[80px] px-0 rounded-[32px] w-full">
+						<div class="flex flex-col gap-[16px] md:gap-[26px] items-center leading-[0] not-italic px-4 md:px-8 lg:px-[80px] py-0 text-center w-full">
+							<div class="flex flex-col font-normal justify-center text-[24px] md:text-[32px] lg:text-[40px] text-black tracking-[-1.6px] w-full">
+								<p class="leading-[1.2] md:leading-[50px]">Make Your Team Global</p>
 							</div>
-							<div class="flex flex-col font-semibold justify-center text-[#666666] text-[20px] tracking-[-0.374px] w-full">
+							<div class="flex flex-col font-semibold justify-center text-[#666666] text-[14px] md:text-[18px] lg:text-[20px] tracking-[-0.374px] w-full">
 								<p class="leading-[1.2]">Help reps sell across regions and industries by bridging language, cultural and context gaps on every call.</p>
 							</div>
 						</div>
-						<div class="h-[374px] overflow-clip relative shrink-0 w-full">
-							<!-- Global team visualization - placeholder for complex image -->
-							<div class="w-full h-full bg-gradient-to-br from-blue-50 to-purple-50"></div>
+						<div class="h-[200px] md:h-[300px] lg:h-[374px] overflow-clip relative shrink-0 w-full">
+							<!-- Complex circular UI with ellipses and badges - Hidden on mobile, shown on larger screens -->
+							<div class="hidden md:block absolute left-1/2 top-[89px] translate-x-[-50%]">
+								<!-- Concentric circles created with CSS -->
+								<div class="absolute left-[55px] top-[89px] size-[510px] flex items-center justify-center">
+									<div class="size-[478.476px] rounded-full border-[2px] border-[rgba(0,0,0,0.1)] rotate-[356.089deg]"></div>
+								</div>
+								<div class="absolute left-[61.53px] top-[116.72px] size-[475.831px] flex items-center justify-center">
+									<div class="size-[446.42px] rounded-full border-[2px] border-[rgba(0,0,0,0.08)] rotate-[356.089deg]"></div>
+								</div>
+								<div class="absolute left-[77.98px] top-[133.17px] size-[442.928px] flex items-center justify-center">
+									<div class="size-[415.55px] rounded-full border-[2px] border-[rgba(0,0,0,0.06)] rotate-[356.089deg]"></div>
+								</div>
+								<div class="absolute left-[99.5px] top-[154.68px] size-[399.901px] flex items-center justify-center">
+									<div class="size-[375.182px] rounded-full border-[2px] border-[rgba(0,0,0,0.05)] rotate-[356.089deg]"></div>
+								</div>
+								<div class="absolute left-[77.42px] top-[124.88px] size-[441.308px] flex items-center justify-center">
+									<div class="size-[415.55px] rounded-full border-[2px] border-[rgba(0,0,0,0.07)] rotate-[356.089deg]"></div>
+								</div>
+								<div class="absolute left-[125px] top-[161px] size-[349.361px] flex items-center justify-center">
+									<div class="size-[327.691px] rounded-full border-[2px] border-[rgba(0,0,0,0.06)] rotate-[356.089deg]"></div>
+								</div>
+								<!-- Center logo -->
+								<div class="absolute bg-[rgba(255,255,255,0.6)] border-[3.75px] border-[rgba(255,255,255,0.49)] border-solid left-1/2 overflow-clip rounded-full size-[120px] top-[160.8px] translate-x-[-50%] flex items-center justify-center">
+									<div class="size-[90px]">
+										<img alt="" class="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src="/images/logo/final-logo-1.png" />
+									</div>
+								</div>
+								<!-- UI Badges -->
+								<div class="absolute bg-[rgba(255,255,255,0.6)] border border-solid border-white flex gap-[8px] items-center left-[371px] pl-[14px] pr-[20px] py-[8px] rounded-[12px] top-[196px]">
+									<div class="size-[24px] flex items-center justify-center">
+										<span class="text-[16px]">💬</span>
+									</div>
+									<div class="flex flex-col font-medium justify-center leading-[0] not-italic relative shrink-0 text-[16px] text-black text-nowrap tracking-[-0.16px]">
+										<p class="leading-[33px] whitespace-pre">Objection Assist</p>
+									</div>
+								</div>
+								<div class="absolute bg-[rgba(255,255,255,0.6)] border border-solid border-white flex gap-[8px] items-center left-1/2 pl-[14px] pr-[20px] py-[8px] rounded-[12px] top-[98px] translate-x-[-50%]">
+									<div class="size-[24px] flex items-center justify-center">
+										<span class="text-[16px]">🌐</span>
+									</div>
+									<div class="flex flex-col font-medium justify-center leading-[0] not-italic relative shrink-0 text-[16px] text-black text-nowrap tracking-[-0.16px]">
+										<p class="leading-[33px] whitespace-pre">Live multilingual translation</p>
+									</div>
+								</div>
+								<div class="absolute bg-[rgba(255,255,255,0.6)] border border-solid border-white flex gap-[8px] items-center left-1/2 pl-[14px] pr-[20px] py-[8px] rounded-[12px] top-[293px] translate-x-[-50%]">
+									<div class="size-[24px] flex items-center justify-center">
+										<span class="text-[16px]">🎯</span>
+									</div>
+									<div class="flex flex-col font-medium justify-center leading-[0] not-italic relative shrink-0 text-[16px] text-black text-nowrap tracking-[-0.16px]">
+										<p class="leading-[33px] whitespace-pre">Context-Driven Coaching</p>
+									</div>
+								</div>
+								<div class="absolute bg-[rgba(255,255,255,0.6)] border border-solid border-white flex gap-[8px] items-center left-[32px] pl-[14px] pr-[20px] py-[8px] rounded-[12px] top-[196px]">
+									<div class="size-[24px] flex items-center justify-center">
+										<span class="text-[16px]">📖</span>
+									</div>
+									<div class="flex flex-col font-medium justify-center leading-[0] not-italic relative shrink-0 text-[16px] text-black text-nowrap tracking-[-0.16px]">
+										<p class="leading-[33px] whitespace-pre">Sharper Storytelling</p>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -108,32 +253,32 @@
 		</div>
 		
 		<!-- For Sales Professionals Section -->
-		<div class="flex flex-col gap-[63px] items-center justify-end rounded-[18px] w-[1240px]">
-			<div class="flex flex-col gap-[24px] items-start leading-[0] not-italic w-full">
-				<div class="flex flex-col font-medium justify-center text-[40px] text-black tracking-[-1.6px] w-full">
-					<p class="leading-[50px]">For Sales Professionals</p>
+		<div class="flex flex-col gap-[40px] md:gap-[63px] items-center justify-end rounded-[18px] w-full max-w-[1240px]">
+			<div class="flex flex-col gap-[16px] md:gap-[24px] items-start leading-[0] not-italic w-full">
+				<div class="flex flex-col font-medium justify-center text-[24px] md:text-[32px] lg:text-[40px] text-black tracking-[-1.6px] w-full">
+					<p class="leading-[1.2] md:leading-[50px]">For Sales Professionals</p>
 				</div>
-				<div class="flex flex-col font-semibold justify-center text-[#666666] text-[20px] tracking-[-0.374px] w-full">
+				<div class="flex flex-col font-semibold justify-center text-[#666666] text-[16px] md:text-[18px] lg:text-[20px] tracking-[-0.374px] w-full">
 					<p class="leading-[1.2]">Access instant facts, handle objections confidently, adapt your storytelling and tone, and communicate clearly—even in mixed languages.</p>
 				</div>
 			</div>
 			
 			<!-- Features Grid -->
-			<div class="flex flex-col gap-[24px] items-start justify-center w-[1240px]">
-				<div class="flex gap-[24px] items-center w-full">
+			<div class="flex flex-col gap-[16px] md:gap-[24px] items-start justify-center w-full">
+				<div class="flex flex-col md:flex-row gap-[16px] md:gap-[24px] items-center w-full">
 					<!-- Column 1 -->
 					<div class="basis-0 flex flex-col gap-[24px] grow items-start min-h-px min-w-px shrink-0">
 						<!-- Higher Sales Facts on Tap -->
-						<div class="bg-white flex flex-col h-[686px] items-center justify-between overflow-clip pb-0 pt-[80px] px-0 rounded-[32px] w-full">
-							<div class="flex flex-col gap-[26px] items-center leading-[0] not-italic px-[80px] py-0 text-center w-full">
-								<div class="flex flex-col font-normal justify-center text-[40px] text-black tracking-[-1.6px] w-full">
-									<p class="leading-[50px]">Higher Sales Facts on Tap</p>
+						<div class="bg-white flex flex-col min-h-[500px] md:h-[686px] items-center justify-between overflow-clip pb-0 pt-[40px] md:pt-[80px] px-0 rounded-[32px] w-full">
+							<div class="flex flex-col gap-[16px] md:gap-[26px] items-center leading-[0] not-italic px-4 md:px-8 lg:px-[80px] py-0 text-center w-full">
+								<div class="flex flex-col font-normal justify-center text-[24px] md:text-[32px] lg:text-[40px] text-black tracking-[-1.6px] w-full">
+									<p class="leading-[1.2] md:leading-[50px]">Higher Sales Facts on Tap</p>
 								</div>
-								<div class="flex flex-col font-semibold justify-center text-[#666666] text-[20px] tracking-[-0.374px] w-full">
+								<div class="flex flex-col font-semibold justify-center text-[#666666] text-[14px] md:text-[18px] lg:text-[20px] tracking-[-0.374px] w-full">
 									<p class="leading-[1.2]">See key product, pricing and customer details on screen the moment you need them.</p>
 								</div>
 							</div>
-							<div class="bg-white h-[374px] overflow-clip relative shrink-0 w-full">
+							<div class="bg-white h-[200px] md:h-[300px] lg:h-[374px] overflow-clip relative shrink-0 w-full">
 								<img 
 									src="/images/features/demo.png" 
 									alt="Sales Facts" 
@@ -143,15 +288,15 @@
 						</div>
 						
 						<!-- Multi-Lingual Support -->
-						<div class="bg-white flex flex-col h-[590px] items-center justify-between overflow-clip rounded-[32px] w-full">
-							<div class="bg-[#ecd7f5] h-[280px] overflow-clip relative shrink-0 w-full">
+						<div class="bg-white flex flex-col min-h-[400px] md:h-[590px] items-center justify-between overflow-clip rounded-[32px] w-full">
+							<div class="bg-[#ecd7f5] h-[150px] md:h-[280px] overflow-clip relative shrink-0 w-full">
 								<!-- Multilingual interface visualization -->
 							</div>
-							<div class="basis-0 flex flex-col gap-[24px] grow items-center justify-center leading-[0] min-h-px min-w-px not-italic px-[80px] py-0 text-center w-full">
-								<div class="flex flex-col font-normal justify-center text-[40px] text-black tracking-[-1.6px] w-full">
-									<p class="leading-[50px] whitespace-pre-wrap">Multi-Lingual  Support</p>
+							<div class="basis-0 flex flex-col gap-[16px] md:gap-[24px] grow items-center justify-center leading-[0] min-h-px min-w-px not-italic px-4 md:px-8 lg:px-[80px] py-0 text-center w-full">
+								<div class="flex flex-col font-normal justify-center text-[24px] md:text-[32px] lg:text-[40px] text-black tracking-[-1.6px] w-full">
+									<p class="leading-[1.2] md:leading-[50px] whitespace-pre-wrap">Multi-Lingual  Support</p>
 								</div>
-								<div class="flex flex-col font-semibold justify-center text-[#666666] text-[20px] tracking-[-0.374px] w-full">
+								<div class="flex flex-col font-semibold justify-center text-[#666666] text-[14px] md:text-[18px] lg:text-[20px] tracking-[-0.374px] w-full">
 									<p class="leading-[1.2]">Speak naturally—English, Hinglish or a mix—while Shadow keeps your message clear and professional.</p>
 								</div>
 							</div>
@@ -161,35 +306,35 @@
 					<!-- Column 2 -->
 					<div class="basis-0 flex flex-col gap-[24px] grow items-start min-h-px min-w-px shrink-0">
 						<!-- Objection Handling -->
-						<div class="bg-white flex flex-col h-[590px] items-center justify-between overflow-clip pb-[80px] pt-0 px-0 rounded-[32px] w-full">
-							<div class="bg-white h-[280px] overflow-clip relative shrink-0 w-full">
+						<div class="bg-white flex flex-col min-h-[400px] md:h-[590px] items-center justify-between overflow-clip pb-[40px] md:pb-[80px] pt-0 px-0 rounded-[32px] w-full">
+							<div class="bg-white h-[150px] md:h-[280px] overflow-clip relative shrink-0 w-full">
 								<img 
 									src="/images/hero/desktop-wallpaper.png" 
 									alt="Objection Handling" 
 									class="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full"
 								/>
 							</div>
-							<div class="flex flex-col gap-[26px] items-center leading-[0] not-italic px-[80px] py-0 text-center w-full">
-								<div class="flex flex-col font-normal justify-center text-[40px] text-black tracking-[-1.6px] w-full">
-									<p class="leading-[50px]">Objection Handling</p>
+							<div class="flex flex-col gap-[16px] md:gap-[26px] items-center leading-[0] not-italic px-4 md:px-8 lg:px-[80px] py-0 text-center w-full">
+								<div class="flex flex-col font-normal justify-center text-[24px] md:text-[32px] lg:text-[40px] text-black tracking-[-1.6px] w-full">
+									<p class="leading-[1.2] md:leading-[50px]">Objection Handling</p>
 								</div>
-								<div class="flex flex-col font-semibold justify-center text-[#666666] text-[20px] tracking-[-0.374px] w-full">
+								<div class="flex flex-col font-semibold justify-center text-[#666666] text-[14px] md:text-[18px] lg:text-[20px] tracking-[-0.374px] w-full">
 									<p class="leading-[1.2]">When a customer pushes back, get simple, suggested replies and follow-up questions right in the flow of the call.</p>
 								</div>
 							</div>
 						</div>
 						
 						<!-- Sharper Story Telling -->
-						<div class="bg-white flex flex-col h-[686px] items-center justify-between overflow-clip pb-0 pt-[80px] px-0 rounded-[32px] w-full">
-							<div class="flex flex-col gap-[26px] items-center leading-[0] not-italic px-[80px] py-0 text-center w-full">
-								<div class="flex flex-col font-normal justify-center text-[40px] text-black tracking-[-1.6px] w-full">
-									<p class="leading-[50px] whitespace-pre-wrap">Sharper  Story Telling</p>
+						<div class="bg-white flex flex-col min-h-[500px] md:h-[686px] items-center justify-between overflow-clip pb-0 pt-[40px] md:pt-[80px] px-0 rounded-[32px] w-full">
+							<div class="flex flex-col gap-[16px] md:gap-[26px] items-center leading-[0] not-italic px-4 md:px-8 lg:px-[80px] py-0 text-center w-full">
+								<div class="flex flex-col font-normal justify-center text-[24px] md:text-[32px] lg:text-[40px] text-black tracking-[-1.6px] w-full">
+									<p class="leading-[1.2] md:leading-[50px] whitespace-pre-wrap">Sharper  Story Telling</p>
 								</div>
-								<div class="flex flex-col font-semibold justify-center text-[#666666] text-[20px] tracking-[-0.374px] w-full">
+								<div class="flex flex-col font-semibold justify-center text-[#666666] text-[14px] md:text-[18px] lg:text-[20px] tracking-[-0.374px] w-full">
 									<p class="leading-[1.2]">Get timely nudges to use the right examples, numbers and customer stories for this specific customer.</p>
 								</div>
 							</div>
-							<div class="h-[374px] overflow-clip relative shrink-0 w-full">
+							<div class="h-[200px] md:h-[300px] lg:h-[374px] overflow-clip relative shrink-0 w-full">
 								<img 
 									src="/images/features/layer-01.png" 
 									alt="Storytelling" 
@@ -202,15 +347,15 @@
 				
 				<!-- Personality Intelligence -->
 				<div class="flex flex-col items-start w-full">
-					<div class="bg-white flex gap-[24px] h-[400px] items-center overflow-clip rounded-[32px] w-full">
-						<div class="bg-[#d6e3f8] h-full overflow-clip relative shrink-0 w-[607px]">
+					<div class="bg-white flex flex-col md:flex-row gap-[16px] md:gap-[24px] min-h-[300px] md:h-[400px] items-center overflow-clip rounded-[32px] w-full">
+						<div class="bg-[#d6e3f8] h-[200px] md:h-full overflow-clip relative shrink-0 w-full md:w-[607px]">
 							<!-- Personality visualization -->
 						</div>
-						<div class="basis-0 flex flex-col gap-[16px] grow h-full items-start justify-center leading-[0] min-h-px min-w-px not-italic px-[80px] py-[40px] shrink-0">
-							<div class="flex flex-col font-normal justify-center text-[40px] text-black tracking-[-1.6px] w-full">
-								<p class="leading-[50px]">Personality Intelligence</p>
+						<div class="basis-0 flex flex-col gap-[12px] md:gap-[16px] grow h-full items-start justify-center leading-[0] min-h-px min-w-px not-italic px-4 md:px-8 lg:px-[80px] py-[20px] md:py-[40px] shrink-0">
+							<div class="flex flex-col font-normal justify-center text-[24px] md:text-[32px] lg:text-[40px] text-black tracking-[-1.6px] w-full">
+								<p class="leading-[1.2] md:leading-[50px]">Personality Intelligence</p>
 							</div>
-							<div class="flex flex-col font-semibold justify-center text-[#666666] text-[20px] tracking-[-0.374px] w-full">
+							<div class="flex flex-col font-semibold justify-center text-[#666666] text-[14px] md:text-[18px] lg:text-[20px] tracking-[-0.374px] w-full">
 								<p class="leading-[1.2]">Shadow picks up how the customer talks and suggests how to match their tone, pace and directness.</p>
 							</div>
 						</div>

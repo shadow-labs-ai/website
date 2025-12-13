@@ -2,11 +2,11 @@
 // Why Us section component - Updated to match Figma design
 ---
 
-<section id="why-us" class="bg-white flex flex-col gap-[80px] items-center px-[100px] py-[80px]">
+<section id="why-us" class="bg-white flex flex-col gap-[40px] md:gap-[80px] items-center px-4 md:px-8 lg:px-[100px] py-[40px] md:py-[80px]">
 	<!-- Section Heading -->
 	<div class="flex flex-col gap-[8px] items-center not-italic text-center w-full">
-		<p class="leading-[1.4] text-[#666666] text-[24px] w-full">Why Us?</p>
-		<div class="flex flex-col justify-center leading-[50px] text-[40px] text-black tracking-[-1.6px] w-full">
+		<p class="leading-[1.4] text-[#666666] text-[18px] md:text-[24px] w-full">Why Us?</p>
+		<div class="flex flex-col justify-center leading-[1.2] md:leading-[50px] text-[28px] md:text-[32px] lg:text-[40px] text-black tracking-[-1.6px] w-full">
 			<p class="mb-0">Built for high-stakes teams that</p>
 			<p class="mb-0">care about privacy, control and </p>
 			<p>real impact on every call.</p>
@@ -14,25 +14,25 @@
 	</div>
 	
 	<!-- Features List -->
-	<div class="bg-white flex flex-col items-start w-full">
+	<div class="bg-white flex flex-col items-start w-full max-w-[1240px]">
 		<div class="flex flex-col gap-[9px] items-start w-full">
 			<!-- Item 1 -->
-			<div class="bg-white border-[#e2e3e9] border-[0px_0px_1px] border-solid flex gap-[24px] items-start pb-[25px] pt-[24px] px-[12px] rounded-[6px] w-full">
-				<div class="bg-gradient-to-b from-[30.83%] from-[rgba(238,239,241,0.5)] rounded-[16px] shrink-0 size-[56px] to-[rgba(227,228,233,0.5)]">
-					<div class="flex items-center justify-center relative size-[56px]">
+			<div class="bg-white border-[#e2e3e9] border-[0px_0px_1px] border-solid flex flex-col md:flex-row gap-[16px] md:gap-[24px] items-start pb-[20px] md:pb-[25px] pt-[20px] md:pt-[24px] px-[12px] rounded-[6px] w-full">
+				<div class="bg-gradient-to-b from-[30.83%] from-[rgba(238,239,241,0.5)] rounded-[16px] shrink-0 size-[48px] md:size-[56px] to-[rgba(227,228,233,0.5)]">
+					<div class="flex items-center justify-center relative size-full">
 						<img 
 							src="/images/icons/icon-1.png" 
 							alt="Privacy Icon" 
-							class="relative shrink-0 size-[32px]"
+							class="relative shrink-0 size-[28px] md:size-[32px]"
 						/>
 					</div>
 				</div>
 				<div class="basis-0 grow min-h-px min-w-px relative self-stretch shrink-0">
-					<div class="flex items-center justify-between not-italic relative size-full">
-						<div class="flex flex-col font-medium justify-center leading-[0] relative shrink-0 text-[22px] text-black tracking-[-0.4px] w-[250px]">
-							<p class="leading-[33px]">Build with Privacy in Mind</p>
+					<div class="flex flex-col md:flex-row md:items-center md:justify-between not-italic relative size-full gap-2 md:gap-0">
+						<div class="flex flex-col font-medium justify-center leading-[0] relative shrink-0 text-[18px] md:text-[22px] text-black tracking-[-0.4px] w-full md:w-[250px]">
+							<p class="leading-[1.4] md:leading-[33px]">Build with Privacy in Mind</p>
 						</div>
-						<p class="leading-[1.4] relative shrink-0 text-[#666666] text-[20px] w-[544px]">
+						<p class="leading-[1.4] relative shrink-0 text-[#666666] text-[16px] md:text-[20px] w-full md:w-[544px]">
 							Shadow records only with consent, encrypts everything, and lets you control what's stored, shared and deleted.
 						</p>
 					</div>
@@ -40,22 +40,22 @@
 			</div>
 			
 			<!-- Item 2 -->
-			<div class="bg-white border-[#e2e3e9] border-[0px_0px_1px] border-solid flex gap-[24px] items-start pb-[25px] pt-[24px] px-[12px] rounded-[6px] w-full">
-				<div class="bg-gradient-to-b from-[30.83%] from-[rgba(238,239,241,0.5)] rounded-[16px] shrink-0 size-[56px] to-[rgba(227,228,233,0.5)]">
-					<div class="flex items-center justify-center relative size-[56px]">
+			<div class="bg-white border-[#e2e3e9] border-[0px_0px_1px] border-solid flex flex-col md:flex-row gap-[16px] md:gap-[24px] items-start pb-[20px] md:pb-[25px] pt-[20px] md:pt-[24px] px-[12px] rounded-[6px] w-full">
+				<div class="bg-gradient-to-b from-[30.83%] from-[rgba(238,239,241,0.5)] rounded-[16px] shrink-0 size-[48px] md:size-[56px] to-[rgba(227,228,233,0.5)]">
+					<div class="flex items-center justify-center relative size-full">
 						<img 
 							src="/images/icons/icon-2.png" 
 							alt="Enterprise Icon" 
-							class="relative shrink-0 size-[32px]"
+							class="relative shrink-0 size-[28px] md:size-[32px]"
 						/>
 					</div>
 				</div>
 				<div class="basis-0 grow min-h-px min-w-px relative self-stretch shrink-0">
-					<div class="flex items-center justify-between not-italic relative size-full">
-						<div class="flex flex-col font-medium justify-center leading-[0] relative shrink-0 text-[22px] text-black tracking-[-0.4px] w-[250px]">
-							<p class="leading-[33px]">Enterprise First</p>
+					<div class="flex flex-col md:flex-row md:items-center md:justify-between not-italic relative size-full gap-2 md:gap-0">
+						<div class="flex flex-col font-medium justify-center leading-[0] relative shrink-0 text-[18px] md:text-[22px] text-black tracking-[-0.4px] w-full md:w-[250px]">
+							<p class="leading-[1.4] md:leading-[33px]">Enterprise First</p>
 						</div>
-						<p class="leading-[1.4] relative shrink-0 text-[#666666] text-[20px] w-[544px]">
+						<p class="leading-[1.4] relative shrink-0 text-[#666666] text-[16px] md:text-[20px] w-full md:w-[544px]">
 							SSO, RBAC, audit logs and scalable infrastructure so your security and IT teams can say yes with confidence.
 						</p>
 					</div>
@@ -63,22 +63,22 @@
 			</div>
 			
 			<!-- Item 3 -->
-			<div class="bg-white border-[#e2e3e9] border-[0px_0px_1px] border-solid flex gap-[24px] items-start pb-[25px] pt-[24px] px-[12px] rounded-[6px] w-full">
-				<div class="bg-gradient-to-b from-[30.83%] from-[rgba(238,239,241,0.5)] rounded-[16px] shrink-0 size-[56px] to-[rgba(227,228,233,0.5)]">
-					<div class="flex items-center justify-center relative size-[56px]">
+			<div class="bg-white border-[#e2e3e9] border-[0px_0px_1px] border-solid flex flex-col md:flex-row gap-[16px] md:gap-[24px] items-start pb-[20px] md:pb-[25px] pt-[20px] md:pt-[24px] px-[12px] rounded-[6px] w-full">
+				<div class="bg-gradient-to-b from-[30.83%] from-[rgba(238,239,241,0.5)] rounded-[16px] shrink-0 size-[48px] md:size-[56px] to-[rgba(227,228,233,0.5)]">
+					<div class="flex items-center justify-center relative size-full">
 						<img 
 							src="/images/icons/icon-3.png" 
 							alt="Insights Icon" 
-							class="relative shrink-0 size-[32px]"
+							class="relative shrink-0 size-[28px] md:size-[32px]"
 						/>
 					</div>
 				</div>
 				<div class="basis-0 grow min-h-px min-w-px relative self-stretch shrink-0">
-					<div class="flex items-center justify-between not-italic relative size-full">
-						<div class="flex flex-col font-medium justify-center leading-[0] relative shrink-0 text-[22px] text-black tracking-[-0.4px] w-[250px]">
-							<p class="leading-[33px]">Built on behavioral insights</p>
+					<div class="flex flex-col md:flex-row md:items-center md:justify-between not-italic relative size-full gap-2 md:gap-0">
+						<div class="flex flex-col font-medium justify-center leading-[0] relative shrink-0 text-[18px] md:text-[22px] text-black tracking-[-0.4px] w-full md:w-[250px]">
+							<p class="leading-[1.4] md:leading-[33px]">Built on behavioral insights</p>
 						</div>
-						<p class="leading-[1.4] relative shrink-0 text-[#666666] text-[20px] w-[544px]">
+						<p class="leading-[1.4] relative shrink-0 text-[#666666] text-[16px] md:text-[20px] w-full md:w-[544px]">
 							Designed from real call patterns, what top reps actually say and do, not just generic sales advice.
 						</p>
 					</div>
@@ -86,22 +86,22 @@
 			</div>
 			
 			<!-- Item 4 -->
-			<div class="bg-white border-[#e2e3e9] border-[0px_0px_1px] border-solid flex gap-[24px] items-start pb-[25px] pt-[24px] px-[12px] rounded-[6px] w-full">
-				<div class="bg-gradient-to-b from-[30.83%] from-[rgba(238,239,241,0.5)] rounded-[16px] shrink-0 size-[56px] to-[rgba(227,228,233,0.5)]">
-					<div class="flex items-center justify-center relative size-[56px]">
+			<div class="bg-white border-[#e2e3e9] border-[0px_0px_1px] border-solid flex flex-col md:flex-row gap-[16px] md:gap-[24px] items-start pb-[20px] md:pb-[25px] pt-[20px] md:pt-[24px] px-[12px] rounded-[6px] w-full">
+				<div class="bg-gradient-to-b from-[30.83%] from-[rgba(238,239,241,0.5)] rounded-[16px] shrink-0 size-[48px] md:size-[56px] to-[rgba(227,228,233,0.5)]">
+					<div class="flex items-center justify-center relative size-full">
 						<img 
 							src="/images/icons/icon-4.png" 
 							alt="Research Icon" 
-							class="relative shrink-0 size-[32px]"
+							class="relative shrink-0 size-[28px] md:size-[32px]"
 						/>
 					</div>
 				</div>
 				<div class="basis-0 grow min-h-px min-w-px relative self-stretch shrink-0">
-					<div class="flex items-center justify-between not-italic relative size-full">
-						<div class="flex flex-col font-medium justify-center leading-[0] relative shrink-0 text-[22px] text-black tracking-[-0.4px] w-[250px]">
-							<p class="leading-[33px]">Deep Research Algorithm</p>
+					<div class="flex flex-col md:flex-row md:items-center md:justify-between not-italic relative size-full gap-2 md:gap-0">
+						<div class="flex flex-col font-medium justify-center leading-[0] relative shrink-0 text-[18px] md:text-[22px] text-black tracking-[-0.4px] w-full md:w-[250px]">
+							<p class="leading-[1.4] md:leading-[33px]">Deep Research Algorithm</p>
 						</div>
-						<p class="leading-[1.4] relative shrink-0 text-[#666666] text-[20px] w-[544px]">
+						<p class="leading-[1.4] relative shrink-0 text-[#666666] text-[16px] md:text-[20px] w-full md:w-[544px]">
 							Surfaces the right facts, proof points and references in real time, backed by your own content and data.
 						</p>
 					</div>
@@ -109,22 +109,22 @@
 			</div>
 			
 			<!-- Item 5 -->
-			<div class="bg-white flex gap-[24px] items-start px-[12px] py-[24px] rounded-[6px] w-full">
-				<div class="bg-gradient-to-b from-[30.83%] from-[rgba(238,239,241,0.5)] rounded-[16px] shrink-0 size-[56px] to-[rgba(227,228,233,0.5)]">
-					<div class="flex items-center justify-center relative size-[56px]">
+			<div class="bg-white flex flex-col md:flex-row gap-[16px] md:gap-[24px] items-start px-[12px] py-[20px] md:py-[24px] rounded-[6px] w-full">
+				<div class="bg-gradient-to-b from-[30.83%] from-[rgba(238,239,241,0.5)] rounded-[16px] shrink-0 size-[48px] md:size-[56px] to-[rgba(227,228,233,0.5)]">
+					<div class="flex items-center justify-center relative size-full">
 						<img 
 							src="/images/icons/icon-5.png" 
 							alt="Personalized Icon" 
-							class="relative shrink-0 size-[32px]"
+							class="relative shrink-0 size-[28px] md:size-[32px]"
 						/>
 					</div>
 				</div>
 				<div class="basis-0 grow min-h-px min-w-px relative self-stretch shrink-0">
-					<div class="flex items-center justify-between not-italic relative size-full">
-						<div class="flex flex-col font-medium justify-center leading-[0] relative shrink-0 text-[22px] text-black tracking-[-0.4px] w-[250px]">
-							<p class="leading-[33px]">Personalized</p>
+					<div class="flex flex-col md:flex-row md:items-center md:justify-between not-italic relative size-full gap-2 md:gap-0">
+						<div class="flex flex-col font-medium justify-center leading-[0] relative shrink-0 text-[18px] md:text-[22px] text-black tracking-[-0.4px] w-full md:w-[250px]">
+							<p class="leading-[1.4] md:leading-[33px]">Personalized</p>
 						</div>
-						<p class="leading-[1.4] relative shrink-0 text-[#666666] text-[20px] w-[544px]">
+						<p class="leading-[1.4] relative shrink-0 text-[#666666] text-[16px] md:text-[20px] w-full md:w-[544px]">
 							Learns your playbooks, language and market over time so guidance feels tailored to your team, not templated.
 						</p>
 					</div>
