@@ -35,20 +35,20 @@ export default function ShadowLabsLanding() {
     //   answer: "Shadow is designed with enterprise needs in mind, offering scalable infrastructure, SSO integration, RBAC controls, and comprehensive audit logs. It helps standardize sales excellence across your entire organization while maintaining security and compliance standards."
     // },
     {
-      question: "Is Shadow secure",
-      answer: "Absolutely not. Shadow is built with privacy and security at its core. All data is encrypted, recordings are only made with consent, and you have complete control over what's stored, shared, and deleted. We're SOC 2 compliant and follow enterprise-grade security protocols."
+      question: "Is Shadow secure?",
+      answer: "Absolutely. Shadow is built with privacy and security at its core. All data is encrypted, recordings are only made with consent, and you have complete control over what's stored, shared, and deleted. We're SOC 2 compliant and follow enterprise-grade security protocols."
     },
     {
       question: "Can I try it for free before starting?",
-      answer: "Yes!"
+      answer: "Yep! Download it and see if it's for you. No credit card, no BS."
     },
     {
       question: "What languages and apps are supported?",
-      answer: "Shadow supports English, and Hindi (mixed language conversations). It works seamlessly with all major meeting platforms including Zoom, Google Meet, Microsoft Teams, and more. Our multi-lingual AI ensures clear communication across language barriers."
+      answer: "We've got English and Hindi for now. Works with Zoom, Google Meet, and Teams basically anywhere you take calls."
     },
     {
       question: "What tools does Shadow work with?",
-      answer: "Shadow integrates with your existing tech stack including CRM systems, meeting platforms (Zoom, Teams, Meet), and communication tools. We offer API/Webhook access for custom integrations, and our platform is designed to work alongside your current sales tools without disruption."
+      answer: "Shadow works with all the meeting platforms, whatever you're already using. We play nice with your tech stack. "
     }
   ];
 
@@ -109,9 +109,9 @@ export default function ShadowLabsLanding() {
           </h1>
 
           <p className="text-gray-500 text-body-large mb-6 sm:mb-8 animate-slide-up" style={{animationDelay: '0.1s'}}>
-            Every super-hero has a voice in their ear. Shadow has yours covered. <br />
+          Every super-hero has a voice in their ear. Shadow has yours covered. <br />
             Shadow listens, thinks ahead, and slips you the right prompts while you’re on the call, <br />
-             so you sound like a conversational super hero.
+            Just you, sounding ridiculously smart on every single call.
           </p>
           <button 
             onClick={() => window.open('https://drive.google.com/file/d/1v_Gg3tc48bVM978d3Zp_QuveJxGPvDQE/view', '_blank')}
@@ -147,9 +147,9 @@ export default function ShadowLabsLanding() {
       {/* For Sales Professionals */}
       <section className="py-12 sm:py-16 px-4 sm:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h3 className="text-h2 mb-4 sm:mb-6 text-neutral-900">For Users</h3>
+          <h3 className="text-h2 mb-4 sm:mb-6 text-neutral-900">For You</h3>
           <p className="text-gray-600 text-body max-w-4xl">
-            Your quiet edge in all the conversations.
+            Your secret weapon for crushing every conversation. No one will know. We promise.
           </p>
         </div>
       </section>
@@ -166,10 +166,10 @@ export default function ShadowLabsLanding() {
               </div>
               <div className="p-6 sm:p-8 text-center">
                 <h3 className="text-h3 mb-2 sm:mb-3 text-gray-900">
-                  Instant information Access
+                  Instant Answers from your data sources
                 </h3>
                 <p className="text-gray-600 text-body">
-                  When anyone asks a question, Shadow instantly gives you the answer. No more guessing or winging it.
+                  Someone drops a random question? Shadow instantly gives you the answer. No more guessing or winging it.
                 </p>
               </div>
             </div>
@@ -198,10 +198,10 @@ export default function ShadowLabsLanding() {
               </div>
               <div className="p-6 sm:p-8 text-center">
                 <h3 className="text-h3 mb-2 sm:mb-3 text-gray-900">
-                  Sharper Story Telling
+                  Tell Stories That Actually Land
                 </h3>
                 <p className="text-gray-600 text-body">
-                  Get timely nudges to use the right examples, numbers and customer stories for this specific prospect.
+                  Shadow nudges you with the perfect example or stat at the perfect moment. Your stories hit different now.
                 </p>
               </div>
             </div>
@@ -210,10 +210,10 @@ export default function ShadowLabsLanding() {
             <div className="bg-gray-50 rounded-2xl sm:rounded-3xl shadow-sm h-auto md:h-[444px] flex flex-col hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
               <div className="p-6 sm:p-10 text-center">
                 <h3 className="text-h3 mb-3 sm:mb-4 text-gray-900">
-                  Multi-Lingual Support
+                  Speak How You Actually Speak
                 </h3>
                 <p className="text-gray-600 text-body">
-                  Speak naturally, English, Hinglish or a mix, while Shadow keeps your message clear and culturally on point.
+                  English? Hindi? Hinglish? Mix it all up. Shadow gets it and keeps you sounding smooth no matter what language flies out.
                 </p>
               </div>
               <div className="flex-1 px-6 sm:px-10 pb-6 sm:pb-10 flex flex-col justify-end">
@@ -230,10 +230,10 @@ export default function ShadowLabsLanding() {
               </div>
               <div className="flex-1 p-6 sm:p-10 flex flex-col justify-center">
                 <h3 className="text-h3 mb-3 sm:mb-4 text-gray-900">
-                  Personality Intelligence
+                  Read the Room (Personality Intelligence)
                 </h3>
                 <p className="text-gray-600 text-body">
-                  Shadow picks up how the customer talks and suggests how to match their tone, pace and directness.
+                  Shadow picks up on how they're talking and tells you how to vibe with them. Match their energy without even trying.
                 </p>
               </div>
             </div>
@@ -246,7 +246,7 @@ export default function ShadowLabsLanding() {
         <div className="max-w-6xl mx-auto">
           <h3 className="text-h2 mb-4 sm:mb-6 text-neutral-900">For Business Owners</h3>
           <p className="text-gray-600 text-body max-w-4xl">
-            Drive higher conversions with real-time coaching, pitch personalization, and team-wide performance consistency across regions and languages.
+            Turn your whole team into closers. Shadow makes everyone sound like your best rep without the awkward coaching sessions.
           </p>
         </div>
       </section>
@@ -260,11 +260,10 @@ export default function ShadowLabsLanding() {
             <div className="bg-white rounded-2xl sm:rounded-3xl shadow-sm h-auto md:h-[600px] flex flex-col hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
               <div className="p-6 sm:p-10 text-center">
                 <h3 className="text-h3 mb-3 sm:mb-4 text-gray-900">
-                  Higher Sales Conversions
+                  Close More Deals, Obviously
                 </h3>
                 <p className="text-gray-600 text-body">
-                  Right answers, on the spot, even for complex SKUs.
-                  Less back-and-forth. Faster deals.
+                  Your team gets instant answers to everything. No stalling, no "let me get back to you." Just smooth, confident closes.
                 </p>
               </div>
               <div className="flex-1 px-6 sm:px-10 pb-6 sm:pb-10 flex flex-col justify-end">
@@ -284,7 +283,7 @@ export default function ShadowLabsLanding() {
                   Personalised Pitch
                 </h3>
                 <p className="text-gray-600 text-body">
-                  Shadow tailors the prompts based on user. It listens for intent and willingness to pay in real time, and nudges reps to the right offer.
+                Shadow tailors the prompts based on user. It listens for intent and willingness to pay in real time, and nudges reps to the right offer.
                 </p>
               </div>
             </div>
@@ -299,7 +298,7 @@ export default function ShadowLabsLanding() {
                   Performance Equity Across<br />the Team
                 </h3>
                 <p className="text-gray-600 text-body">
-                  Turn what your best reps say, and when they say it, into live guidance for everyone.
+                  Shadow learns from your top performers and teaches everyone else their moves. It's like copy-paste for sales skills.
                 </p>
               </div>
             </div>
@@ -308,11 +307,10 @@ export default function ShadowLabsLanding() {
             <div className="bg-white rounded-2xl sm:rounded-3xl shadow-sm h-auto md:h-[600px] flex flex-col hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
               <div className="p-6 sm:p-10 text-center">
                 <h3 className="text-h3 mb-3 sm:mb-4 text-gray-900">
-                  Team-wide Performance Equity
+                  Go Global Without the Chaos
                 </h3>
                 <p className="text-gray-600 text-body">
-                  
-                  Help reps sell across regions and industries by bridging language and cultural gaps.
+                  Your team can sell anywhere, in any language, without sounding like robots. Shadow handles all the cultural weird stuff.
                 </p>
               </div>
               <div className="flex-1 px-6 sm:px-10 pb-6 sm:pb-10 flex flex-col justify-end">
@@ -331,9 +329,9 @@ export default function ShadowLabsLanding() {
           <div className="max-w-4xl mx-auto text-center mb-12 sm:mb-16">
             <p className="text-caption text-gray-400 mb-4 sm:mb-6 uppercase tracking-wider">Why Us?</p>
             <h2 className="text-h1 text-neutral-900">
-              Built for high-stakes teams that<br />
-              care about privacy, control and<br />
-              real impact on every call.
+              We're not another boring<br />
+              enterprise tool. We're actually<br />
+              built different.
             </h2>
           </div>
 
@@ -347,11 +345,11 @@ export default function ShadowLabsLanding() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                   </svg>
                 </div>
-                <h3 className="text-body font-semibold text-black">Build with Privacy in Mind</h3>
+                <h3 className="text-body font-semibold text-black">Your Secrets Stay Secret</h3>
               </div>
               <div className="px-4 sm:px-20">
                 <p className="text-gray-500 text-body">
-                  Shadow records only with consent, encrypts everything, and lets you control what&apos;s stored, shared and deleted.
+                  We only record when you say it's cool. Everything's encrypted. You control what stays and what gets deleted. Simple as that.
                 </p>
               </div>
             </div>
@@ -364,11 +362,11 @@ export default function ShadowLabsLanding() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                   </svg>
                 </div>
-                <h3 className="text-body font-semibold text-black">Enterprise First</h3>
+                <h3 className="text-body font-semibold text-black">Enterprise-Grade (But Not Boring)</h3>
               </div>
               <div className="px-4 sm:px-20">
                 <p className="text-gray-500 text-body">
-                  SSO, RBAC, audit logs and scalable infrastructure so your security and IT teams can say yes with confidence.
+                  All the enterprise security stuff your IT team cares about. SSO, audit logs, the works. We speak their language so you don't have to.
                 </p>
               </div>
             </div>
@@ -381,11 +379,11 @@ export default function ShadowLabsLanding() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                   </svg>
                 </div>
-                <h3 className="text-body font-semibold text-black">Built on behavioral insights</h3>
+                <h3 className="text-body font-semibold text-black">Learned From the Best (Real People)</h3>
               </div>
               <div className="px-4 sm:px-20">
                 <p className="text-gray-500 text-body">
-                  Designed from real call patterns, what top reps actually say and do, not just generic sales advice.
+                  We studied what actually works in real conversations. No generic advice from some sales guru. Just actual patterns from people who crush it.
                 </p>
               </div>
             </div>
@@ -398,11 +396,11 @@ export default function ShadowLabsLanding() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                   </svg>
                 </div>
-                <h3 className="text-body font-semibold text-black">Deep Research Algorithm</h3>
+                <h3 className="text-body font-semibold text-black">Smart Research Engine</h3>
               </div>
               <div className="px-4 sm:px-20">
                 <p className="text-gray-500 text-body">
-                  Surfaces the right facts, proof points and references in real time, backed by your own content and data.
+                  Pulls exactly what you need from your own docs and data. Right fact, right moment. It's like having a research assistant who never sleeps.
                 </p>
               </div>
             </div>
@@ -415,11 +413,11 @@ export default function ShadowLabsLanding() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                   </svg>
                 </div>
-                <h3 className="text-body font-semibold text-black">Personalized</h3>
+                <h3 className="text-body font-semibold text-black">Gets Smarter With You</h3>
               </div>
               <div className="px-4 sm:px-20">
                 <p className="text-gray-500 text-body">
-                  Learns your playbooks, language and market over time so guidance feels tailored to your team, not templated.
+                  Shadow learns how YOU talk, what YOUR team sells, what YOUR market needs. The more you use it, the more it feels like it's reading your mind.
                 </p>
               </div>
             </div>
@@ -618,7 +616,7 @@ export default function ShadowLabsLanding() {
             </span>
               </div>
               <p className="text-caption text-gray-500 max-w-xs">
-                Make everything in your brand shift towards sharper conversations, higher conversion, happier customers.
+                Sharper conversations. More wins. Happier customers. Less stress. That's the vibe.
               </p>
             </div>
             <div>
@@ -633,7 +631,7 @@ export default function ShadowLabsLanding() {
           </div>
           <div className="mt-8 pt-8 border-t border-gray-200">
             <p className="text-caption text-gray-500">
-              © 2024 ShadowLabs. All rights reserved.
+              © 2026 ShadowLabs. All rights reserved.
             </p>
           </div>
         </div>
