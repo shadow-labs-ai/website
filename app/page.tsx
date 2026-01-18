@@ -68,15 +68,15 @@ export default function ShadowLabsLanding() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             {/* <button onClick={() => scrollToSection('enterprise')} className="text-sm text-gray-600 hover:text-black transition-colors">Enterprise</button> */}
-            <button onClick={() => scrollToSection('features')} className="text-body text-gray-600 hover:text-black transition-colors">Features</button>
+            <button onClick={() => scrollToSection('features')} className="text-body text-gray-600 hover:text-black transition-colors cursor-pointer">Features</button>
             {/* <button onClick={() => scrollToSection('pricing')} className="text-sm text-gray-600 hover:text-black transition-colors">Pricing</button> */}
-            <button onClick={() => scrollToSection('about')} className="text-body text-gray-600 hover:text-black transition-colors">Why Shadow?</button>
+            <button onClick={() => scrollToSection('about')} className="text-body text-gray-600 hover:text-black transition-colors cursor-pointer">Why Shadow?</button>
           </div>
 
           {/* Mobile Menu Button */}
           <button 
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden p-2"
+            className="md:hidden p-2 cursor-pointer"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               {mobileMenuOpen ? (
@@ -92,10 +92,10 @@ export default function ShadowLabsLanding() {
         {mobileMenuOpen && (
           <div className="md:hidden bg-white border-t border-gray-100">
             <div className="px-4 py-2 space-y-2">
-              <button onClick={() => scrollToSection('enterprise')} className="block w-full text-left py-2 text-body text-gray-600">Enterprise</button>
-              <button onClick={() => scrollToSection('features')} className="block w-full text-left py-2 text-body text-gray-600">Features</button>
-              <button onClick={() => scrollToSection('pricing')} className="block w-full text-left py-2 text-body text-gray-600">Pricing</button>
-              <button onClick={() => scrollToSection('about')} className="block w-full text-left py-2 text-body text-gray-600">Why us?</button>
+              <button onClick={() => scrollToSection('enterprise')} className="block w-full text-left py-2 text-body text-gray-600 cursor-pointer">Enterprise</button>
+              <button onClick={() => scrollToSection('features')} className="block w-full text-left py-2 text-body text-gray-600 cursor-pointer">Features</button>
+              <button onClick={() => scrollToSection('pricing')} className="block w-full text-left py-2 text-body text-gray-600 cursor-pointer">Pricing</button>
+              <button onClick={() => scrollToSection('about')} className="block w-full text-left py-2 text-body text-gray-600 cursor-pointer">Why us?</button>
             </div>
           </div>
         )}
@@ -115,7 +115,7 @@ export default function ShadowLabsLanding() {
           </p>
           <button 
             onClick={() => window.open('https://drive.google.com/file/d/1v_Gg3tc48bVM978d3Zp_QuveJxGPvDQE/view', '_blank')}
-            className="bg-[#0f172a] text-white px-6 sm:px-8 py-3 sm:py-4 text-body rounded-lg hover:bg-[#1e293b] transition-all duration-300 font-medium flex items-center gap-2 mx-auto hover:scale-105 shadow-lg hover:shadow-xl animate-slide-up" 
+            className="bg-[#0f172a] text-white px-6 sm:px-8 py-3 sm:py-4 text-body rounded-lg hover:bg-[#1e293b] transition-all duration-300 font-medium flex items-center gap-2 mx-auto hover:scale-105 shadow-lg hover:shadow-xl animate-slide-up cursor-pointer" 
             style={{animationDelay: '0.2s'}}
           >
             <span>Download App</span>
@@ -575,7 +575,7 @@ export default function ShadowLabsLanding() {
                 <div key={index} className="border-b border-gray-200 pb-4 sm:pb-6">
                   <button
                     onClick={() => toggleFaq(index)}
-                    className="w-full flex items-center justify-between text-left group"
+                    className="w-full flex items-center justify-between text-left group cursor-pointer"
                   >
                     <h3 className="text-body font-semibold text-gray-900 pr-4">
                       {faq.question}
@@ -625,9 +625,9 @@ export default function ShadowLabsLanding() {
               <h4 className="text-body font-semibold text-gray-900 mb-3">Navigation</h4>
               <ul className="space-y-2 text-body text-gray-600">
                 {/* <li><button onClick={() => scrollToSection('enterprise')} className="hover:text-gray-900">Enterprise</button></li> */}
-                <li><button onClick={() => scrollToSection('features')} className="hover:text-gray-900">Features</button></li>
-                {/* <li><button onClick={() => scrollToSection('pricing')} className="hover:text-gray-900">Pricing</button></li> */}
-                <li><button onClick={() => scrollToSection('about')} className="hover:text-gray-900">Why us?</button></li>
+                <li><button onClick={() => scrollToSection('features')} className="hover:text-gray-900 cursor-pointer">Features</button></li>
+                {/* <li><button onClick={() => scrollToSection('pricing')} className="hover:text-gray-900 cursor-pointer">Pricing</button></li> */}
+                <li><button onClick={() => scrollToSection('about')} className="hover:text-gray-900 cursor-pointer">Why us?</button></li>
               </ul>
             </div>
           </div>
