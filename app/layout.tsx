@@ -13,8 +13,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Smarter Conversations",
+  title: "ShadowLabs - Your Wingman for Smarter Conversations",
   description: "Your Wingman for Smarter Conversations",
+  icons: {
+    icon: '/icon.svg',
+  },
 };
 
 export default function RootLayout({

@@ -57,9 +57,9 @@ export default function ShadowLabsLanding() {
       {/* Header */}
       <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="w-2 h-2 bg-black rounded-full"></div>
-            <span className="text-body font-semibold tracking-tight">
+          <div className="flex items-center gap-3 sm:gap-4">
+            <div className="w-4 h-4 sm:w-5 sm:h-5 bg-black rounded-full"></div>
+            <span className="text-lg sm:text-xl font-semibold tracking-tight">
               <span className="text-gray-800">SHADOW</span>
               <span className="bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent">LABS</span>
             </span>
@@ -610,9 +610,9 @@ export default function ShadowLabsLanding() {
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col sm:flex-row items-start justify-between gap-8">
             <div>
-              <div className="flex items-center gap-2 mb-4">
-                <div className="w-2 h-2 bg-black rounded-full"></div>
-                <span className="text-body font-semibold tracking-tight">
+              <div className="flex items-center gap-3 sm:gap-4 mb-4">
+                <div className="w-4 h-4 sm:w-5 sm:h-5 bg-black rounded-full"></div>
+                <span className="text-lg sm:text-xl font-semibold tracking-tight">
               <span className="text-gray-800">SHADOW</span>
               <span className="bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent">LABS</span>
             </span>
