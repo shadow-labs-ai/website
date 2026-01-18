@@ -19,21 +19,21 @@ export default function ShadowLabsLanding() {
   };
 
   const faqs = [
+    // {
+    //   question: "Why use plan Shadow for enterprise?",
+    //   answer: "Shadow is designed with enterprise needs in mind, offering scalable infrastructure, SSO integration, RBAC controls, and comprehensive audit logs. It helps standardize sales excellence across your entire organization while maintaining security and compliance standards."
+    // },
     {
-      question: "Why use plan Shadow for enterprise?",
-      answer: "Shadow is designed with enterprise needs in mind, offering scalable infrastructure, SSO integration, RBAC controls, and comprehensive audit logs. It helps standardize sales excellence across your entire organization while maintaining security and compliance standards."
-    },
-    {
-      question: "Does Shadow leak my org data?",
+      question: "Is Shadow secure",
       answer: "Absolutely not. Shadow is built with privacy and security at its core. All data is encrypted, recordings are only made with consent, and you have complete control over what's stored, shared, and deleted. We're SOC 2 compliant and follow enterprise-grade security protocols."
     },
     {
       question: "Can I try it for free before starting?",
-      answer: "Yes! We offer a 10-day free trial with our Starter plan. This gives you access to essential features including limited support, 1 customized email/prompt, and up to 10 hours of call recording so you can experience Shadow's capabilities firsthand."
+      answer: "Yes!"
     },
     {
       question: "What languages and apps are supported?",
-      answer: "Shadow supports English, Hindi, and Hinglish (mixed language conversations). It works seamlessly with all major meeting platforms including Zoom, Google Meet, Microsoft Teams, and more. Our multi-lingual AI ensures clear communication across language barriers."
+      answer: "Shadow supports English, and Hindi (mixed language conversations). It works seamlessly with all major meeting platforms including Zoom, Google Meet, Microsoft Teams, and more. Our multi-lingual AI ensures clear communication across language barriers."
     },
     {
       question: "What tools does Shadow work with?",
@@ -56,10 +56,10 @@ export default function ShadowLabsLanding() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            <button onClick={() => scrollToSection('enterprise')} className="text-sm text-gray-600 hover:text-black transition-colors">Enterprise</button>
+            {/* <button onClick={() => scrollToSection('enterprise')} className="text-sm text-gray-600 hover:text-black transition-colors">Enterprise</button> */}
             <button onClick={() => scrollToSection('features')} className="text-sm text-gray-600 hover:text-black transition-colors">Features</button>
-            <button onClick={() => scrollToSection('pricing')} className="text-sm text-gray-600 hover:text-black transition-colors">Pricing</button>
-            <button onClick={() => scrollToSection('about')} className="text-sm text-gray-600 hover:text-black transition-colors">Why us?</button>
+            {/* <button onClick={() => scrollToSection('pricing')} className="text-sm text-gray-600 hover:text-black transition-colors">Pricing</button> */}
+            <button onClick={() => scrollToSection('about')} className="text-sm text-gray-600 hover:text-black transition-colors">Why Shadow?</button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -94,14 +94,16 @@ export default function ShadowLabsLanding() {
       <section className="pt-24 sm:pt-32 pb-12 sm:pb-16 px-4 sm:px-8 animate-fade-in">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-tight mb-4 text-neutral-900 animate-slide-up">
-            Your Wingman for<br />High Stakes Conversations
+            Your Wingman for<br />Smarter Conversations
           </h1>
 
           <p className="text-gray-500 text-sm sm:text-base mb-6 sm:mb-8 animate-slide-up" style={{animationDelay: '0.1s'}}>
-            The grid stage in every conversation
+            Every super-hero has a voice in their ear. Shadow has yours covered. <br />
+            Shadow listens, thinks ahead, and slips you the right prompts while you’re on the call, <br />
+             so you sound like a conversational super hero.
           </p>
           <button 
-            onClick={() => window.open('https://drive.google.com/file/d/18GTUwBoa-k4wMYLlsMwIJ5_6D9Yb33nE/view', '_blank')}
+            onClick={() => window.open('https://drive.google.com/file/d/1v_Gg3tc48bVM978d3Zp_QuveJxGPvDQE/view', '_blank')}
             className="bg-[#0f172a] text-white px-6 sm:px-8 py-3 sm:py-4 text-sm rounded-lg hover:bg-[#1e293b] transition-all duration-300 font-medium flex items-center gap-2 mx-auto hover:scale-105 shadow-lg hover:shadow-xl animate-slide-up" 
             style={{animationDelay: '0.2s'}}
           >
@@ -123,102 +125,22 @@ export default function ShadowLabsLanding() {
       {/* Features Introduction */}
       <section id="features" className="py-16 sm:py-20 px-4 sm:px-8 bg-gray-50">
         <div className="max-w-6xl mx-auto text-center">
-          <p className="text-xs text-gray-400 mb-4 uppercase tracking-wider">Features</p>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight leading-tight text-neutral-900">
-            Scale great conversations,<br />not just teams.
+            Features
           </h2>
+          {/* <p className="text-s text-gray-400 mb-4 uppercase tracking-wider">Scale great conversations,<br />not just teams.</p> */}
         </div>
       </section>
 
-      {/* For Business Owners */}
-      <section id="enterprise" className="py-12 sm:py-16 px-4 sm:px-8 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <h3 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4 sm:mb-6 text-neutral-900">For Business Owners</h3>
-          <p className="text-gray-600 text-sm sm:text-base leading-relaxed max-w-4xl">
-            Drive higher conversions with real-time deal coaching, pitch personalization, and team-wide performance consistency across regions and languages.
-          </p>
-        </div>
-      </section>
-
-      {/* 4-Box Grid Section */}
-      <section className="py-8 sm:py-12 px-4 sm:px-8 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 items-start">
-            
-            {/* Card 1 - Top Left (Tall) */}
-            <div className="bg-white rounded-2xl sm:rounded-3xl shadow-sm h-auto md:h-[600px] flex flex-col hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-              <div className="p-6 sm:p-10 text-center">
-                <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold mb-3 sm:mb-4 text-gray-900">
-                  Higher Sales Conversions
-                </h3>
-                <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                  Help your reps run focused conversations that uncover real needs and move deals to close.
-                </p>
-              </div>
-              <div className="flex-1 px-6 sm:px-10 pb-6 sm:pb-10 flex flex-col justify-end">
-                <div className="relative rounded-xl sm:rounded-2xl overflow-hidden h-64 sm:h-full">
-                  <img src="./images/image 12.png" alt="Higher Sales Conversions" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
-                </div>
-              </div>
-            </div>
-
-            {/* Card 2 - Top Right (Short) */}
-            <div className="bg-white rounded-2xl sm:rounded-3xl shadow-sm h-auto md:h-[420px] flex flex-col overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-              <div className="flex items-center justify-center h-40 sm:h-48 overflow-hidden">
-                <img src="./images/image 11.png" alt="Personalised Sales Pitch" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
-              </div>
-              <div className="p-6 sm:p-10 text-center">
-                <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold mb-3 sm:mb-4 text-gray-900">
-                  Personalised Sales Pitch
-                </h3>
-                <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                  Shadow listens for intent and willingness to pay in real time, and nudges reps to the right offer.
-                </p>
-              </div>
-            </div>
-
-            {/* Card 3 - Bottom Left (Short) */}
-            <div className="bg-white rounded-2xl sm:rounded-3xl shadow-sm h-auto md:h-[420px] flex flex-col overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-              <div className="flex items-center justify-center h-40 sm:h-48 overflow-hidden">
-                <img src="./images/team.png" alt="Make Your Team Global" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
-              </div>
-              <div className="p-6 sm:p-10 text-center">
-                <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold mb-3 sm:mb-4 text-gray-900">
-                  Make Your Team Global
-                </h3>
-                <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                  Help reps sell across regions and industries by bridging language and cultural gaps.
-                </p>
-              </div>
-            </div>
-
-            {/* Card 4 - Bottom Right (Tall) */}
-            <div className="bg-white rounded-2xl sm:rounded-3xl shadow-sm h-auto md:h-[600px] flex flex-col hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-              <div className="p-6 sm:p-10 text-center">
-                <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold mb-3 sm:mb-4 text-gray-900">
-                  Performance Equity Across<br />the Team
-                </h3>
-                <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                  Turn what your best reps do—questions, phrasing, timing—into live guidance for everyone on the team.
-                </p>
-              </div>
-              <div className="flex-1 px-6 sm:px-10 pb-6 sm:pb-10 flex flex-col justify-end">
-                <div className="relative rounded-xl sm:rounded-2xl overflow-hidden h-64 sm:h-full">
-                  <img src="./images/performance.png" alt="Performance Equity" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
       
       {/* For Sales Professionals */}
       <section className="py-12 sm:py-16 px-4 sm:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h3 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4 sm:mb-6 text-neutral-900">For Sales Professionals</h3>
-          <p className="text-gray-600 text-sm sm:text-base leading-relaxed max-w-4xl">
-            Access instant facts, handle objections confidently, adapt your storytelling and tone, and communicate clearly—even in mixed language scenarios.
-          </p>
+          <h3 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4 sm:mb-6 text-neutral-900">For Users</h3>
+          {/* <p className="text-gray-600 text-sm sm:text-base leading-relaxed max-w-4xl">
+            Every super-hero has a voice in their ear. Shadow has yours covered. <br />
+            Shadow listens, thinks ahead, and slips you the right facts and stories while you’re on the call so you sound like a conversational super hero.
+          </p> */}
         </div>
       </section>
 
@@ -226,23 +148,6 @@ export default function ShadowLabsLanding() {
       <section className="py-8 sm:py-12 px-4 sm:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 items-start">
-            
-            {/* Card 1 */}
-            <div className="bg-gray-50 rounded-2xl sm:rounded-3xl shadow-sm h-auto md:h-[600px] flex flex-col hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-              <div className="p-6 sm:p-10 text-center">
-                <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold mb-3 sm:mb-4 text-gray-900">
-                  Higher Sales Facts on Tap
-                </h3>
-                <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                  See key product, pricing and customer details on screen the moment you need them.
-                </p>
-              </div>
-              <div className="flex-1 px-6 sm:px-10 pb-6 sm:pb-10 flex flex-col justify-end">
-                <div className="relative rounded-xl sm:rounded-2xl overflow-hidden h-64 sm:h-full">
-                  <img src="./images/image 19.png" alt="Higher Sales Facts on Tap" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
-                </div>
-              </div>
-            </div>
 
             {/* Card 2 */}
             <div className="bg-gray-50 rounded-2xl sm:rounded-3xl shadow-sm h-auto md:h-[484px] flex flex-col overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
@@ -251,11 +156,28 @@ export default function ShadowLabsLanding() {
               </div>
               <div className="p-6 sm:p-8 text-center">
                 <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold mb-2 sm:mb-3 text-gray-900">
-                  Objection Handling
+                  Instant information Access
                 </h3>
                 <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                  When a customer pushes back, get simple, targeted replies and follow-up questions right in the flow of the call.
+                  When anyone asks a question, Shadow instantly gives you the answer. No more guessing or winging it.
                 </p>
+              </div>
+            </div>
+                        
+            {/* Card 1 */}
+            <div className="bg-gray-50 rounded-2xl sm:rounded-3xl shadow-sm h-auto md:h-[600px] flex flex-col hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div className="p-6 sm:p-10 text-center">
+                <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold mb-3 sm:mb-4 text-gray-900">
+                  Instant Fact Check
+                </h3>
+                <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                  Know what’s real while the call’s still going. No more embarrassing mistakes.
+                </p>
+              </div>
+              <div className="flex-1 px-6 sm:px-10 pb-6 sm:pb-10 flex flex-col justify-end">
+                <div className="relative rounded-xl sm:rounded-2xl overflow-hidden h-64 sm:h-full">
+                  <img src="./images/image 19.png" alt="Higher Sales Facts on Tap" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+                </div>
               </div>
             </div>
 
@@ -281,7 +203,7 @@ export default function ShadowLabsLanding() {
                   Multi-Lingual Support
                 </h3>
                 <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                  Speak naturally—English, Hinglish or a mix—while Shadow keeps your message clear and culturally on point.
+                  Speak naturally, English, Hinglish or a mix, while Shadow keeps your message clear and culturally on point.
                 </p>
               </div>
               <div className="flex-1 px-6 sm:px-10 pb-6 sm:pb-10 flex flex-col justify-end">
@@ -303,6 +225,90 @@ export default function ShadowLabsLanding() {
                 <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">
                   Shadow picks up how the customer talks and suggests how to match their tone, pace and directness.
                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* For Business Owners */}
+      <section id="enterprise" className="py-12 sm:py-16 px-4 sm:px-8 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <h3 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4 sm:mb-6 text-neutral-900">For Business Owners</h3>
+          <p className="text-gray-600 text-sm sm:text-base leading-relaxed max-w-4xl">
+            Drive higher conversions with real-time coaching, pitch personalization, and team-wide performance consistency across regions and languages.
+          </p>
+        </div>
+      </section>
+
+      {/* 4-Box Grid Section */}
+      <section className="py-8 sm:py-12 px-4 sm:px-8 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 items-start">
+            
+            {/* Card 1 - Top Left (Tall) */}
+            <div className="bg-white rounded-2xl sm:rounded-3xl shadow-sm h-auto md:h-[600px] flex flex-col hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div className="p-6 sm:p-10 text-center">
+                <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold mb-3 sm:mb-4 text-gray-900">
+                  Higher Sales Conversions
+                </h3>
+                <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                  Right answers, on the spot, even for complex SKUs.
+                  Less back-and-forth. Faster deals.
+                </p>
+              </div>
+              <div className="flex-1 px-6 sm:px-10 pb-6 sm:pb-10 flex flex-col justify-end">
+                <div className="relative rounded-xl sm:rounded-2xl overflow-hidden h-64 sm:h-full">
+                  <img src="./images/image 12.png" alt="Higher Sales Conversions" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+                </div>
+              </div>
+            </div>
+
+            {/* Card 2 - Top Right (Short) */}
+            <div className="bg-white rounded-2xl sm:rounded-3xl shadow-sm h-auto md:h-[420px] flex flex-col overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div className="flex items-center justify-center h-40 sm:h-48 overflow-hidden">
+                <img src="./images/image 11.png" alt="Personalised Sales Pitch" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+              </div>
+              <div className="p-6 sm:p-10 text-center">
+                <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold mb-3 sm:mb-4 text-gray-900">
+                  Personalised Pitch
+                </h3>
+                <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                  Shadow tailors the prompts based on user. It listens for intent and willingness to pay in real time, and nudges reps to the right offer.
+                </p>
+              </div>
+            </div>
+
+            {/* Card 3 - Bottom Left (Short) */}
+            <div className="bg-white rounded-2xl sm:rounded-3xl shadow-sm h-auto md:h-[420px] flex flex-col overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div className="flex items-center justify-center h-40 sm:h-48 overflow-hidden">
+                <img src="./images/team.png" alt="Make Your Team Global" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+              </div>
+              <div className="p-6 sm:p-10 text-center">
+                <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold mb-3 sm:mb-4 text-gray-900">
+                  Performance Equity Across<br />the Team
+                </h3>
+                <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                  Turn what your best reps say, and when they say it, into live guidance for everyone.
+                </p>
+              </div>
+            </div>
+
+            {/* Card 4 - Bottom Right (Tall) */}
+            <div className="bg-white rounded-2xl sm:rounded-3xl shadow-sm h-auto md:h-[600px] flex flex-col hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div className="p-6 sm:p-10 text-center">
+                <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold mb-3 sm:mb-4 text-gray-900">
+                  Team-wide Performance Equity
+                </h3>
+                <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                  
+                  Help reps sell across regions and industries by bridging language and cultural gaps.
+                </p>
+              </div>
+              <div className="flex-1 px-6 sm:px-10 pb-6 sm:pb-10 flex flex-col justify-end">
+                <div className="relative rounded-xl sm:rounded-2xl overflow-hidden h-64 sm:h-full">
+                  <img src="./images/performance.png" alt="Performance Equity" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+                </div>
               </div>
             </div>
           </div>
@@ -412,26 +418,24 @@ export default function ShadowLabsLanding() {
       </section>
 
       {/* Platform Integration Section */}
-      <section className="py-16 sm:py-20 px-4 sm:px-8 bg-white">
+      {/* <section className="py-16 sm:py-20 px-4 sm:px-8 bg-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-2xl sm:text-3xl font-semibold mb-8 sm:mb-12 text-gray-900">
             Works with every meeting platform
           </h2>
           
-          {/* Platform Icons */}
           <div className="mb-12 sm:mb-16">
             <img src="./images/image 8.png" alt="Meeting Platforms" className="mx-auto max-w-full sm:max-w-md" />
           </div>
 
-          {/* Integration Cards */}
           <div className="mb-16 sm:mb-20">
             <img src="./images/image 9.png" alt="Integrates with and Compatible for" className="mx-auto max-w-full sm:max-w-4xl" />
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Pricing Section */}
-      <section id="pricing" className="py-16 sm:py-20 px-4 sm:px-8 bg-gray-50">
+      {/* <section id="pricing" className="py-16 sm:py-20 px-4 sm:px-8 bg-gray-50">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-8 sm:mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-gray-900">
@@ -450,9 +454,7 @@ export default function ShadowLabsLanding() {
             </div>
           </div>
 
-          {/* Pricing Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
-            {/* Starter Plan */}
             <div className="bg-white rounded-2xl p-6 sm:p-8 border border-gray-200 hover:shadow-xl hover:border-gray-300 transition-all duration-300 hover:-translate-y-1">
               <h3 className="text-lg sm:text-xl font-semibold mb-2 text-gray-900">Starter</h3>
               <div className="mb-4 sm:mb-6">
@@ -490,7 +492,6 @@ export default function ShadowLabsLanding() {
               </div>
             </div>
 
-            {/* Pro Plan */}
             <div className="bg-white rounded-2xl p-6 sm:p-8 border border-gray-200 hover:shadow-xl hover:border-gray-300 transition-all duration-300 hover:-translate-y-1">
               <h3 className="text-lg sm:text-xl font-semibold mb-2 text-gray-900">Pro</h3>
               <div className="mb-4 sm:mb-6">
@@ -523,7 +524,6 @@ export default function ShadowLabsLanding() {
               </div>
             </div>
 
-            {/* Enterprise Plan */}
             <div className="bg-white rounded-2xl p-6 sm:p-8 border border-gray-200 hover:shadow-xl hover:border-gray-300 transition-all duration-300 hover:-translate-y-1">
               <h3 className="text-lg sm:text-xl font-semibold mb-2 text-gray-900">Enterprise</h3>
               <div className="mb-4 sm:mb-6">
@@ -551,7 +551,7 @@ export default function ShadowLabsLanding() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* FAQ Section */}
       <section className="py-16 sm:py-20 px-4 sm:px-8 bg-white">
@@ -614,9 +614,9 @@ export default function ShadowLabsLanding() {
             <div>
               <h4 className="text-sm font-semibold text-gray-900 mb-3">Navigation</h4>
               <ul className="space-y-2 text-sm text-gray-600">
-                <li><button onClick={() => scrollToSection('enterprise')} className="hover:text-gray-900">Enterprise</button></li>
+                {/* <li><button onClick={() => scrollToSection('enterprise')} className="hover:text-gray-900">Enterprise</button></li> */}
                 <li><button onClick={() => scrollToSection('features')} className="hover:text-gray-900">Features</button></li>
-                <li><button onClick={() => scrollToSection('pricing')} className="hover:text-gray-900">Pricing</button></li>
+                {/* <li><button onClick={() => scrollToSection('pricing')} className="hover:text-gray-900">Pricing</button></li> */}
                 <li><button onClick={() => scrollToSection('about')} className="hover:text-gray-900">Why us?</button></li>
               </ul>
             </div>
