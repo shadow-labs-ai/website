@@ -92,9 +92,9 @@ export default function ShadowLabsLanding() {
         {mobileMenuOpen && (
           <div className="md:hidden bg-white border-t border-gray-100">
             <div className="px-4 py-2 space-y-2">
-              <button onClick={() => scrollToSection('enterprise')} className="block w-full text-left py-2 text-body text-gray-600 cursor-pointer">Enterprise</button>
+              {/* <button onClick={() => scrollToSection('enterprise')} className="block w-full text-left py-2 text-body text-gray-600 cursor-pointer">Enterprise</button> */}
               <button onClick={() => scrollToSection('features')} className="block w-full text-left py-2 text-body text-gray-600 cursor-pointer">Features</button>
-              <button onClick={() => scrollToSection('pricing')} className="block w-full text-left py-2 text-body text-gray-600 cursor-pointer">Pricing</button>
+              {/* <button onClick={() => scrollToSection('pricing')} className="block w-full text-left py-2 text-body text-gray-600 cursor-pointer">Pricing</button> */}
               <button onClick={() => scrollToSection('about')} className="block w-full text-left py-2 text-body text-gray-600 cursor-pointer">Why us?</button>
             </div>
           </div>
