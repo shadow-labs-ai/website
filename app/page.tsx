@@ -114,7 +114,7 @@ export default function ShadowLabsLanding() {
             Just you, sounding ridiculously smart on every single call.
           </p>
           <button 
-            onClick={() => window.open('https://drive.google.com/file/d/1v_Gg3tc48bVM978d3Zp_QuveJxGPvDQE/view', '_blank')}
+            onClick={() => window.open('https://drive.google.com/file/d/1otAxXpODafDLSGpu1Syon45sjM0M6oAp/view?usp=drive_link', '_blank')}
             className="bg-[#0f172a] text-white px-6 sm:px-8 py-3 sm:py-4 text-body rounded-lg hover:bg-[#1e293b] transition-all duration-300 font-medium flex items-center gap-2 mx-auto hover:scale-105 shadow-lg hover:shadow-xl animate-slide-up cursor-pointer" 
             style={{animationDelay: '0.2s'}}
           >
