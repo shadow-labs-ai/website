@@ -128,7 +128,7 @@ export default function ShadowLabsLanding() {
         {/* Dashboard Preview */}
         <div className="max-w-5xl mx-auto mt-12 sm:mt-16 px-4 sm:px-8 animate-slide-up" style={{animationDelay: '0.3s'}}>
           <div className="rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl border border-gray-200 hover:shadow-3xl transition-shadow duration-300">
-            <img src="./images/image 10.png" alt="Dashboard Preview" className="w-full h-auto" />
+            <img src="/images/image 10.png" alt="Dashboard Preview" className="w-full h-auto" />
           </div>
         </div>
       </section>
@@ -162,7 +162,7 @@ export default function ShadowLabsLanding() {
             {/* Card 2 */}
             <div className="bg-gray-50 rounded-2xl sm:rounded-3xl shadow-sm h-auto md:h-[484px] flex flex-col overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
               <div className="flex items-center justify-center flex-1 relative h-48 sm:h-auto overflow-hidden">
-                <img src="./images/image 13.png" alt="Objection Handling" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+                <img src="/images/image 13.png" alt="Objection Handling" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
               </div>
               <div className="p-6 sm:p-8 text-center">
                 <h3 className="text-h3 mb-2 sm:mb-3 text-gray-900">
@@ -186,7 +186,7 @@ export default function ShadowLabsLanding() {
               </div>
               <div className="flex-1 px-6 sm:px-10 pb-6 sm:pb-10 flex flex-col justify-end">
                 <div className="relative rounded-xl sm:rounded-2xl overflow-hidden h-64 sm:h-full">
-                  <img src="./images/image 19.png" alt="Higher Sales Facts on Tap" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+                  <img src="/images/image 19.png" alt="Higher Sales Facts on Tap" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
                 </div>
               </div>
             </div>
@@ -194,7 +194,7 @@ export default function ShadowLabsLanding() {
             {/* Card 3 */}
             <div className="bg-gray-50 rounded-2xl sm:rounded-3xl shadow-sm h-auto md:h-[484px] flex flex-col overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
               <div className="flex items-center justify-center flex-1 relative h-48 sm:h-auto overflow-hidden">
-                <img src="./images/image 15.png" alt="Sharper Story Telling" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+                <img src="/images/image 15.png" alt="Sharper Story Telling" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
               </div>
               <div className="p-6 sm:p-8 text-center">
                 <h3 className="text-h3 mb-2 sm:mb-3 text-gray-900">
@@ -218,7 +218,7 @@ export default function ShadowLabsLanding() {
               </div>
               <div className="flex-1 px-6 sm:px-10 pb-6 sm:pb-10 flex flex-col justify-end">
                 <div className="relative rounded-xl sm:rounded-2xl overflow-hidden h-48 sm:h-full">
-                  <img src="./images/image 16.png" alt="Multi-Lingual Support" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+                  <img src="/images/image 16.png" alt="Multi-Lingual Support" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
                 </div>
               </div>
             </div>
@@ -226,7 +226,7 @@ export default function ShadowLabsLanding() {
             {/* Card 5 */}
             <div className="bg-gray-50 rounded-2xl sm:rounded-3xl shadow-sm h-auto md:h-[280px] md:col-span-2 flex flex-col sm:flex-row overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
               <div className="flex-1 flex items-center justify-center relative h-48 sm:h-auto overflow-hidden">
-                <img src="./images/image 3.png" alt="Personality Intelligence" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+                <img src="/images/image 3.png" alt="Personality Intelligence" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
               </div>
               <div className="flex-1 p-6 sm:p-10 flex flex-col justify-center">
                 <h3 className="text-h3 mb-3 sm:mb-4 text-gray-900">
@@ -268,7 +268,7 @@ export default function ShadowLabsLanding() {
               </div>
               <div className="flex-1 px-6 sm:px-10 pb-6 sm:pb-10 flex flex-col justify-end">
                 <div className="relative rounded-xl sm:rounded-2xl overflow-hidden h-64 sm:h-full">
-                  <img src="./images/image 12.png" alt="Higher Sales Conversions" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+                  <img src="/images/image 12.png" alt="Higher Sales Conversions" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
                 </div>
               </div>
             </div>
@@ -276,7 +276,7 @@ export default function ShadowLabsLanding() {
             {/* Card 2 - Top Right (Short) */}
             <div className="bg-white rounded-2xl sm:rounded-3xl shadow-sm h-auto md:h-[420px] flex flex-col overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
               <div className="flex items-center justify-center h-40 sm:h-48 overflow-hidden">
-                <img src="./images/image 11.png" alt="Personalised Sales Pitch" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+                <img src="/images/image 11.png" alt="Personalised Sales Pitch" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
               </div>
               <div className="p-6 sm:p-10 text-center">
                 <h3 className="text-h3 mb-3 sm:mb-4 text-gray-900">
@@ -291,7 +291,7 @@ export default function ShadowLabsLanding() {
             {/* Card 3 - Bottom Left (Short) */}
             <div className="bg-white rounded-2xl sm:rounded-3xl shadow-sm h-auto md:h-[420px] flex flex-col overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
               <div className="flex items-center justify-center h-40 sm:h-48 overflow-hidden">
-                <img src="./images/team.png" alt="Make Your Team Global" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+                <img src="/images/team.png" alt="Make Your Team Global" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
               </div>
               <div className="p-6 sm:p-10 text-center">
                 <h3 className="text-h3 mb-3 sm:mb-4 text-gray-900">
@@ -315,7 +315,7 @@ export default function ShadowLabsLanding() {
               </div>
               <div className="flex-1 px-6 sm:px-10 pb-6 sm:pb-10 flex flex-col justify-end">
                 <div className="relative rounded-xl sm:rounded-2xl overflow-hidden h-64 sm:h-full">
-                  <img src="./images/performance.png" alt="Performance Equity" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+                  <img src="/images/performance.png" alt="Performance Equity" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
                 </div>
               </div>
             </div>
@@ -433,11 +433,11 @@ export default function ShadowLabsLanding() {
           </h2>
           
           <div className="mb-12 sm:mb-16">
-            <img src="./images/image 8.png" alt="Meeting Platforms" className="mx-auto max-w-full sm:max-w-md" />
+            <img src="/images/image 8.png" alt="Meeting Platforms" className="mx-auto max-w-full sm:max-w-md" />
           </div>
 
           <div className="mb-16 sm:mb-20">
-            <img src="./images/image 9.png" alt="Integrates with and Compatible for" className="mx-auto max-w-full sm:max-w-4xl" />
+            <img src="/images/image 9.png" alt="Integrates with and Compatible for" className="mx-auto max-w-full sm:max-w-4xl" />
           </div>
         </div>
       </section> */}
