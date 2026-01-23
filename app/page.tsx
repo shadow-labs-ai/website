@@ -40,7 +40,7 @@ export default function ShadowLabsLanding() {
     },
     {
       question: "Can I try it for free before starting?",
-      answer: "Yep! Download it and see if it's for you. No credit card, no BS."
+      answer: "Yes! Download it and see if it's for you. No credit card needed."
     },
     {
       question: "What languages and apps are supported?",
@@ -109,7 +109,7 @@ export default function ShadowLabsLanding() {
           </h1>
 
           <p className="text-gray-500 text-body-large mb-6 sm:mb-8 animate-slide-up" style={{animationDelay: '0.1s'}}>
-          Every super-hero has a voice in their ear. Shadow has yours covered. <br />
+          Every superhero has a voice in their ear. Shadow has yours covered. <br />
             Shadow listens, thinks ahead, and slips you the right prompts while you’re on the call, <br />
             Just you, sounding ridiculously smart on every single call.
           </p>
@@ -149,7 +149,7 @@ export default function ShadowLabsLanding() {
         <div className="max-w-6xl mx-auto">
           <h3 className="text-h2 mb-4 sm:mb-6 text-neutral-900">For You</h3>
           <p className="text-gray-600 text-body max-w-4xl">
-            Your secret weapon for crushing every conversation. No one will know. We promise.
+            Your secret weapon for crushing every conversation. No one will know.
           </p>
         </div>
       </section>
@@ -230,7 +230,7 @@ export default function ShadowLabsLanding() {
               </div>
               <div className="flex-1 p-6 sm:p-10 flex flex-col justify-center">
                 <h3 className="text-h3 mb-3 sm:mb-4 text-gray-900">
-                  Read the Room (Personality Intelligence)
+                  Read the Room - Personality Intelligence
                 </h3>
                 <p className="text-gray-600 text-body">
                   Shadow picks up on how they're talking and tells you how to vibe with them. Match their energy without even trying.
@@ -276,11 +276,11 @@ export default function ShadowLabsLanding() {
             {/* Card 2 - Top Right (Short) */}
             <div className="bg-white rounded-2xl sm:rounded-3xl shadow-sm h-auto md:h-[420px] flex flex-col overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
               <div className="flex items-center justify-center h-40 sm:h-48 overflow-hidden">
-                <img src="./images/image 11.png" alt="Personalised Sales Pitch" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+                <img src="./images/image 11.png" alt="Personalized Sales Pitch" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
               </div>
               <div className="p-6 sm:p-10 text-center">
                 <h3 className="text-h3 mb-3 sm:mb-4 text-gray-900">
-                  Personalised Pitch
+                  Personalized Pitch
                 </h3>
                 <p className="text-gray-600 text-body">
                 Shadow tailors the prompts based on user. It listens for intent and willingness to pay in real time, and nudges reps to the right offer.
@@ -330,7 +330,7 @@ export default function ShadowLabsLanding() {
             <p className="text-caption text-gray-400 mb-4 sm:mb-6 uppercase tracking-wider">Why Us?</p>
             <h2 className="text-h1 text-neutral-900">
               We're not another boring<br />
-              enterprise tool. We're actually<br />
+              enterprise tool. We're<br />
               built different.
             </h2>
           </div>
@@ -349,7 +349,7 @@ export default function ShadowLabsLanding() {
               </div>
               <div className="px-4 sm:px-20">
                 <p className="text-gray-500 text-body">
-                  We only record when you say it's cool. Everything's encrypted. You control what stays and what gets deleted. Simple as that.
+                  Everything's encrypted. You control what stays and what gets deleted. Simple as that.
                 </p>
               </div>
             </div>
@@ -362,7 +362,7 @@ export default function ShadowLabsLanding() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                   </svg>
                 </div>
-                <h3 className="text-body font-semibold text-black">Enterprise-Grade (But Not Boring)</h3>
+                <h3 className="text-body font-semibold text-black">Enterprise-Grade</h3>
               </div>
               <div className="px-4 sm:px-20">
                 <p className="text-gray-500 text-body">
@@ -489,7 +489,7 @@ export default function ShadowLabsLanding() {
                   <svg className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span className="text-xs sm:text-sm text-gray-700">1 customised emails & prompts</span>
+                  <span className="text-xs sm:text-sm text-gray-700">1 customized emails & prompts</span>
                 </div>
                 <div className="flex items-start gap-2">
                   <svg className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
