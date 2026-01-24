@@ -1,6 +1,14 @@
 "use client";
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { 
+  trackDownloadClick, 
+  trackNavigation, 
+  trackFAQToggle, 
+  trackMobileMenuToggle, 
+  trackSectionView,
+  trackExternalLinkClick 
+} from '@/lib/analytics';
 
 /**
  * Typography Scale:
@@ -17,8 +25,45 @@ export default function ShadowLabsLanding() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  // Track section views when they come into viewport
+  useEffect(() => {
+    const sections = ['features', 'about'];
+    const observers: IntersectionObserver[] = [];
+
+    sections.forEach((sectionId) => {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                trackSectionView(sectionId);
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.3 }
+        );
+        observer.observe(element);
+        observers.push(observer);
+      }
+    });
+
+    return () => {
+      observers.forEach((observer) => observer.disconnect());
+    };
+  }, []);
+
   const toggleFaq = (index: number | null) => {
-    setOpenFaq(openFaq === index ? null : index);
+    const newOpenFaq = openFaq === index ? null : index;
+    setOpenFaq(newOpenFaq);
+    
+    // Track FAQ toggle
+    if (newOpenFaq !== null) {
+      trackFAQToggle(faqs[newOpenFaq].question, true);
+    } else if (index !== null) {
+      trackFAQToggle(faqs[index].question, false);
+    }
   };
 
   const scrollToSection = (id: string) => {
@@ -26,6 +71,8 @@ export default function ShadowLabsLanding() {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
       setMobileMenuOpen(false);
+      trackNavigation(id);
+      trackSectionView(id);
     }
   };
 
@@ -75,7 +122,11 @@ export default function ShadowLabsLanding() {
 
           {/* Mobile Menu Button */}
           <button 
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            onClick={() => {
+              const newState = !mobileMenuOpen;
+              setMobileMenuOpen(newState);
+              trackMobileMenuToggle(newState);
+            }}
             className="md:hidden p-2 cursor-pointer"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -114,7 +165,12 @@ export default function ShadowLabsLanding() {
             Just you, sounding ridiculously smart on every single call.
           </p>
           <button 
-            onClick={() => window.open('https://drive.google.com/file/d/1otAxXpODafDLSGpu1Syon45sjM0M6oAp/view?usp=drive_link', '_blank')}
+            onClick={() => {
+              const downloadUrl = 'https://drive.google.com/file/d/1otAxXpODafDLSGpu1Syon45sjM0M6oAp/view?usp=drive_link';
+              trackDownloadClick();
+              trackExternalLinkClick(downloadUrl, 'download_app');
+              window.open(downloadUrl, '_blank');
+            }}
             className="bg-[#0f172a] text-white px-6 sm:px-8 py-3 sm:py-4 text-body rounded-lg hover:bg-[#1e293b] transition-all duration-300 font-medium flex items-center gap-2 mx-auto hover:scale-105 shadow-lg hover:shadow-xl animate-slide-up cursor-pointer" 
             style={{animationDelay: '0.2s'}}
           >
