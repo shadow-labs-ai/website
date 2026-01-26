@@ -74,7 +74,7 @@ export default function ShadowLabsLanding() {
           </div>
 
           {/* Mobile Menu Button */}
-          <button 
+          <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="md:hidden p-2 cursor-pointer"
           >
@@ -108,15 +108,15 @@ export default function ShadowLabsLanding() {
             Your Wingman for<br />Smarter Conversations
           </h1>
 
-          <p className="text-gray-500 text-body-large mb-6 sm:mb-8 animate-slide-up" style={{animationDelay: '0.1s'}}>
-          Every superhero has a voice in their ear. Shadow has yours covered. <br />
+          <p className="text-gray-500 text-body-large mb-6 sm:mb-8 animate-slide-up" style={{ animationDelay: '0.1s' }}>
+            Every superhero has a voice in their ear. Shadow has yours covered. <br />
             Shadow listens, thinks ahead, and slips you the right prompts while you’re on the call, <br />
             Just you, sounding ridiculously smart on every single call.
           </p>
-          <button 
-            onClick={() => window.open('https://drive.google.com/file/d/1otAxXpODafDLSGpu1Syon45sjM0M6oAp/view?usp=drive_link', '_blank')}
-            className="bg-[#0f172a] text-white px-6 sm:px-8 py-3 sm:py-4 text-body rounded-lg hover:bg-[#1e293b] transition-all duration-300 font-medium flex items-center gap-2 mx-auto hover:scale-105 shadow-lg hover:shadow-xl animate-slide-up cursor-pointer" 
-            style={{animationDelay: '0.2s'}}
+          <button
+            onClick={() => window.open('https://drive.google.com/file/d/1nr68K1ALDjLPibmQNOHp7v3CejA5utSY/view?usp=drive_link', '_blank')}
+            className="bg-[#0f172a] text-white px-6 sm:px-8 py-3 sm:py-4 text-body rounded-lg hover:bg-[#1e293b] transition-all duration-300 font-medium flex items-center gap-2 mx-auto hover:scale-105 shadow-lg hover:shadow-xl animate-slide-up cursor-pointer"
+            style={{ animationDelay: '0.2s' }}
           >
             <span>Download App</span>
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -126,7 +126,7 @@ export default function ShadowLabsLanding() {
         </div>
 
         {/* Dashboard Preview */}
-        <div className="max-w-5xl mx-auto mt-12 sm:mt-16 px-4 sm:px-8 animate-slide-up" style={{animationDelay: '0.3s'}}>
+        <div className="max-w-5xl mx-auto mt-12 sm:mt-16 px-4 sm:px-8 animate-slide-up" style={{ animationDelay: '0.3s' }}>
           <div className="rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl border border-gray-200 hover:shadow-3xl transition-shadow duration-300">
             <img src="/images/image 10.png" alt="Dashboard Preview" className="w-full h-auto" />
           </div>
@@ -143,7 +143,7 @@ export default function ShadowLabsLanding() {
         </div>
       </section>
 
-      
+
       {/* For Sales Professionals */}
       <section className="py-12 sm:py-16 px-4 sm:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
@@ -173,7 +173,7 @@ export default function ShadowLabsLanding() {
                 </p>
               </div>
             </div>
-                        
+
             {/* Card 1 */}
             <div className="bg-gray-50 rounded-2xl sm:rounded-3xl shadow-sm h-auto md:h-[600px] flex flex-col hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
               <div className="p-6 sm:p-10 text-center">
@@ -255,7 +255,7 @@ export default function ShadowLabsLanding() {
       <section className="py-8 sm:py-12 px-4 sm:px-8 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 items-start">
-            
+
             {/* Card 1 - Top Left (Tall) */}
             <div className="bg-white rounded-2xl sm:rounded-3xl shadow-sm h-auto md:h-[600px] flex flex-col hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
               <div className="p-6 sm:p-10 text-center">
@@ -283,7 +283,7 @@ export default function ShadowLabsLanding() {
                   Personalized Pitch
                 </h3>
                 <p className="text-gray-600 text-body">
-                Shadow tailors the prompts based on user. It listens for intent and willingness to pay in real time, and nudges reps to the right offer.
+                  Shadow tailors the prompts based on user. It listens for intent and willingness to pay in real time, and nudges reps to the right offer.
                 </p>
               </div>
             </div>
@@ -579,9 +579,8 @@ export default function ShadowLabsLanding() {
                       {faq.question}
                     </h3>
                     <svg
-                      className={`w-5 h-5 text-gray-600 transition-transform flex-shrink-0 ${
-                        openFaq === index ? 'transform rotate-180' : ''
-                      }`}
+                      className={`w-5 h-5 text-gray-600 transition-transform flex-shrink-0 ${openFaq === index ? 'transform rotate-180' : ''
+                        }`}
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -611,9 +610,9 @@ export default function ShadowLabsLanding() {
               <div className="flex items-center gap-3 sm:gap-4 mb-4">
                 <div className="w-4 h-4 sm:w-5 sm:h-5 bg-black rounded-full"></div>
                 <span className="text-lg sm:text-xl font-semibold tracking-tight">
-              <span className="text-gray-800">SHADOW</span>
-              <span className="bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent">LABS</span>
-            </span>
+                  <span className="text-gray-800">SHADOW</span>
+                  <span className="bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent">LABS</span>
+                </span>
               </div>
               <p className="text-caption text-gray-500 max-w-xs">
                 Sharper conversations. More wins. Happier customers. Less stress. That's the vibe.
