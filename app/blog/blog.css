@@ -1,0 +1,25 @@
+@reference "../globals.css";
+
+.blog-content h2 {
+    @apply text-xl sm:text-2xl lg:text-3xl font-semibold tracking-tight leading-tight text-gray-900 mt-12 mb-6;
+}
+
+.blog-content h3 {
+    @apply text-lg sm:text-xl lg:text-xl font-semibold leading-snug text-gray-900 mt-8 mb-4;
+}
+
+.blog-content p {
+    @apply text-sm sm:text-base lg:text-base leading-relaxed text-gray-600 mb-6;
+}
+
+.blog-content ul {
+    @apply list-disc pl-6 mb-8 space-y-3 text-sm sm:text-base lg:text-base leading-relaxed text-gray-600;
+}
+
+.blog-content strong {
+    @apply font-semibold text-gray-900;
+}
+
+.blog-content blockquote {
+    @apply border-l-4 border-teal-500 pl-6 my-10 italic text-base sm:text-lg lg:text-lg leading-relaxed text-gray-700;
+}

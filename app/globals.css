@@ -29,27 +29,27 @@ body {
   .text-display {
     @apply text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-tight;
   }
-  
+
   .text-h1 {
     @apply text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight leading-tight;
   }
-  
+
   .text-h2 {
     @apply text-xl sm:text-2xl lg:text-3xl font-semibold tracking-tight leading-tight;
   }
-  
+
   .text-h3 {
     @apply text-lg sm:text-xl lg:text-xl font-semibold leading-snug;
   }
-  
+
   .text-body-large {
     @apply text-base sm:text-lg lg:text-lg leading-relaxed;
   }
-  
+
   .text-body {
     @apply text-sm sm:text-base lg:text-base leading-relaxed;
   }
-  
+
   .text-caption {
     @apply text-sm leading-normal;
   }

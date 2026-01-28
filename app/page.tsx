@@ -9,6 +9,8 @@ import {
   trackSectionView,
   trackExternalLinkClick
 } from '@/lib/analytics';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 /**
  * Typography Scale:
@@ -23,7 +25,6 @@ import {
 
 export default function ShadowLabsLanding() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   // Track section views when they come into viewport
   useEffect(() => {
@@ -70,7 +71,6 @@ export default function ShadowLabsLanding() {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
-      setMobileMenuOpen(false);
       trackNavigation(id);
       trackSectionView(id);
     }
@@ -101,56 +101,7 @@ export default function ShadowLabsLanding() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Header */}
-      <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
-        <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-3 sm:gap-4">
-            <div className="w-4 h-4 sm:w-5 sm:h-5 bg-black rounded-full"></div>
-            <span className="text-lg sm:text-xl font-semibold tracking-tight">
-              <span className="text-gray-800">SHADOW</span>
-              <span className="bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent">LABS</span>
-            </span>
-          </div>
-
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
-            {/* <button onClick={() => scrollToSection('enterprise')} className="text-sm text-gray-600 hover:text-black transition-colors">Enterprise</button> */}
-            <button onClick={() => scrollToSection('features')} className="text-body text-gray-600 hover:text-black transition-colors cursor-pointer">Features</button>
-            <button onClick={() => scrollToSection('about')} className="text-body text-gray-600 hover:text-black transition-colors cursor-pointer">Why Shadow?</button>
-            <button onClick={() => scrollToSection('contact')} className="text-body text-gray-600 hover:text-black transition-colors cursor-pointer">Connect with Founder</button>
-          </div>
-
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => {
-              const newState = !mobileMenuOpen;
-              setMobileMenuOpen(newState);
-              trackMobileMenuToggle(newState);
-            }}
-            className="md:hidden p-2 cursor-pointer"
-          >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              {mobileMenuOpen ? (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              ) : (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              )}
-            </svg>
-          </button>
-        </nav>
-
-        {/* Mobile Menu */}
-        {mobileMenuOpen && (
-          <div className="md:hidden bg-white border-t border-gray-100">
-            <div className="px-4 py-2 space-y-2">
-              {/* <button onClick={() => scrollToSection('enterprise')} className="block w-full text-left py-2 text-body text-gray-600 cursor-pointer">Enterprise</button> */}
-              <button onClick={() => scrollToSection('features')} className="block w-full text-left py-2 text-body text-gray-600 cursor-pointer">Features</button>
-              <button onClick={() => scrollToSection('about')} className="block w-full text-left py-2 text-body text-gray-600 cursor-pointer">Why Shadow?</button>
-              <button onClick={() => scrollToSection('contact')} className="block w-full text-left py-2 text-body text-gray-600 cursor-pointer">Connect with Founder</button>
-            </div>
-          </div>
-        )}
-      </header>
+      <Header />
 
       {/* Hero Section */}
       <section className="pt-24 sm:pt-32 pb-12 sm:pb-16 px-4 sm:px-8 animate-fade-in">
@@ -395,8 +346,8 @@ export default function ShadowLabsLanding() {
           <div className="max-w-4xl mx-auto text-center mb-12 sm:mb-16">
             <p className="text-caption text-gray-400 mb-4 sm:mb-6 uppercase tracking-wider">Why Shadow?</p>
             <h2 className="text-h1 text-neutral-900">
-              We're not another boring<br />
-              enterprise tool. We're<br />
+              We&apos;re not another boring<br />
+              enterprise tool. We&apos;re<br />
               built different.
             </h2>
           </div>
@@ -415,7 +366,7 @@ export default function ShadowLabsLanding() {
               </div>
               <div className="px-4 sm:px-20">
                 <p className="text-gray-500 text-body">
-                  Everything's encrypted. You control what stays and what gets deleted. Simple as that.
+                  Everything&apos;s encrypted. You control what stays and what gets deleted. Simple as that.
                 </p>
               </div>
             </div>
@@ -432,7 +383,7 @@ export default function ShadowLabsLanding() {
               </div>
               <div className="px-4 sm:px-20">
                 <p className="text-gray-500 text-body">
-                  All the enterprise security stuff your IT team cares about. SSO, audit logs, the works. We speak their language so you don't have to.
+                  All the enterprise security stuff your IT team cares about. SSO, audit logs, the works. We speak their language so you don&apos;t have to.
                 </p>
               </div>
             </div>
@@ -466,7 +417,7 @@ export default function ShadowLabsLanding() {
               </div>
               <div className="px-4 sm:px-20">
                 <p className="text-gray-500 text-body">
-                  Pulls exactly what you need from your own docs and data. Right fact, right moment. It's like having a research assistant who never sleeps.
+                  Pulls exactly what you need from your own docs and data. Right fact, right moment. It&apos;s like having a research assistant who never sleeps.
                 </p>
               </div>
             </div>
@@ -483,7 +434,7 @@ export default function ShadowLabsLanding() {
               </div>
               <div className="px-4 sm:px-20">
                 <p className="text-gray-500 text-body">
-                  Shadow learns how YOU talk, what YOUR team sells, what YOUR market needs. The more you use it, the more it feels like it's reading your mind.
+                  Shadow learns how YOU talk, what YOUR team sells, what YOUR market needs. The more you use it, the more it feels like it&apos;s reading your mind.
                 </p>
               </div>
             </div>
@@ -633,7 +584,7 @@ export default function ShadowLabsLanding() {
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-h1 mb-4 text-gray-900">Connect with Founder</h2>
             <p className="text-gray-600 text-body max-w-2xl mx-auto">
-              Have questions or want to explore how Shadow can help your team? Let's chat.
+              Have questions or want to explore how Shadow can help your team? Let&apos;s chat.
             </p>
           </div>
 
@@ -788,38 +739,7 @@ export default function ShadowLabsLanding() {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 sm:py-12 px-4 sm:px-8 border-t border-gray-200 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col sm:flex-row items-start justify-between gap-8">
-            <div>
-              <div className="flex items-center gap-3 sm:gap-4 mb-4">
-                <div className="w-4 h-4 sm:w-5 sm:h-5 bg-black rounded-full"></div>
-                <span className="text-lg sm:text-xl font-semibold tracking-tight">
-                  <span className="text-gray-800">SHADOW</span>
-                  <span className="bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent">LABS</span>
-                </span>
-              </div>
-              <p className="text-caption text-gray-500 max-w-xs">
-                Sharper conversations. More wins. Happier customers. Less stress. That's the vibe.
-              </p>
-            </div>
-            <div>
-              <h4 className="text-body font-semibold text-gray-900 mb-3">Navigation</h4>
-              <ul className="space-y-2 text-body text-gray-600">
-                {/* <li><button onClick={() => scrollToSection('enterprise')} className="hover:text-gray-900">Enterprise</button></li> */}
-                <li><button onClick={() => scrollToSection('features')} className="hover:text-gray-900 cursor-pointer">Features</button></li>
-                <li><button onClick={() => scrollToSection('about')} className="hover:text-gray-900 cursor-pointer">Why Shadow?</button></li>
-                <li><button onClick={() => scrollToSection('contact')} className="hover:text-gray-900 cursor-pointer">Connect with Founder</button></li>
-              </ul>
-            </div>
-          </div>
-          <div className="mt-8 pt-8 border-t border-gray-200">
-            <p className="text-caption text-gray-500">
-              © 2026 ShadowLabs. All rights reserved.
-            </p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
 
       {/* CSS Animations */}
       <style jsx>{`
