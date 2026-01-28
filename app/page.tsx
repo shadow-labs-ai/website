@@ -116,8 +116,8 @@ export default function ShadowLabsLanding() {
           <div className="hidden md:flex items-center gap-8">
             {/* <button onClick={() => scrollToSection('enterprise')} className="text-sm text-gray-600 hover:text-black transition-colors">Enterprise</button> */}
             <button onClick={() => scrollToSection('features')} className="text-body text-gray-600 hover:text-black transition-colors cursor-pointer">Features</button>
-            {/* <button onClick={() => scrollToSection('pricing')} className="text-sm text-gray-600 hover:text-black transition-colors">Pricing</button> */}
             <button onClick={() => scrollToSection('about')} className="text-body text-gray-600 hover:text-black transition-colors cursor-pointer">Why Shadow?</button>
+            <button onClick={() => scrollToSection('contact')} className="text-body text-gray-600 hover:text-black transition-colors cursor-pointer">Connect with Founder</button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -145,8 +145,8 @@ export default function ShadowLabsLanding() {
             <div className="px-4 py-2 space-y-2">
               {/* <button onClick={() => scrollToSection('enterprise')} className="block w-full text-left py-2 text-body text-gray-600 cursor-pointer">Enterprise</button> */}
               <button onClick={() => scrollToSection('features')} className="block w-full text-left py-2 text-body text-gray-600 cursor-pointer">Features</button>
-              {/* <button onClick={() => scrollToSection('pricing')} className="block w-full text-left py-2 text-body text-gray-600 cursor-pointer">Pricing</button> */}
-              <button onClick={() => scrollToSection('about')} className="block w-full text-left py-2 text-body text-gray-600 cursor-pointer">Why us?</button>
+              <button onClick={() => scrollToSection('about')} className="block w-full text-left py-2 text-body text-gray-600 cursor-pointer">Why Shadow?</button>
+              <button onClick={() => scrollToSection('contact')} className="block w-full text-left py-2 text-body text-gray-600 cursor-pointer">Connect with Founder</button>
             </div>
           </div>
         )}
@@ -164,21 +164,31 @@ export default function ShadowLabsLanding() {
             Shadow listens, thinks ahead, and slips you the right prompts while you’re on the call, <br />
             Just you, sounding ridiculously smart on every single call.
           </p>
-          <button
-            onClick={() => {
-              const downloadUrl = 'https://drive.google.com/file/d/1nr68K1ALDjLPibmQNOHp7v3CejA5utSY/view?usp=drive_link';
-              trackDownloadClick();
-              trackExternalLinkClick(downloadUrl, 'download_app');
-              window.open(downloadUrl, '_blank');
-            }}
-            className="bg-[#0f172a] text-white px-6 sm:px-8 py-3 sm:py-4 text-body rounded-lg hover:bg-[#1e293b] transition-all duration-300 font-medium flex items-center gap-2 mx-auto hover:scale-105 shadow-lg hover:shadow-xl animate-slide-up cursor-pointer"
-            style={{ animationDelay: '0.2s' }}
-          >
-            <span>Download App</span>
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-            </svg>
-          </button>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-slide-up" style={{ animationDelay: '0.2s' }}>
+            <button
+              onClick={() => {
+                const downloadUrl = 'https://drive.google.com/file/d/1nr68K1ALDjLPibmQNOHp7v3CejA5utSY/view?usp=drive_link';
+                trackDownloadClick();
+                trackExternalLinkClick(downloadUrl, 'download_app');
+                window.open(downloadUrl, '_blank');
+              }}
+              className="bg-[#0f172a] text-white px-6 sm:px-8 py-3 sm:py-4 text-body rounded-lg hover:bg-[#1e293b] transition-all duration-300 font-medium flex items-center gap-2 hover:scale-105 shadow-lg hover:shadow-xl cursor-pointer w-full sm:w-auto justify-center"
+            >
+              <span>Download App</span>
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+            </button>
+            <button
+              onClick={() => scrollToSection('contact')}
+              className="bg-white text-gray-900 border border-gray-200 px-6 sm:px-8 py-3 sm:py-4 text-body rounded-lg hover:bg-gray-50 transition-all duration-300 font-medium flex items-center gap-2 hover:scale-105 shadow-sm hover:shadow-md cursor-pointer w-full sm:w-auto justify-center"
+            >
+              <span>Connect with Founder</span>
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+              </svg>
+            </button>
+          </div>
         </div>
 
         {/* Dashboard Preview */}
@@ -383,7 +393,7 @@ export default function ShadowLabsLanding() {
       <section id="about" className="py-16 sm:py-20 px-4 sm:px-8 bg-white">
         <div className="space-y-8">
           <div className="max-w-4xl mx-auto text-center mb-12 sm:mb-16">
-            <p className="text-caption text-gray-400 mb-4 sm:mb-6 uppercase tracking-wider">Why Us?</p>
+            <p className="text-caption text-gray-400 mb-4 sm:mb-6 uppercase tracking-wider">Why Shadow?</p>
             <h2 className="text-h1 text-neutral-900">
               We're not another boring<br />
               enterprise tool. We're<br />
@@ -617,6 +627,125 @@ export default function ShadowLabsLanding() {
         </div>
       </section> */}
 
+      {/* Connect with Founder Section */}
+      <section id="contact" className="py-16 sm:py-24 px-4 sm:px-8 bg-gray-50">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-h1 mb-4 text-gray-900">Connect with Founder</h2>
+            <p className="text-gray-600 text-body max-w-2xl mx-auto">
+              Have questions or want to explore how Shadow can help your team? Let's chat.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-16 items-stretch">
+            {/* Contact Options */}
+            <div className="flex flex-col gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <a
+                  href="https://wa.me/919582819710"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 group flex flex-col items-center text-center"
+                  onClick={() => trackExternalLinkClick('https://wa.me/919582819710', 'whatsapp')}
+                >
+                  <div className="w-12 h-12 bg-green-50 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <svg className="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                    </svg>
+                  </div>
+                  <h4 className="text-body font-semibold text-gray-900 mb-1">WhatsApp</h4>
+                  <p className="text-caption text-gray-500">Fastest response</p>
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/shubham16180/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 group flex flex-col items-center text-center"
+                  onClick={() => trackExternalLinkClick('https://www.linkedin.com/in/shubham16180/', 'linkedin')}
+                >
+                  <div className="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <svg className="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                    </svg>
+                  </div>
+                  <h4 className="text-body font-semibold text-gray-900 mb-1">LinkedIn</h4>
+                  <p className="text-caption text-gray-500">Founder Profile</p>
+                </a>
+              </div>
+
+              <a
+                href="mailto:shubham@shadowlabs.ai"
+                className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 group flex flex-1 items-center gap-4"
+                onClick={() => trackExternalLinkClick('mailto:shubham@shadowlabs.ai', 'email')}
+              >
+                <div className="w-12 h-12 bg-gray-50 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 className="text-body font-semibold text-gray-900">Email</h4>
+                  <p className="text-body text-gray-600">shubham@shadowlabs.ai</p>
+                </div>
+              </a>
+            </div>
+
+            {/* Simple Contact Form */}
+            <div className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm flex flex-col h-full">
+              <form
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  const formData = new FormData(e.currentTarget);
+                  const name = formData.get('name');
+                  const message = formData.get('message');
+                  const email = formData.get('email');
+                  const whatsappUrl = `https://wa.me/919582819710?text=${encodeURIComponent(`Hi, I'm ${name} (${email}). ${message}`)}`;
+                  window.open(whatsappUrl, '_blank');
+                }}
+                className="space-y-4 flex-1 flex flex-col"
+              >
+                <div>
+                  <label className="block text-caption font-medium text-gray-700 mb-1">Name</label>
+                  <input
+                    type="text"
+                    name="name"
+                    required
+                    placeholder="Your name"
+                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-black/5 transition-all text-body"
+                  />
+                </div>
+                <div>
+                  <label className="block text-caption font-medium text-gray-700 mb-1">Email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    required
+                    placeholder="your@email.com"
+                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-black/5 transition-all text-body"
+                  />
+                </div>
+                <div className="flex-1 flex flex-col">
+                  <label className="block text-caption font-medium text-gray-700 mb-1">Message</label>
+                  <textarea
+                    name="message"
+                    required
+                    placeholder="How can we help?"
+                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-black/5 transition-all text-body resize-none flex-1"
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  className="w-full bg-black text-white py-4 rounded-xl font-medium hover:bg-gray-900 transition-all duration-300 hover:scale-[1.02] shadow-sm cursor-pointer mt-4"
+                >
+                  Send via WhatsApp
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section className="py-16 sm:py-20 px-4 sm:px-8 bg-white">
         <div className="max-w-5xl mx-auto">
@@ -679,8 +808,8 @@ export default function ShadowLabsLanding() {
               <ul className="space-y-2 text-body text-gray-600">
                 {/* <li><button onClick={() => scrollToSection('enterprise')} className="hover:text-gray-900">Enterprise</button></li> */}
                 <li><button onClick={() => scrollToSection('features')} className="hover:text-gray-900 cursor-pointer">Features</button></li>
-                {/* <li><button onClick={() => scrollToSection('pricing')} className="hover:text-gray-900 cursor-pointer">Pricing</button></li> */}
-                <li><button onClick={() => scrollToSection('about')} className="hover:text-gray-900 cursor-pointer">Why us?</button></li>
+                <li><button onClick={() => scrollToSection('about')} className="hover:text-gray-900 cursor-pointer">Why Shadow?</button></li>
+                <li><button onClick={() => scrollToSection('contact')} className="hover:text-gray-900 cursor-pointer">Connect with Founder</button></li>
               </ul>
             </div>
           </div>
