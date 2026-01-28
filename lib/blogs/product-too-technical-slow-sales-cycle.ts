@@ -1,16 +1,16 @@
 import { BlogPost } from '../blog';
 
 export const post: BlogPost = {
-    slug: 'product-too-technical-slow-sales-cycle',
-    title: 'Product too technical that your Sales Cycle is slow?',
-    excerpt: 'Is your complex product slowing down your sales team? Learn how Shadow can bridge the technical gap and accelerate your deals.',
-    date: 'January 28, 2026',
-    author: 'Shubham',
-    category: 'Sales Strategy',
-    image: '/images/blog/technical-sales.jpg',
-    metaTitle: 'Product technicality slowing your sales? | ShadowLabs Blogs',
-    metaDescription: 'Discover how Shadow helps sales agents navigate complex product releases and technical hurdles with live prompts and product context.',
-    content: `
+  slug: 'product-too-technical-slow-sales-cycle',
+  title: 'Product too technical that your Sales Cycle is slow?',
+  excerpt: 'Is your complex product slowing down your sales team? Learn how Shadow can bridge the technical gap and accelerate your deals.',
+  date: 'January 25, 2026',
+  author: 'Shubham',
+  category: 'Sales Strategy',
+  image: '/images/blog/technical-sales.jpg',
+  metaTitle: 'Product technicality slowing your sales? | ShadowLabs Blogs',
+  metaDescription: 'Discover how Shadow helps sales agents navigate complex product releases and technical hurdles with live prompts and product context.',
+  content: `
       <div class="blog-content">
         <p class="text-body-large">
           We've all seen it. A revolutionary product, backed by cutting-edge engineering, struggling to gain traction in the market. Why? Because the sales team, as talented as they are, can't keep up with the technical complexity. 
