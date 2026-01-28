@@ -31,8 +31,15 @@ export default function BlogListing() {
                                 className="group flex flex-col bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden"
                             >
                                 <div className="aspect-video relative overflow-hidden bg-gray-100">
-                                    <div className="absolute inset-0 bg-gradient-to-br from-teal-500/10 to-cyan-500/10 flex items-center justify-center">
-                                        <span className="text-teal-600 font-semibold tracking-wider text-sm uppercase">{post.category}</span>
+                                    <img
+                                        src={post.image}
+                                        alt={post.title}
+                                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                    />
+                                    <div className="absolute top-4 left-4">
+                                        <span className="text-caption text-white font-medium px-2 py-1 bg-teal-600/80 backdrop-blur-sm rounded-md uppercase tracking-wider">
+                                            {post.category}
+                                        </span>
                                     </div>
                                 </div>
                                 <div className="p-6 flex flex-col flex-1">

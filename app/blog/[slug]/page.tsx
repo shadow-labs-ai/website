@@ -65,6 +65,14 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                         </div>
                     </header>
 
+                    <div className="mb-12 rounded-3xl overflow-hidden shadow-lg aspect-video">
+                        <img
+                            src={post.image}
+                            alt={post.title}
+                            className="w-full h-full object-cover"
+                        />
+                    </div>
+
                     <div
                         className="blog-content"
                         dangerouslySetInnerHTML={{ __html: post.content }}

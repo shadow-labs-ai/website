@@ -7,7 +7,7 @@ export const post: BlogPost = {
   date: 'January 25, 2026',
   author: 'Shubham',
   category: 'Sales Strategy',
-  image: '/images/blog/technical-sales.jpg',
+  image: '/images/blog/technical-sales.png',
   metaTitle: 'Product technicality slowing your sales? | ShadowLabs Blogs',
   metaDescription: 'Discover how Shadow helps sales agents navigate complex product releases and technical hurdles with live prompts and product context.',
   content: `

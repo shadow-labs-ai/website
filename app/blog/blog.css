@@ -12,6 +12,10 @@
     @apply text-sm sm:text-base lg:text-base leading-relaxed text-gray-600 mb-6;
 }
 
+.blog-content .text-body-large {
+    @apply text-base sm:text-lg lg:text-xl text-gray-700 font-medium mb-8;
+}
+
 .blog-content ul {
     @apply list-disc pl-6 mb-8 space-y-3 text-sm sm:text-base lg:text-base leading-relaxed text-gray-600;
 }
