@@ -1,4 +1,5 @@
 import { post as technicalSalesPost } from './blogs/product-too-technical-slow-sales-cycle';
+import { post as salesContextPost } from './blogs/ai-sales-tailor-pitch-customer-context';
 
 export interface BlogPost {
   slug: string;
@@ -14,5 +15,6 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
-  technicalSalesPost
+  technicalSalesPost,
+  salesContextPost
 ];
