@@ -118,7 +118,7 @@ export default function ShadowLabsLanding() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-slide-up" style={{ animationDelay: '0.2s' }}>
             <button
               onClick={() => {
-                const downloadUrl = 'https://drive.google.com/file/d/1nr68K1ALDjLPibmQNOHp7v3CejA5utSY/view?usp=drive_link';
+                const downloadUrl = 'https://drive.google.com/file/d/1EVlXOMnbr-WxmGVZ2AZf_lXd7obvXgGY/view?usp=drive_link';
                 trackDownloadClick();
                 trackExternalLinkClick(downloadUrl, 'download_app');
                 window.open(downloadUrl, '_blank');
