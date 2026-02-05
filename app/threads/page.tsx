@@ -159,20 +159,26 @@ export default function ThreadsPage() {
                             <div className={styles.personaCost}>Inconsistent evaluation</div>
                         </div>
                     </div>
-                    <p className={styles.closingText}>For anyone who jumps from meeting to meeting, where precision matters.</p>
+                    {/* <p className={styles.closingText}>For anyone who jumps from meeting to meeting, where precision matters.</p> */}
                 </div>
             </section>
 
             {/* Section 5: The Promise */}
             <section className={`${styles.promise} ${styles.section}`}>
                 <div className={styles.container}>
-                    <div className={`${styles.textContent} ${styles.centeredText}`}>
-                        <p className={styles.bodyText}>What if the structure stayed intact?</p>
-                        <p className={`${styles.bodyText} ${styles.spacingTop}`}>Agenda recalled at the right moment.</p>
-                        <p className={styles.bodyText}>Follow-ups surfaced contextually.</p>
-                        <p className={styles.bodyText}>Answers captured without breaking flow.</p>
-                        <p className={`${styles.bodyText} ${styles.spacingTop} ${styles.emphasis}`}>Not automation. Load redistribution.</p>
+                    <h2 className={styles.sectionHeadline}>Introducing 'Threads'</h2>
+                    <p className={styles.subtext}>A real-time reasoning layer that listens and guides the call.</p>
+
+                    <div className={styles.illustration}>
+                        <Image
+                            src="/reasoning_engine_flow.png"
+                            alt="Real-time reasoning engine transforming raw conversation into structured thinking"
+                            width={800}
+                            height={600}
+                            loading="lazy"
+                        />
                     </div>
+
                 </div>
             </section>
 

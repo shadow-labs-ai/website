@@ -308,6 +308,51 @@
     text-align: center;
 }
 
+.promise .subtext {
+    text-align: center;
+    margin: 0 auto 1.5rem;
+}
+
+.promise .bodyText {
+    text-align: center;
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.featureList {
+    max-width: 600px;
+    margin: 3rem auto;
+}
+
+.featureItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding-left: 0.5rem;
+}
+
+.featureBullet {
+    font-size: 1.25rem;
+    color: var(--color-accent);
+    flex-shrink: 0;
+    line-height: 1.9;
+    font-weight: 400;
+}
+
+.featureText {
+    font-size: clamp(1.063rem, 1.5vw, 1.188rem);
+    font-weight: 300;
+    line-height: 1.9;
+    color: var(--color-gray);
+}
+
+.featureText strong {
+    font-weight: 500;
+    color: var(--color-charcoal);
+}
+
 .spacingTop {
     margin-top: 2rem;
 }
