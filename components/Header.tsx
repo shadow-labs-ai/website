@@ -42,6 +42,7 @@ export default function Header() {
                     <button onClick={() => scrollToSection('about')} className="text-body text-gray-600 hover:text-black transition-colors cursor-pointer">Why Shadow?</button>
                     <button onClick={() => scrollToSection('contact')} className="text-body text-gray-600 hover:text-black transition-colors cursor-pointer">Connect with Founder</button>
                     <Link href="/blog" className="text-body text-gray-600 hover:text-black transition-colors">Blogs</Link>
+                    <Link href="/threads" className="text-body text-gray-600 hover:text-black transition-colors">Threads</Link>
                 </div>
 
                 {/* Mobile Menu Button */}
@@ -71,6 +72,7 @@ export default function Header() {
                         <button onClick={() => scrollToSection('about')} className="block w-full text-left py-2 text-body text-gray-600 cursor-pointer">Why Shadow?</button>
                         <button onClick={() => scrollToSection('contact')} className="block w-full text-left py-2 text-body text-gray-600 cursor-pointer">Connect with Founder</button>
                         <Link href="/blog" onClick={() => setMobileMenuOpen(false)} className="block w-full text-left py-2 text-body text-gray-600 cursor-pointer">Blogs</Link>
+                        <Link href="/threads" onClick={() => setMobileMenuOpen(false)} className="block w-full text-left py-2 text-body text-gray-600 cursor-pointer">Threads</Link>
                     </div>
                 </div>
             )}

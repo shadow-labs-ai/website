@@ -44,6 +44,7 @@ export default function Footer() {
                             <li><button onClick={() => scrollToSection('about')} className="hover:text-gray-900 cursor-pointer">Why Shadow?</button></li>
                             <li><button onClick={() => scrollToSection('contact')} className="hover:text-gray-900 cursor-pointer">Connect with Founder</button></li>
                             <li><Link href="/blog" className="hover:text-gray-900 cursor-pointer">Blogs</Link></li>
+                            <li><Link href="/threads" className="hover:text-gray-900 cursor-pointer">Threads</Link></li>
                         </ul>
                     </div>
                 </div>
