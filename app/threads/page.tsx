@@ -182,15 +182,33 @@ export default function ThreadsPage() {
                 </div>
             </section>
 
-            {/* Section 6: Closing */}
-            <section className={`${styles.closing} ${styles.section}`}>
+            {/* Section 6: Coming Soon */}
+            <section className={`${styles.comingSoonSection} ${styles.section}`}>
                 <div className={`${styles.container} ${styles.centered}`}>
-                    <p className={styles.closingStatement}>Good conversations shouldn't rely on memory alone.</p>
-                    <footer className={styles.siteFooter}>
-                        <p className={styles.companyName}>Thread</p>
-                    </footer>
+                    <h2 className={styles.comingSoonHeadline}>Coming Soon</h2>
+                    <p className={styles.bodyText}>We're putting the finishing touches on Thread. Stay tuned.</p>
                 </div>
             </section>
+
+            {/* Footer */}
+            <footer className={styles.threadsFooter}>
+                <div className={styles.container}>
+                    <div className={styles.footerContent}>
+                        <div className={styles.footerBrand}>
+                            <p className={styles.companyName}>Thread</p>
+                            <p className={styles.footerTagline}>Structure in every conversation.</p>
+                        </div>
+                        <div className={styles.footerLinks}>
+                            <a href="https://shadowlabs.ai" className={styles.footerLink}>
+                                Discover more from Shadow Labs →
+                            </a>
+                        </div>
+                    </div>
+                    <div className={styles.footerBottom}>
+                        <p className={styles.copyright}>© {new Date().getFullYear()} Shadow Labs. All rights reserved.</p>
+                    </div>
+                </div>
+            </footer>
         </div>
     );
 }
