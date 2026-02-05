@@ -49,7 +49,7 @@ export default function ThreadsPage() {
             </section>
 
             {/* Section 3: The Core Problem */}
-            <section className={`${styles.roles} ${styles.section}`}>
+            {/* <section className={`${styles.roles} ${styles.section}`}>
                 <div className={styles.container}>
                     <h2 className={styles.sectionHeadline}>Too many roles. One conversation.</h2>
                     <div className={styles.problemColumns}>
@@ -73,7 +73,7 @@ export default function ThreadsPage() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* Section 4: Who This Is For */}
             <section className={`${styles.personas} ${styles.section}`}>
@@ -163,26 +163,7 @@ export default function ThreadsPage() {
                 </div>
             </section>
 
-            {/* Section 5: The Insight */}
-            <section className={`${styles.insight} ${styles.section}`}>
-                <div className={`${styles.container} ${styles.centered}`}>
-                    <blockquote className={styles.insightQuote}>
-                        People don't need more information.<br />
-                        They need structure that survives live conversation.
-                    </blockquote>
-                    <div className={styles.illustration}>
-                        <Image
-                            src="/structure_alignment.png"
-                            alt="Threads realigning around backbone"
-                            width={600}
-                            height={400}
-                            loading="lazy"
-                        />
-                    </div>
-                </div>
-            </section>
-
-            {/* Section 7: The Promise */}
+            {/* Section 5: The Promise */}
             <section className={`${styles.promise} ${styles.section}`}>
                 <div className={styles.container}>
                     <div className={`${styles.textContent} ${styles.centeredText}`}>
@@ -195,7 +176,7 @@ export default function ThreadsPage() {
                 </div>
             </section>
 
-            {/* Section 8: Closing */}
+            {/* Section 6: Closing */}
             <section className={`${styles.closing} ${styles.section}`}>
                 <div className={`${styles.container} ${styles.centered}`}>
                     <p className={styles.closingStatement}>Good conversations shouldn't rely on memory alone.</p>
