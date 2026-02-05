@@ -16,7 +16,7 @@ export default function ThreadsPage() {
                         <h1 className={styles.brandName}>Thread</h1>
                         <p className={styles.brandSubtitle}>Bringing structure to conversations that wander.</p>
                     </div>
-                    <button className={styles.downloadBtn}>Download app</button>
+                    <div className={styles.comingSoon}>Coming Soon</div>
                 </div>
             </header>
 
@@ -49,7 +49,7 @@ export default function ThreadsPage() {
             </section>
 
             {/* Section 3: The Core Problem */}
-            <section className={`${styles.roles} ${styles.section}`}>
+            {/* <section className={`${styles.roles} ${styles.section}`}>
                 <div className={styles.container}>
                     <h2 className={styles.sectionHeadline}>Too many roles. One conversation.</h2>
                     <div className={styles.problemColumns}>
@@ -73,7 +73,7 @@ export default function ThreadsPage() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* Section 4: Who This Is For */}
             <section className={`${styles.personas} ${styles.section}`}>
@@ -159,51 +159,56 @@ export default function ThreadsPage() {
                             <div className={styles.personaCost}>Inconsistent evaluation</div>
                         </div>
                     </div>
-                    <p className={styles.closingText}>For anyone who jumps from meeting to meeting, where precision matters.</p>
+                    {/* <p className={styles.closingText}>For anyone who jumps from meeting to meeting, where precision matters.</p> */}
                 </div>
             </section>
 
-            {/* Section 5: The Insight */}
-            <section className={`${styles.insight} ${styles.section}`}>
-                <div className={`${styles.container} ${styles.centered}`}>
-                    <blockquote className={styles.insightQuote}>
-                        People don't need more information.<br />
-                        They need structure that survives live conversation.
-                    </blockquote>
+            {/* Section 5: The Promise */}
+            <section className={`${styles.promise} ${styles.section}`}>
+                <div className={styles.container}>
+                    <h2 className={styles.sectionHeadline}>Introducing 'Threads'</h2>
+                    <p className={styles.subtext}>A real-time reasoning layer that listens and guides the call.</p>
+
                     <div className={styles.illustration}>
                         <Image
-                            src="/structure_alignment.png"
-                            alt="Threads realigning around backbone"
-                            width={600}
-                            height={400}
+                            src="/reasoning_engine_flow.png"
+                            alt="Real-time reasoning engine transforming raw conversation into structured thinking"
+                            width={800}
+                            height={600}
                             loading="lazy"
                         />
                     </div>
+
                 </div>
             </section>
 
-            {/* Section 7: The Promise */}
-            <section className={`${styles.promise} ${styles.section}`}>
+            {/* Section 6: Coming Soon */}
+            <section className={`${styles.comingSoonSection} ${styles.section}`}>
+                <div className={`${styles.container} ${styles.centered}`}>
+                    <h2 className={styles.comingSoonHeadline}>Coming Soon</h2>
+                    <p className={styles.bodyText}>We're putting the finishing touches on Thread. Stay tuned.</p>
+                </div>
+            </section>
+
+            {/* Footer */}
+            <footer className={styles.threadsFooter}>
                 <div className={styles.container}>
-                    <div className={`${styles.textContent} ${styles.centeredText}`}>
-                        <p className={styles.bodyText}>What if the structure stayed intact?</p>
-                        <p className={`${styles.bodyText} ${styles.spacingTop}`}>Agenda recalled at the right moment.</p>
-                        <p className={styles.bodyText}>Follow-ups surfaced contextually.</p>
-                        <p className={styles.bodyText}>Answers captured without breaking flow.</p>
-                        <p className={`${styles.bodyText} ${styles.spacingTop} ${styles.emphasis}`}>Not automation. Load redistribution.</p>
+                    <div className={styles.footerContent}>
+                        <div className={styles.footerBrand}>
+                            <p className={styles.companyName}>Thread</p>
+                            <p className={styles.footerTagline}>Structure in every conversation.</p>
+                        </div>
+                        <div className={styles.footerLinks}>
+                            <a href="https://shadowlabs.ai" className={styles.footerLink}>
+                                Discover more from Shadow Labs →
+                            </a>
+                        </div>
+                    </div>
+                    <div className={styles.footerBottom}>
+                        <p className={styles.copyright}>© {new Date().getFullYear()} Shadow Labs. All rights reserved.</p>
                     </div>
                 </div>
-            </section>
-
-            {/* Section 8: Closing */}
-            <section className={`${styles.closing} ${styles.section}`}>
-                <div className={`${styles.container} ${styles.centered}`}>
-                    <p className={styles.closingStatement}>Good conversations shouldn't rely on memory alone.</p>
-                    <footer className={styles.siteFooter}>
-                        <p className={styles.companyName}>Thread</p>
-                    </footer>
-                </div>
-            </section>
+            </footer>
         </div>
     );
 }
