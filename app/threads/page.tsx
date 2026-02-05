@@ -16,7 +16,7 @@ export default function ThreadsPage() {
                         <h1 className={styles.brandName}>Thread</h1>
                         <p className={styles.brandSubtitle}>Bringing structure to conversations that wander.</p>
                     </div>
-                    <button className={styles.downloadBtn}>Download app</button>
+                    <div className={styles.comingSoon}>Coming Soon</div>
                 </div>
             </header>
 

@@ -20,7 +20,7 @@
 
     /* Spacing */
     --spacing-unit: 1rem;
-    --section-padding: clamp(1rem, 4vw, 2rem);
+    --section-padding: clamp(1rem, 3vw, 1.5rem);
     --container-max: 1100px;
     --container-narrow: 720px;
 
@@ -128,35 +128,23 @@
     max-width: 420px;
 }
 
-.downloadBtn {
+.comingSoon {
     font-family: var(--font-sans);
-    font-size: 0.938rem;
+    font-size: 0.875rem;
     font-weight: 400;
-    color: var(--color-warm-white);
-    background-color: var(--color-charcoal);
-    padding: 0.75rem 2rem;
-    border: none;
+    color: var(--color-gray);
+    background-color: rgba(45, 52, 54, 0.05);
+    padding: 0.625rem 1.5rem;
+    border: 1px solid rgba(45, 52, 54, 0.1);
     border-radius: 6px;
-    cursor: pointer;
-    transition: var(--transition-smooth);
     white-space: nowrap;
-    letter-spacing: 0.01em;
-}
-
-.downloadBtn:hover {
-    background-color: var(--color-gray);
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(45, 52, 54, 0.15);
-}
-
-.downloadBtn:active {
-    transform: translateY(0);
+    letter-spacing: 0.02em;
 }
 
 /* === SECTION 1: HERO === */
 .hero {
-    padding-top: clamp(6rem, 15vh, 12rem);
-    padding-bottom: clamp(4rem, 10vh, 8rem);
+    padding-top: clamp(4rem, 10vh, 7rem);
+    padding-bottom: clamp(3rem, 8vh, 5rem);
 }
 
 .hero .headline {
@@ -298,7 +286,7 @@
 /* === SECTION 6: INSIGHT === */
 .insight {
     background: linear-gradient(180deg, var(--color-paper) 0%, var(--color-warm-white) 50%, var(--color-paper) 100%);
-    padding: clamp(6rem, 14vh, 10rem) var(--spacing-unit);
+    padding: clamp(4rem, 10vh, 6rem) var(--spacing-unit);
 }
 
 .insightQuote {
@@ -326,7 +314,7 @@
 
 /* === SECTION 8: CLOSING === */
 .closing {
-    padding: clamp(6rem, 14vh, 10rem) var(--spacing-unit) 4rem;
+    padding: clamp(4rem, 10vh, 6rem) var(--spacing-unit) 3rem;
 }
 
 .closingStatement {
