@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import styles from './page.module.css';
+import WaitlistForm from './WaitlistForm';
 
 export const metadata = {
     title: 'Structure in Conversation | Thread',
@@ -47,33 +48,6 @@ export default function ThreadsPage() {
                     </div>
                 </div>
             </section>
-
-            {/* Section 3: The Core Problem */}
-            {/* <section className={`${styles.roles} ${styles.section}`}>
-                <div className={styles.container}>
-                    <h2 className={styles.sectionHeadline}>Too many roles. One conversation.</h2>
-                    <div className={styles.problemColumns}>
-                        <div className={styles.problemCol}>
-                            <p className={styles.bodyText}>In any given conversation, one person must:</p>
-                            <ul className={styles.roleList}>
-                                <li>Recall context from last time</li>
-                                <li>Prepare the agenda</li>
-                                <li>Listen actively</li>
-                                <li>Ask follow-ups in the moment</li>
-                                <li>Capture notes cleanly</li>
-                            </ul>
-                            <p className={styles.roleEmphasis}>Sound confident doing all of it</p>
-                        </div>
-                        <div className={`${styles.problemCol} ${styles.damageCol}`}>
-                            <p className={`${styles.bodyText} ${styles.emphasis}`}>The damage isn't loud.</p>
-                            <p className={styles.bodyText}>Credibility erodes slowly.</p>
-                            <p className={styles.bodyText}>Extra meetings pile up to backtrack and clarify.</p>
-                            <p className={styles.bodyText}>Wrong decisions get made on incomplete information.</p>
-                            <p className={`${styles.bodyText} ${styles.emphasis}`}>Emotional exhaustion compounds.</p>
-                        </div>
-                    </div>
-                </div>
-            </section> */}
 
             {/* Section 4: Who This Is For */}
             <section className={`${styles.personas} ${styles.section}`}>
@@ -159,7 +133,6 @@ export default function ThreadsPage() {
                             <div className={styles.personaCost}>Inconsistent evaluation</div>
                         </div>
                     </div>
-                    {/* <p className={styles.closingText}>For anyone who jumps from meeting to meeting, where precision matters.</p> */}
                 </div>
             </section>
 
@@ -182,12 +155,9 @@ export default function ThreadsPage() {
                 </div>
             </section>
 
-            {/* Section 6: Coming Soon */}
-            <section className={`${styles.comingSoonSection} ${styles.section}`}>
-                <div className={`${styles.container} ${styles.centered}`}>
-                    <h2 className={styles.comingSoonHeadline}>Coming Soon</h2>
-                    <p className={styles.bodyText}>We're putting the finishing touches on Thread. Stay tuned.</p>
-                </div>
+            {/* Section 6: Waitlist */}
+            <section className={`${styles.waitlistSection} ${styles.section}`}>
+                <WaitlistForm />
             </section>
 
             {/* Footer */}
