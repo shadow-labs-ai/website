@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import styles from './page.module.css';
+import WaitlistForm from './WaitlistForm';
 
 export const metadata = {
     title: 'Structure in Conversation | Thread',
@@ -47,33 +48,6 @@ export default function ThreadsPage() {
                     </div>
                 </div>
             </section>
-
-            {/* Section 3: The Core Problem */}
-            {/* <section className={`${styles.roles} ${styles.section}`}>
-                <div className={styles.container}>
-                    <h2 className={styles.sectionHeadline}>Too many roles. One conversation.</h2>
-                    <div className={styles.problemColumns}>
-                        <div className={styles.problemCol}>
-                            <p className={styles.bodyText}>In any given conversation, one person must:</p>
-                            <ul className={styles.roleList}>
-                                <li>Recall context from last time</li>
-                                <li>Prepare the agenda</li>
-                                <li>Listen actively</li>
-                                <li>Ask follow-ups in the moment</li>
-                                <li>Capture notes cleanly</li>
-                            </ul>
-                            <p className={styles.roleEmphasis}>Sound confident doing all of it</p>
-                        </div>
-                        <div className={`${styles.problemCol} ${styles.damageCol}`}>
-                            <p className={`${styles.bodyText} ${styles.emphasis}`}>The damage isn't loud.</p>
-                            <p className={styles.bodyText}>Credibility erodes slowly.</p>
-                            <p className={styles.bodyText}>Extra meetings pile up to backtrack and clarify.</p>
-                            <p className={styles.bodyText}>Wrong decisions get made on incomplete information.</p>
-                            <p className={`${styles.bodyText} ${styles.emphasis}`}>Emotional exhaustion compounds.</p>
-                        </div>
-                    </div>
-                </div>
-            </section> */}
 
             {/* Section 4: Who This Is For */}
             <section className={`${styles.personas} ${styles.section}`}>
@@ -159,35 +133,82 @@ export default function ThreadsPage() {
                             <div className={styles.personaCost}>Inconsistent evaluation</div>
                         </div>
                     </div>
-                    {/* <p className={styles.closingText}>For anyone who jumps from meeting to meeting, where precision matters.</p> */}
                 </div>
             </section>
 
-            {/* Section 5: The Promise */}
+            {/* Section 5: The Features */}
             <section className={`${styles.promise} ${styles.section}`}>
                 <div className={styles.container}>
-                    <h2 className={styles.sectionHeadline}>Introducing 'Threads'</h2>
-                    <p className={styles.subtext}>A real-time reasoning layer that listens and guides the call.</p>
+                    <h2 className={`${styles.sectionHeadline} ${styles.centeredText}`}>Introducing 'Threads'</h2>
+                    <p className={`${styles.subtext} ${styles.centeredText}`}>A real-time reasoning layer that listens and guides the call.</p>
 
-                    <div className={styles.illustration}>
-                        <Image
-                            src="/reasoning_engine_flow.png"
-                            alt="Real-time reasoning engine transforming raw conversation into structured thinking"
-                            width={800}
-                            height={600}
-                            loading="lazy"
-                        />
+                    <div className={styles.featureGrid}>
+                        {/* Feature 1: Prepare */}
+                        <div className={styles.featureRow}>
+                            <div className={styles.featureContent}>
+                                <h3 className={styles.featureTitle}>Prepare</h3>
+                                <p className={styles.featureDescription}>
+                                    Shadow turns your context into <strong>clear agenda items</strong>.
+                                    Start every call with a structured plan, not a blank sheet.
+                                </p>
+                            </div>
+                            <div className={styles.featureImageWrapper}>
+                                <Image
+                                    src="/thread_prepare_agenda.png"
+                                    alt="Interface showing Shadow transforming context into a clear agenda"
+                                    width={600}
+                                    height={400}
+                                    style={{ width: '100%', height: 'auto' }}
+                                />
+                            </div>
+                        </div>
+
+                        {/* Feature 2: Stay on track */}
+                        <div className={`${styles.featureRow} ${styles.reverse}`}>
+                            <div className={styles.featureContent}>
+                                <h3 className={styles.featureTitle}>Stay on track</h3>
+                                <p className={styles.featureDescription}>
+                                    Shadow <strong>tracks coverage live</strong> and captures answers into <strong>structured notes</strong>.
+                                    Never lose track of what's covered and what's missing.
+                                </p>
+                            </div>
+                            <div className={styles.featureImageWrapper}>
+                                <Image
+                                    src="/thread_stay_on_track.png"
+                                    alt="Interface showing real-time tracking of agenda items and structured notes"
+                                    width={600}
+                                    height={400}
+                                    style={{ width: '100%', height: 'auto' }}
+                                />
+                            </div>
+                        </div>
+
+                        {/* Feature 3: Ask */}
+                        <div className={styles.featureRow}>
+                            <div className={styles.featureContent}>
+                                <h3 className={styles.featureTitle}>Ask</h3>
+                                <p className={styles.featureDescription}>
+                                    A <strong>reasoning assistant</strong> to help you reason and probe deeper.
+                                    Query information based on chat context in real-time.
+                                </p>
+                            </div>
+                            <div className={styles.featureImageWrapper}>
+                                <Image
+                                    src="/thread_reasoning_assistant.png"
+                                    alt="Interface showing the reasoning assistant answering queries based on context"
+                                    width={600}
+                                    height={400}
+                                    style={{ width: '100%', height: 'auto' }}
+                                />
+                            </div>
+                        </div>
                     </div>
-
                 </div>
             </section>
 
-            {/* Section 6: Coming Soon */}
-            <section className={`${styles.comingSoonSection} ${styles.section}`}>
-                <div className={`${styles.container} ${styles.centered}`}>
-                    <h2 className={styles.comingSoonHeadline}>Coming Soon</h2>
-                    <p className={styles.bodyText}>We're putting the finishing touches on Thread. Stay tuned.</p>
-                </div>
+            {/* Section 6: Waitlist */}
+            <section className={`${styles.waitlistSection} ${styles.section}`}>
+                <WaitlistForm />
             </section>
 
             {/* Footer */}
