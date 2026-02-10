@@ -136,22 +136,73 @@ export default function ThreadsPage() {
                 </div>
             </section>
 
-            {/* Section 5: The Promise */}
+            {/* Section 5: The Features */}
             <section className={`${styles.promise} ${styles.section}`}>
                 <div className={styles.container}>
-                    <h2 className={styles.sectionHeadline}>Introducing 'Threads'</h2>
-                    <p className={styles.subtext}>A real-time reasoning layer that listens and guides the call.</p>
+                    <h2 className={`${styles.sectionHeadline} ${styles.centeredText}`}>Introducing 'Threads'</h2>
+                    <p className={`${styles.subtext} ${styles.centeredText}`}>A real-time reasoning layer that listens and guides the call.</p>
 
-                    <div className={styles.illustration}>
-                        <Image
-                            src="/reasoning_engine_flow.png"
-                            alt="Real-time reasoning engine transforming raw conversation into structured thinking"
-                            width={800}
-                            height={600}
-                            loading="lazy"
-                        />
+                    <div className={styles.featureGrid}>
+                        {/* Feature 1: Prepare */}
+                        <div className={styles.featureRow}>
+                            <div className={styles.featureContent}>
+                                <h3 className={styles.featureTitle}>Prepare</h3>
+                                <p className={styles.featureDescription}>
+                                    Shadow turns your context into <strong>clear agenda items</strong>.
+                                    Start every call with a structured plan, not a blank sheet.
+                                </p>
+                            </div>
+                            <div className={styles.featureImageWrapper}>
+                                <Image
+                                    src="/thread_prepare_agenda.png"
+                                    alt="Interface showing Shadow transforming context into a clear agenda"
+                                    width={600}
+                                    height={400}
+                                    style={{ width: '100%', height: 'auto' }}
+                                />
+                            </div>
+                        </div>
+
+                        {/* Feature 2: Stay on track */}
+                        <div className={`${styles.featureRow} ${styles.reverse}`}>
+                            <div className={styles.featureContent}>
+                                <h3 className={styles.featureTitle}>Stay on track</h3>
+                                <p className={styles.featureDescription}>
+                                    Shadow <strong>tracks coverage live</strong> and captures answers into <strong>structured notes</strong>.
+                                    Never lose track of what's covered and what's missing.
+                                </p>
+                            </div>
+                            <div className={styles.featureImageWrapper}>
+                                <Image
+                                    src="/thread_stay_on_track.png"
+                                    alt="Interface showing real-time tracking of agenda items and structured notes"
+                                    width={600}
+                                    height={400}
+                                    style={{ width: '100%', height: 'auto' }}
+                                />
+                            </div>
+                        </div>
+
+                        {/* Feature 3: Ask */}
+                        <div className={styles.featureRow}>
+                            <div className={styles.featureContent}>
+                                <h3 className={styles.featureTitle}>Ask</h3>
+                                <p className={styles.featureDescription}>
+                                    A <strong>reasoning assistant</strong> to help you reason and probe deeper.
+                                    Query information based on chat context in real-time.
+                                </p>
+                            </div>
+                            <div className={styles.featureImageWrapper}>
+                                <Image
+                                    src="/thread_reasoning_assistant.png"
+                                    alt="Interface showing the reasoning assistant answering queries based on context"
+                                    width={600}
+                                    height={400}
+                                    style={{ width: '100%', height: 'auto' }}
+                                />
+                            </div>
+                        </div>
                     </div>
-
                 </div>
             </section>
 
