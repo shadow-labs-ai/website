@@ -27,6 +27,8 @@ concurrency:
 jobs:
   # Build job
   build:
+    # Under a minute in every run seen (2026-10); the default is 6 hours.
+    timeout-minutes: 10
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -85,6 +87,7 @@ jobs:
 
   # Deployment job
   deploy:
+    timeout-minutes: 10
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
