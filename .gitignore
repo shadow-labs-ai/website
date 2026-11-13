@@ -39,3 +39,5 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+# personal values the house-gates hook refuses to commit; never tracked
+.house-gates.denylist
